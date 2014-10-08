@@ -7,6 +7,8 @@
 //
 
 #import "HWHomeViewController.h"
+#import "HWDropdownMenu.h"
+#import "HWTitleMenuViewController.h"
 
 @interface HWHomeViewController ()
 
@@ -41,48 +43,35 @@
     titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
     
     // 监听标题点击
-    [titleButton addTarget:self action:@selector(titleClick) forControlEvents:UIControlEventTouchUpInside];
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.titleView = titleButton;
     // 如果图片的某个方向上不规则，比如有突起，那么这个方向就不能拉伸
     
-    UITextField *field = [[UITextField alloc] init];
-    field.backgroundColor = [UIColor redColor];
-    field.width = 100;
-    field.height = 30;
-    [self.view addSubview:field];
+//    UITextField *field = [[UITextField alloc] init];
+//    field.backgroundColor = [UIColor redColor];
+//    field.width = 100;
+//    field.height = 30;
+//    [self.view addSubview:field];
 }
 
 /**
  *  标题点击
  */
-- (void)titleClick
+- (void)titleClick:(UIButton *)titleButton
 {
-    // 这样获得的窗口，是目前显示在屏幕最上面的窗口
-    UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
+    // 创建下拉菜单
+    HWDropdownMenu *menu = [HWDropdownMenu menu];
     
-    // 添加蒙板（用于拦截灰色图片外面的点击事件）
-    UIView *cover = [[UIView alloc] init];
-    cover.backgroundColor = [UIColor clearColor];
-    cover.frame = window.bounds;
-    [window addSubview:cover];
+    // 设置内容
+//    menu.content = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 100)];
     
-    // 添加带箭头的灰色图片
-    UIImageView *dropdownMenu = [[UIImageView alloc] init];
-    dropdownMenu.image = [UIImage imageNamed:@"popover_background"];
-    dropdownMenu.width = 217;
-    dropdownMenu.height = 217;
-    dropdownMenu.y = 40;
+    HWTitleMenuViewController *vc = [[HWTitleMenuViewController alloc] init];
+    vc.view.height = 44 * 3;
+    menu.contentController = vc;
     
-    [dropdownMenu addSubview:[UIButton buttonWithType:UIButtonTypeContactAdd]];
-    
-    [window addSubview:dropdownMenu];
-    
-    
-    // self.view.window = [UIApplication sharedApplication].keyWindow
-    // 建议使用[UIApplication sharedApplication].keyWindow获得窗口
-    
-    NSLog(@"%@", [UIApplication sharedApplication].windows);
+    // 显示
+    [menu showFrom:titleButton];
 }
 
 - (void)friendSearch
