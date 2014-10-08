@@ -12,8 +12,9 @@
 #import "HWDiscoverViewController.h"
 #import "HWProfileViewController.h"
 #import "HWNavigationController.h"
+#import "HWTabBar.h"
 
-@interface HWTabBarViewController ()
+@interface HWTabBarViewController () <HWTabBarDelegate>
 
 @end
 
@@ -35,7 +36,32 @@
     
     HWProfileViewController *profile = [[HWProfileViewController alloc] init];
     [self addChildVc:profile title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
+    
+    // 2.更换系统自带的tabbar
+    //    self.tabBar = [[HWTabBar alloc] init];
+    HWTabBar *tabBar = [[HWTabBar alloc] init];
+    tabBar.delegate = self;
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+    //    self.tabBar = tabBar;
+    
+//    Person *p = [[Person allooc] init];
+//    p.name = @"jack";
+//    [p setValue:@"jack" forKeyPath:@"name"];
 }
+
+//- (void)viewDidAppear:(BOOL)animated
+//{
+//    [super viewDidAppear:animated];
+//    
+//    int count = self.tabBar.subviews.count;
+//    for (int i = 0; i<count; i++) {
+//        UIView *child = self.tabBar.subviews[i];
+//        Class class = NSClassFromString(@"UITabBarButton");
+//        if ([child isKindOfClass:class]) {
+//            child.width = self.tabBar.width / count;
+//        }
+//    }
+//}
 
 /**
  *  添加一个子控制器
@@ -69,6 +95,14 @@
     HWNavigationController *nav = [[HWNavigationController alloc] initWithRootViewController:childVc];
     // 添加为子控制器
     [self addChildViewController:nav];
+}
+
+#pragma mark - HWTabBarDelegate代理方法
+- (void)tabBarDidClickPlusButton:(HWTabBar *)tabBar
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
