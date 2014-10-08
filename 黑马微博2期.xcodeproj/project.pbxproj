@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66719E4CE8C00280C20 /* HWSearchBar.m */; };
 		18728E2B19E37EB8008F3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2A19E37EB8008F3BFE /* Foundation.framework */; };
 		18728E2D19E37EB8008F3BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */; };
 		18728E2F19E37EB8008F3BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2E19E37EB8008F3BFE /* UIKit.framework */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1839F66619E4CE8C00280C20 /* HWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchBar.h; sourceTree = "<group>"; };
+		1839F66719E4CE8C00280C20 /* HWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchBar.m; sourceTree = "<group>"; };
 		18728E2719E37EB8008F3BFE /* 黑马微博2期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑马微博2期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18728E2A19E37EB8008F3BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -325,6 +328,8 @@
 		18728EA919E3D91D008F3BFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1839F66619E4CE8C00280C20 /* HWSearchBar.h */,
+				1839F66719E4CE8C00280C20 /* HWSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -521,6 +526,7 @@
 				189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */,
 				18728EC019E3D91D008F3BFE /* HWDiscoverViewController.m in Sources */,
 				18728EC619E3D91D008F3BFE /* main.m in Sources */,
+				1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */,
 				189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */,
 				18728ECD19E3D91D008F3BFE /* HWTest3ViewController.m in Sources */,
 				18728ECB19E3D91D008F3BFE /* HWTest2ViewController.m in Sources */,

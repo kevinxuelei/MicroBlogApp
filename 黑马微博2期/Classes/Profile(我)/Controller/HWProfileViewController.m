@@ -8,6 +8,7 @@
 
 #import "HWProfileViewController.h"
 #import "HWTest1ViewController.h"
+#import "HWSearchBar.h"
 
 @interface HWProfileViewController ()
 
@@ -29,7 +30,16 @@
     [super viewDidLoad];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:0 target:self action:@selector(setting)];
-//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(setting) image:@"navigationbar_pop" highImage:@"navigationbar_pop_highlighted"];
+    
+    // 分类：UITextField\UISearchBar
+    // 自定义控件：新建一个类，继承自UITextField
+    // 搞个工具类
+    
+    // 创建搜索框对象
+    HWSearchBar *searchBar = [HWSearchBar searchBar];
+    searchBar.width = 300;
+    searchBar.height = 30;
+    [self.view addSubview:searchBar];
 }
 
 - (void)setting
