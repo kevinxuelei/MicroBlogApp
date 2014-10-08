@@ -48,11 +48,22 @@
     self.navigationItem.titleView = titleButton;
     // 如果图片的某个方向上不规则，比如有突起，那么这个方向就不能拉伸
     
-//    UITextField *field = [[UITextField alloc] init];
-//    field.backgroundColor = [UIColor redColor];
-//    field.width = 100;
-//    field.height = 30;
-//    [self.view addSubview:field];
+    UIView *grayView = [[UIView alloc] init];
+    grayView.width = 200;
+    grayView.height = 70;
+    grayView.x = 20;
+    grayView.y = 30;
+    grayView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:grayView];
+    
+    UIButton *btn = [[UIButton alloc] init];
+    btn.width = 100;
+    btn.x = 140;
+    btn.y = 30;
+    btn.height = 30;
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+    [grayView addSubview:btn];
 }
 
 /**
@@ -60,17 +71,16 @@
  */
 - (void)titleClick:(UIButton *)titleButton
 {
-    // 创建下拉菜单
+    // 1.创建下拉菜单
     HWDropdownMenu *menu = [HWDropdownMenu menu];
     
-    // 设置内容
-//    menu.content = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 100)];
-    
+    // 2.设置内容
     HWTitleMenuViewController *vc = [[HWTitleMenuViewController alloc] init];
-    vc.view.height = 44 * 3;
+    vc.view.height = 150;
+    vc.view.width = 150;
     menu.contentController = vc;
     
-    // 显示
+    // 3.显示
     [menu showFrom:titleButton];
 }
 
