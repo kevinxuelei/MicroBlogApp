@@ -86,9 +86,8 @@
 - (void)dropdownMenuDidDismiss:(HWDropdownMenu *)menu
 {
     UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
-    titleButton.selected = NO;
     // 让箭头向下
-//    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    titleButton.selected = NO;
 }
 
 /**
@@ -97,9 +96,8 @@
 - (void)dropdownMenuDidShow:(HWDropdownMenu *)menu
 {
     UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
-    titleButton.selected = YES;
     // 让箭头向上
-//    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    titleButton.selected = YES;
 }
 
 #pragma mark - Table view data source

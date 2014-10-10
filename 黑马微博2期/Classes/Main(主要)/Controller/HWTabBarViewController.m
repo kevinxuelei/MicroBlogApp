@@ -38,30 +38,11 @@
     [self addChildVc:profile title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
     
     // 2.更换系统自带的tabbar
-    //    self.tabBar = [[HWTabBar alloc] init];
     HWTabBar *tabBar = [[HWTabBar alloc] init];
     tabBar.delegate = self;
     [self setValue:tabBar forKeyPath:@"tabBar"];
     //    self.tabBar = tabBar;
-    
-//    Person *p = [[Person allooc] init];
-//    p.name = @"jack";
-//    [p setValue:@"jack" forKeyPath:@"name"];
 }
-
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    [super viewDidAppear:animated];
-//    
-//    int count = self.tabBar.subviews.count;
-//    for (int i = 0; i<count; i++) {
-//        UIView *child = self.tabBar.subviews[i];
-//        Class class = NSClassFromString(@"UITabBarButton");
-//        if ([child isKindOfClass:class]) {
-//            child.width = self.tabBar.width / count;
-//        }
-//    }
-//}
 
 /**
  *  添加一个子控制器
@@ -75,8 +56,6 @@
 {
     // 设置子控制器的文字
     childVc.title = title; // 同时设置tabbar和navigationBar的文字
-//    childVc.tabBarItem.title = title; // 设置tabbar的文字
-//    childVc.navigationItem.title = title; // 设置navigationBar的文字
     
     // 设置子控制器的图片
     childVc.tabBarItem.image = [UIImage imageNamed:image];
@@ -89,7 +68,6 @@
     selectTextAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
-//    childVc.view.backgroundColor = HWRandomColor;
     
     // 先给外面传进来的小控制器 包装 一个导航控制器
     HWNavigationController *nav = [[HWNavigationController alloc] initWithRootViewController:childVc];
