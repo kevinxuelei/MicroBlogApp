@@ -10,7 +10,7 @@
 #import "HWDropdownMenu.h"
 #import "HWTitleMenuViewController.h"
 
-@interface HWHomeViewController ()
+@interface HWHomeViewController () <HWDropdownMenuDelegate>
 
 @end
 
@@ -37,6 +37,7 @@
     [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
 //    titleButton.imageView.backgroundColor = [UIColor redColor];
 //    titleButton.titleLabel.backgroundColor = [UIColor blueColor];
     titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, 70, 0, 0);
@@ -47,23 +48,6 @@
     
     self.navigationItem.titleView = titleButton;
     // 如果图片的某个方向上不规则，比如有突起，那么这个方向就不能拉伸
-    
-    UIView *grayView = [[UIView alloc] init];
-    grayView.width = 200;
-    grayView.height = 70;
-    grayView.x = 20;
-    grayView.y = 30;
-    grayView.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:grayView];
-    
-    UIButton *btn = [[UIButton alloc] init];
-    btn.width = 100;
-    btn.x = 140;
-    btn.y = 30;
-    btn.height = 30;
-    btn.backgroundColor = [UIColor redColor];
-    [btn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
-    [grayView addSubview:btn];
 }
 
 /**
@@ -73,6 +57,7 @@
 {
     // 1.创建下拉菜单
     HWDropdownMenu *menu = [HWDropdownMenu menu];
+    menu.delegate = self;
     
     // 2.设置内容
     HWTitleMenuViewController *vc = [[HWTitleMenuViewController alloc] init];
@@ -92,6 +77,29 @@
 - (void)pop
 {
     NSLog(@"pop");
+}
+
+#pragma mark - HWDropdownMenuDelegate
+/**
+ *  下拉菜单被销毁了
+ */
+- (void)dropdownMenuDidDismiss:(HWDropdownMenu *)menu
+{
+    UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
+    titleButton.selected = NO;
+    // 让箭头向下
+//    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+}
+
+/**
+ *  下拉菜单显示了
+ */
+- (void)dropdownMenuDidShow:(HWDropdownMenu *)menu
+{
+    UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
+    titleButton.selected = YES;
+    // 让箭头向上
+//    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
 }
 
 #pragma mark - Table view data source
