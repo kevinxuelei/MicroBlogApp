@@ -37,6 +37,7 @@
 		18728ECE19E3D91D008F3BFE /* HWTest3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18728EBF19E3D91D008F3BFE /* HWTest3ViewController.xib */; };
 		189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */; };
 		189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */; };
+		18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */; };
 		18ECFACF19E527300009431B /* HWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECFACE19E527300009431B /* HWTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWItemTool.m; path = ../HWItemTool.m; sourceTree = "<group>"; };
 		189B5CEB19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		18B35D7719E7633300A00499 /* HWNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNewfeatureViewController.h; sourceTree = "<group>"; };
+		18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNewfeatureViewController.m; sourceTree = "<group>"; };
 		18ECFACD19E527300009431B /* HWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTabBar.h; sourceTree = "<group>"; };
 		18ECFACE19E527300009431B /* HWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +202,7 @@
 		18728E5F19E38051008F3BFE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18B35D7519E7630F00A00499 /* Newfeature(新特性) */,
 				18728E8E19E3D91D008F3BFE /* Discover(发现) */,
 				18728E9419E3D91D008F3BFE /* Home(首页) */,
 				18728E9A19E3D91D008F3BFE /* Main(主要) */,
@@ -433,6 +437,23 @@
 			path = "Temp(临时)";
 			sourceTree = "<group>";
 		};
+		18B35D7519E7630F00A00499 /* Newfeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				18B35D7619E7630F00A00499 /* Controller */,
+			);
+			path = "Newfeature(新特性)";
+			sourceTree = "<group>";
+		};
+		18B35D7619E7630F00A00499 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B35D7719E7633300A00499 /* HWNewfeatureViewController.h */,
+				18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -540,6 +561,7 @@
 				18728EC319E3D91D008F3BFE /* HWNavigationController.m in Sources */,
 				189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */,
 				18728EC019E3D91D008F3BFE /* HWDiscoverViewController.m in Sources */,
+				18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */,
 				18728EC619E3D91D008F3BFE /* main.m in Sources */,
 				1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */,
 				189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */,
