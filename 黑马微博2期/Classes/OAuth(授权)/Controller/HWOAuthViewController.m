@@ -8,7 +8,6 @@
 
 #import "HWOAuthViewController.h"
 #import "AFNetworking.h"
-#import "HWAccount.h"
 #import "HWAccountTool.h"
 #import "MBProgressHUD+MJ.h"
 

@@ -13,6 +13,7 @@
 		180E083F19EA0DCB001D9142 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E083C19EA0DCB001D9142 /* MBProgressHUD.m */; };
 		180E084319EA191F001D9142 /* HWAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E084219EA191F001D9142 /* HWAccountTool.m */; };
 		180E084619EA2115001D9142 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E084519EA2115001D9142 /* UIWindow+Extension.m */; };
+		180E084819EA29C8001D9142 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E084719EA29C8001D9142 /* Foundation+Log.m */; };
 		1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66719E4CE8C00280C20 /* HWSearchBar.m */; };
 		1839F66B19E4E09A00280C20 /* HWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66A19E4E09A00280C20 /* HWDropdownMenu.m */; };
 		1839F66E19E4E67900280C20 /* HWTitleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66D19E4E67900280C20 /* HWTitleMenuViewController.m */; };
@@ -79,6 +80,7 @@
 		180E084219EA191F001D9142 /* HWAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWAccountTool.m; sourceTree = "<group>"; };
 		180E084419EA2115001D9142 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		180E084519EA2115001D9142 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
+		180E084719EA29C8001D9142 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		1839F66619E4CE8C00280C20 /* HWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchBar.h; sourceTree = "<group>"; };
 		1839F66719E4CE8C00280C20 /* HWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchBar.m; sourceTree = "<group>"; };
 		1839F66919E4E09A00280C20 /* HWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDropdownMenu.h; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 		18728E9B19E3D91D008F3BFE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				180E084719EA29C8001D9142 /* Foundation+Log.m */,
 				18728E9C19E3D91D008F3BFE /* UIView+Extension.h */,
 				18728E9D19E3D91D008F3BFE /* UIView+Extension.m */,
 				189B5CEB19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.h */,
@@ -684,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183BD44619E7DF2700C0A26A /* AFURLRequestSerialization.m in Sources */,
+				180E084819EA29C8001D9142 /* Foundation+Log.m in Sources */,
 				180E083D19EA0DCB001D9142 /* MBProgressHUD+MJ.m in Sources */,
 				183BD44519E7DF2700C0A26A /* AFURLConnectionOperation.m in Sources */,
 				18728EC219E3D91D008F3BFE /* UIView+Extension.m in Sources */,

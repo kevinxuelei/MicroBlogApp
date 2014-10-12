@@ -8,7 +8,6 @@
 
 #import "HWAppDelegate.h"
 #import "HWOAuthViewController.h"
-#import "HWAccount.h"
 #import "HWAccountTool.h"
 
 @implementation HWAppDelegate
