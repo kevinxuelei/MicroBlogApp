@@ -14,6 +14,7 @@
 		180E084319EA191F001D9142 /* HWAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E084219EA191F001D9142 /* HWAccountTool.m */; };
 		180E084619EA2115001D9142 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E084519EA2115001D9142 /* UIWindow+Extension.m */; };
 		180E084819EA29C8001D9142 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E084719EA29C8001D9142 /* Foundation+Log.m */; };
+		181BBEA219EA5B6B0077569F /* HWTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BBEA119EA5B6B0077569F /* HWTitleButton.m */; };
 		1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66719E4CE8C00280C20 /* HWSearchBar.m */; };
 		1839F66B19E4E09A00280C20 /* HWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66A19E4E09A00280C20 /* HWDropdownMenu.m */; };
 		1839F66E19E4E67900280C20 /* HWTitleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66D19E4E67900280C20 /* HWTitleMenuViewController.m */; };
@@ -81,6 +82,8 @@
 		180E084419EA2115001D9142 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		180E084519EA2115001D9142 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		180E084719EA29C8001D9142 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		181BBEA019EA5B6B0077569F /* HWTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTitleButton.h; sourceTree = "<group>"; };
+		181BBEA119EA5B6B0077569F /* HWTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTitleButton.m; sourceTree = "<group>"; };
 		1839F66619E4CE8C00280C20 /* HWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchBar.h; sourceTree = "<group>"; };
 		1839F66719E4CE8C00280C20 /* HWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchBar.m; sourceTree = "<group>"; };
 		1839F66919E4E09A00280C20 /* HWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDropdownMenu.h; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 			children = (
 				1839F66C19E4E67900280C20 /* HWTitleMenuViewController.h */,
 				1839F66D19E4E67900280C20 /* HWTitleMenuViewController.m */,
+				181BBEA019EA5B6B0077569F /* HWTitleButton.h */,
+				181BBEA119EA5B6B0077569F /* HWTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -697,6 +702,7 @@
 				18728EC119E3D91D008F3BFE /* HWHomeViewController.m in Sources */,
 				18728EC319E3D91D008F3BFE /* HWNavigationController.m in Sources */,
 				183BD42219E7D1B700C0A26A /* HWOAuthViewController.m in Sources */,
+				181BBEA219EA5B6B0077569F /* HWTitleButton.m in Sources */,
 				183BD44419E7DF2700C0A26A /* AFSecurityPolicy.m in Sources */,
 				180E084619EA2115001D9142 /* UIWindow+Extension.m in Sources */,
 				183BD44019E7DF2700C0A26A /* AFHTTPRequestOperation.m in Sources */,

@@ -11,6 +11,7 @@
 #import "HWTitleMenuViewController.h"
 #import "AFNetworking.h"
 #import "HWAccountTool.h"
+#import "HWTitleButton.h"
 
 @interface HWHomeViewController () <HWDropdownMenuDelegate>
 
@@ -68,39 +69,27 @@
 {
     /* 设置导航栏上面的内容 */
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(friendSearch) image:@"navigationbar_friendsearch" highImage:@"navigationbar_friendsearch_highlighted"];
-    
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(pop) image:@"navigationbar_pop" highImage:@"navigationbar_pop_highlighted"];
     
     /* 中间的标题按钮 */
-    UIButton *titleButton = [[UIButton alloc] init];
-    titleButton.width = 150;
-    titleButton.height = 30;
-    
+    HWTitleButton *titleButton = [[HWTitleButton alloc] init];
     // 设置图片和文字
     NSString *name = [HWAccountTool account].name;
     [titleButton setTitle:name?name:@"首页" forState:UIControlStateNormal];
-    [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
-    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
-    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
-    titleButton.backgroundColor = [UIColor redColor];
-    titleButton.imageView.backgroundColor = [UIColor yellowColor];
-    titleButton.titleLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.2];
-    
-    // 标题宽度
-    CGFloat titleW = titleButton.titleLabel.width;
-    NSLog(@"%f", titleW);
-    // 乘上scale系数，保证retina屏幕上的图片宽度是正确的
-    CGFloat imageW = titleButton.imageView.width * [UIScreen mainScreen].scale;
-    CGFloat left = titleW + imageW;
-    titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, left, 0, 0);
-    
     // 监听标题点击
     [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
-    
     self.navigationItem.titleView = titleButton;
-    // 如果图片的某个方向上不规则，比如有突起，那么这个方向就不能拉伸
 }
+
+// 如果图片的某个方向上不规则，比如有突起，那么这个方向就不能拉伸
+// 什么情况下建议使用imageEdgeInsets、titleEdgeInsets
+// 如果按钮内部的图片、文字固定，用这2个属性来设置间距，会比较简单
+// 标题宽度
+//    CGFloat titleW = titleButton.titleLabel.width * [UIScreen mainScreen].scale;
+////    // 乘上scale系数，保证retina屏幕上的图片宽度是正确的
+//    CGFloat imageW = titleButton.imageView.width * [UIScreen mainScreen].scale;
+//    CGFloat left = titleW + imageW;
+//    titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, left, 0, 0);
 
 /**
  *  标题点击
