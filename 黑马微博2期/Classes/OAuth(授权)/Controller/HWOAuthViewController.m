@@ -11,6 +11,7 @@
 #import "HWTabBarViewController.h"
 #import "HWNewfeatureViewController.h"
 #import "HWAccount.h"
+#import "HWAccountTool.h"
 #import "MBProgressHUD+MJ.h"
 
 @interface HWOAuthViewController () <UIWebViewDelegate>
@@ -113,14 +114,10 @@
     [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
         [MBProgressHUD hideHUD];
         
-        // 沙盒路径
-        NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-        NSString *path = [doc stringByAppendingPathComponent:@"account.archive"];
-        
         // 将返回的账号字典数据 --> 模型，存进沙盒
         HWAccount *account = [HWAccount accountWithDict:responseObject];
-        // 自定义对象的存储必须用NSKeyedArchiver，不再有什么writeToFile方法
-        [NSKeyedArchiver archiveRootObject:account toFile:path];
+        // 存储账号信息
+        [HWAccountTool saveAccount:account];
         
         // 切换窗口的根控制器
         NSString *key = @"CFBundleVersion";
