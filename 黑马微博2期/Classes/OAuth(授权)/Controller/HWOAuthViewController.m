@@ -8,6 +8,10 @@
 
 #import "HWOAuthViewController.h"
 #import "AFNetworking.h"
+#import "HWTabBarViewController.h"
+#import "HWNewfeatureViewController.h"
+#import "HWAccount.h"
+#import "MBProgressHUD+MJ.h"
 
 @interface HWOAuthViewController () <UIWebViewDelegate>
 
@@ -31,7 +35,7 @@
      client_id	true	string	申请应用时分配的AppKey。
      redirect_uri	true	string	授权回调地址，站外应用需与设置的回调地址一致，站内应用需填写canvas page的地址。
     */
-    NSURL *url = [NSURL URLWithString:@"https://api.weibo.com/oauth2/authorize?client_id=3235932662&redirect_uri=http://"];
+    NSURL *url = [NSURL URLWithString:@"https://api.weibo.com/oauth2/authorize?client_id=3235932662&redirect_uri=http://www.baidu.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
 }
@@ -39,12 +43,17 @@
 #pragma mark - webView代理方法
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-//    HWLog(@"----webViewDidFinishLoad");
+    [MBProgressHUD hideHUD];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-//    HWLog(@"----webViewDidStartLoad");
+    [MBProgressHUD showMessage:@"正在加载..."];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [MBProgressHUD hideHUD];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
@@ -61,6 +70,9 @@
         
         // 利用code换取一个accessToken
         [self accessTokenWithCode:code];
+        
+        // 禁止加载回调地址
+        return NO;
     }
     
     return YES;
@@ -94,13 +106,41 @@
     params[@"client_id"] = @"3235932662";
     params[@"client_secret"] = @"227141af66d895d0dd8baca62f73b700";
     params[@"grant_type"] = @"authorization_code";
-    params[@"redirect_uri"] = @"http://";
+    params[@"redirect_uri"] = @"http://www.baidu.com";
     params[@"code"] = code;
     
     // 3.发送请求
-    [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        HWLog(@"请求成功-%@", responseObject);
+    [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        [MBProgressHUD hideHUD];
+        
+        // 沙盒路径
+        NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+        NSString *path = [doc stringByAppendingPathComponent:@"account.archive"];
+        
+        // 将返回的账号字典数据 --> 模型，存进沙盒
+        HWAccount *account = [HWAccount accountWithDict:responseObject];
+        // 自定义对象的存储必须用NSKeyedArchiver，不再有什么writeToFile方法
+        [NSKeyedArchiver archiveRootObject:account toFile:path];
+        
+        // 切换窗口的根控制器
+        NSString *key = @"CFBundleVersion";
+        // 上一次的使用版本（存储在沙盒中的版本号）
+        NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+        // 当前软件的版本号（从Info.plist中获得）
+        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+        
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        if ([currentVersion isEqualToString:lastVersion]) { // 版本号相同：这次打开和上次打开的是同一个版本
+            window.rootViewController = [[HWTabBarViewController alloc] init];
+        } else { // 这次打开的版本和上一次不一样，显示新特性
+            window.rootViewController = [[HWNewfeatureViewController alloc] init];
+            
+            // 将当前的版本号存进沙盒
+            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [MBProgressHUD hideHUD];
         HWLog(@"请求失败-%@", error);
     }];
 }
