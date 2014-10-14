@@ -82,6 +82,8 @@
 		18728ECC19E3D91D008F3BFE /* HWTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18728EBC19E3D91D008F3BFE /* HWTest2ViewController.xib */; };
 		18728ECD19E3D91D008F3BFE /* HWTest3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18728EBE19E3D91D008F3BFE /* HWTest3ViewController.m */; };
 		18728ECE19E3D91D008F3BFE /* HWTest3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18728EBF19E3D91D008F3BFE /* HWTest3ViewController.xib */; };
+		187433F919ECAFFF009F4EDC /* HWLoadMoreFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 187433F819ECAFFF009F4EDC /* HWLoadMoreFooter.m */; };
+		187433FB19ECB012009F4EDC /* HWLoadMoreFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187433FA19ECB012009F4EDC /* HWLoadMoreFooter.xib */; };
 		189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */; };
 		189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */; };
 		18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */; };
@@ -239,6 +241,9 @@
 		18728EBD19E3D91D008F3BFE /* HWTest3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTest3ViewController.h; sourceTree = "<group>"; };
 		18728EBE19E3D91D008F3BFE /* HWTest3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTest3ViewController.m; sourceTree = "<group>"; };
 		18728EBF19E3D91D008F3BFE /* HWTest3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWTest3ViewController.xib; sourceTree = "<group>"; };
+		187433F719ECAFFF009F4EDC /* HWLoadMoreFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWLoadMoreFooter.h; sourceTree = "<group>"; };
+		187433F819ECAFFF009F4EDC /* HWLoadMoreFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWLoadMoreFooter.m; sourceTree = "<group>"; };
+		187433FA19ECB012009F4EDC /* HWLoadMoreFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWLoadMoreFooter.xib; sourceTree = "<group>"; };
 		189B5CE819E3DC5300C3CEB4 /* HWItemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWItemTool.h; path = ../HWItemTool.h; sourceTree = "<group>"; };
 		189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWItemTool.m; path = ../HWItemTool.m; sourceTree = "<group>"; };
 		189B5CEB19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -571,6 +576,9 @@
 				1839F66D19E4E67900280C20 /* HWTitleMenuViewController.m */,
 				181BBEA019EA5B6B0077569F /* HWTitleButton.h */,
 				181BBEA119EA5B6B0077569F /* HWTitleButton.m */,
+				187433F719ECAFFF009F4EDC /* HWLoadMoreFooter.h */,
+				187433F819ECAFFF009F4EDC /* HWLoadMoreFooter.m */,
+				187433FA19ECB012009F4EDC /* HWLoadMoreFooter.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -835,6 +843,7 @@
 				18728ECA19E3D91D008F3BFE /* HWTest1ViewController.xib in Resources */,
 				18728E4319E37EB8008F3BFE /* Images.xcassets in Resources */,
 				18728ECC19E3D91D008F3BFE /* HWTest2ViewController.xib in Resources */,
+				187433FB19ECB012009F4EDC /* HWLoadMoreFooter.xib in Resources */,
 				18728E3519E37EB8008F3BFE /* InfoPlist.strings in Resources */,
 				18728ECE19E3D91D008F3BFE /* HWTest3ViewController.xib in Resources */,
 				180E083E19EA0DCB001D9142 /* MBProgressHUD.bundle in Resources */,
@@ -882,6 +891,7 @@
 				18728EC319E3D91D008F3BFE /* HWNavigationController.m in Sources */,
 				183BD42219E7D1B700C0A26A /* HWOAuthViewController.m in Sources */,
 				181BBEA219EA5B6B0077569F /* HWTitleButton.m in Sources */,
+				187433F919ECAFFF009F4EDC /* HWLoadMoreFooter.m in Sources */,
 				181BBED019EA6AF00077569F /* UIImage+MultiFormat.m in Sources */,
 				181BBED219EA6AF00077569F /* UIImageView+HighlightedWebCache.m in Sources */,
 				183BD44419E7DF2700C0A26A /* AFSecurityPolicy.m in Sources */,

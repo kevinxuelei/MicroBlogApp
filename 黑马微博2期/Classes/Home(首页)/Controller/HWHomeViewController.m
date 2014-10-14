@@ -16,6 +16,7 @@
 #import "HWUser.h"
 #import "HWStatus.h"
 #import "MJExtension.h"
+#import "HWLoadMoreFooter.h"
 
 @interface HWHomeViewController () <HWDropdownMenuDelegate>
 /**
@@ -44,14 +45,32 @@
     // 获得用户信息（昵称）
     [self setupUserInfo];
     
-    // 集成刷新控件
-    [self setupRefresh];
+    // 集成下拉刷新控件
+    [self setupDownRefresh];
+    
+    // 集成上拉刷新控件
+    [self setupUpRefresh];
+    
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//    btn.y = 0;
+//    btn.x = 0;
+//    [self.view addSubview:btn];
 }
 
 /**
- *  集成刷新控件
+ *  集成上拉刷新控件
  */
-- (void)setupRefresh
+- (void)setupUpRefresh
+{
+    HWLoadMoreFooter *footer = [HWLoadMoreFooter footer];
+    footer.hidden = YES;
+    self.tableView.tableFooterView = footer;
+}
+
+/**
+ *  集成下拉刷新控件
+ */
+- (void)setupDownRefresh
 {
     // 1.添加刷新控件
     UIRefreshControl *control = [[UIRefreshControl alloc] init];
@@ -78,6 +97,7 @@
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
+    params[@"count"] = @15;
     
     // 取出最前面的微博（最新的微博，ID最大的微博）
     HWStatus *firstStatus = [self.statuses firstObject];
@@ -104,6 +124,8 @@
         
         // 显示最新微博的数量
         [self showNewStatusCount:newStatuses.count];
+        
+//        HWLog(@"%@", NSStringFromUIEdgeInsets(self.tableView.contentInset));
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         HWLog(@"请求失败-%@", error);
         
@@ -289,6 +311,32 @@
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:user.profile_image_url] placeholderImage:placehoder];
     
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    // 如果tableView还没有数据，就直接返回
+    if (self.statuses.count == 0) return;
+//    if ([self.tableView numberOfRowsInSection:0] == 0) return;
+    
+    // 当最后一个cell完全显示在眼前时，contentOffset的y值
+    CGFloat judgeOffsetY = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.height - self.tableView.tableFooterView.height;
+    if (offsetY >= judgeOffsetY) { // 最后一个cell完全进入视野范围内
+        // 显示footer
+        self.tableView.tableFooterView.hidden = NO;
+        
+        // 加载更多的微博数据
+        HWLog(@"加载更多的微博数据");
+    }
+    
+    /*
+     contentInset：除具体内容以外的边框尺寸
+     contentSize: 里面的具体内容（header、cell、footer），除掉contentInset以外的尺寸
+     contentOffset: 
+     1.它可以用来判断scrollView滚动到什么位置
+     2.指scrollView的内容超出了scrollView顶部的距离（除掉contentInset以外的尺寸）
+     */
 }
 
 /**
