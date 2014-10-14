@@ -75,20 +75,20 @@
     // 1.添加刷新控件
     UIRefreshControl *control = [[UIRefreshControl alloc] init];
     // 只有用户通过手动下拉刷新，才会触发UIControlEventValueChanged事件
-    [control addTarget:self action:@selector(refreshStateChange:) forControlEvents:UIControlEventValueChanged];
+    [control addTarget:self action:@selector(loadNewStatus:) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:control];
     
     // 2.马上进入刷新状态(仅仅是显示刷新状态，并不会触发UIControlEventValueChanged事件)
     [control beginRefreshing];
     
     // 3.马上加载数据
-    [self refreshStateChange:control];
+    [self loadNewStatus:control];
 }
 
 /**
  *  UIRefreshControl进入刷新状态：加载最新的数据
  */
-- (void)refreshStateChange:(UIRefreshControl *)control
+- (void)loadNewStatus:(UIRefreshControl *)control
 {
     // 1.请求管理者
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
@@ -97,7 +97,6 @@
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
-    params[@"count"] = @15;
     
     // 取出最前面的微博（最新的微博，ID最大的微博）
     HWStatus *firstStatus = [self.statuses firstObject];
@@ -119,7 +118,7 @@
         // 刷新表格
         [self.tableView reloadData];
         
-        // 结束刷新刷新
+        // 结束刷新
         [control endRefreshing];
         
         // 显示最新微博的数量
@@ -131,6 +130,49 @@
         
         // 结束刷新刷新
         [control endRefreshing];
+    }];
+}
+
+/**
+ *  加载更多的微博数据
+ */
+- (void)loadMoreStatus
+{
+    // 1.请求管理者
+    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    
+    // 2.拼接请求参数
+    HWAccount *account = [HWAccountTool account];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = account.access_token;
+    
+    // 取出最后面的微博（最新的微博，ID最大的微博）
+    HWStatus *lastStatus = [self.statuses lastObject];
+    if (lastStatus) {
+        // 若指定此参数，则返回ID小于或等于max_id的微博，默认为0。
+        // id这种数据一般都是比较大的，一般转成整数的话，最好是long long类型
+        long long maxId = lastStatus.idstr.longLongValue - 1;
+        params[@"max_id"] = @(maxId);
+    }
+    
+    // 3.发送请求
+    [mgr GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        // 将 "微博字典"数组 转为 "微博模型"数组
+        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        
+        // 将更多的微博数据，添加到总数组的最后面
+        [self.statuses addObjectsFromArray:newStatuses];
+        
+        // 刷新表格
+        [self.tableView reloadData];
+        
+        // 结束刷新(隐藏footer)
+        self.tableView.tableFooterView.hidden = YES;
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        HWLog(@"请求失败-%@", error);
+        
+        // 结束刷新
+        self.tableView.tableFooterView.hidden = YES;
     }];
 }
 
@@ -315,10 +357,11 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat offsetY = scrollView.contentOffset.y;
+    //    scrollView == self.tableView == self.view
     // 如果tableView还没有数据，就直接返回
-    if (self.statuses.count == 0) return;
-//    if ([self.tableView numberOfRowsInSection:0] == 0) return;
+    if (self.statuses.count == 0 || self.tableView.tableFooterView.isHidden == NO) return;
+    
+    CGFloat offsetY = scrollView.contentOffset.y;
     
     // 当最后一个cell完全显示在眼前时，contentOffset的y值
     CGFloat judgeOffsetY = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.height - self.tableView.tableFooterView.height;
@@ -327,7 +370,7 @@
         self.tableView.tableFooterView.hidden = NO;
         
         // 加载更多的微博数据
-        HWLog(@"加载更多的微博数据");
+        [self loadMoreStatus];
     }
     
     /*
@@ -338,10 +381,4 @@
      2.指scrollView的内容超出了scrollView顶部的距离（除掉contentInset以外的尺寸）
      */
 }
-
-/**
- 1.将字典转为模型
- 2.能够下拉刷新最新的微博数据
- 3.能够上拉加载更多的微博数据
- */
 @end
