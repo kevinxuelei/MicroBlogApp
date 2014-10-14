@@ -21,18 +21,18 @@
 /**
  *  微博数组（里面放的都是HWStatus模型，一个HWStatus对象就代表一条微博）
  */
-@property (nonatomic, strong) NSArray *statuses;
+@property (nonatomic, strong) NSMutableArray *statuses;
 @end
 
 @implementation HWHomeViewController
 
-//- (NSMutableArray *)statuses
-//{
-//    if (!_statuses) {
-//        self.statuses = [NSMutableArray array];
-//    }
-//    return _statuses;
-//}
+- (NSMutableArray *)statuses
+{
+    if (!_statuses) {
+        self.statuses = [NSMutableArray array];
+    }
+    return _statuses;
+}
 
 - (void)viewDidLoad
 {
@@ -44,14 +44,24 @@
     // 获得用户信息（昵称）
     [self setupUserInfo];
     
-    // 加载最新的微博数据
-    [self loadNewStatus];
+    // 集成刷新控件
+    [self setupRefresh];
 }
 
 /**
- *  加载最新的微博数据
+ *  集成刷新控件
  */
-- (void)loadNewStatus
+- (void)setupRefresh
+{
+    UIRefreshControl *control = [[UIRefreshControl alloc] init];
+    [control addTarget:self action:@selector(refreshStateChange:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:control];
+}
+
+/**
+ *  UIRefreshControl进入刷新状态：加载最新的数据
+ */
+- (void)refreshStateChange:(UIRefreshControl *)control
 {
     // 1.请求管理者
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
@@ -60,17 +70,34 @@
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
-//    params[@"count"] = @10;
+    
+    // 取出最前面的微博（最新的微博，ID最大的微博）
+    HWStatus *firstStatus = [self.statuses firstObject];
+    if (firstStatus) {
+        // 若指定此参数，则返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0
+        params[@"since_id"] = firstStatus.idstr;
+    }
     
     // 3.发送请求
     [mgr GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
         // 将 "微博字典"数组 转为 "微博模型"数组
-        self.statuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        
+        // 将最新的微博数据，添加到总数组的最前面
+        NSRange range = NSMakeRange(0, newStatuses.count);
+        NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:range];
+        [self.statuses insertObjects:newStatuses atIndexes:set];
         
         // 刷新表格
         [self.tableView reloadData];
+        
+        // 结束刷新刷新
+        [control endRefreshing];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         HWLog(@"请求失败-%@", error);
+        
+        // 结束刷新刷新
+        [control endRefreshing];
     }];
 }
 
