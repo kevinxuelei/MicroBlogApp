@@ -17,6 +17,7 @@
 #import "HWStatus.h"
 #import "MJExtension.h"
 #import "HWLoadMoreFooter.h"
+#import "HWStatusCell.h"
 
 @interface HWHomeViewController () <HWDropdownMenuDelegate>
 /**
@@ -52,9 +53,9 @@
     [self setupUpRefresh];
     
     // 获得未读数
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(setupUnreadCount) userInfo:nil repeats:YES];
-    // 主线程也会抽时间处理一下timer（不管主线程是否正在其他事件）
-    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(setupUnreadCount) userInfo:nil repeats:YES];
+//    // 主线程也会抽时间处理一下timer（不管主线程是否正在其他事件）
+//    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
 
 /**
@@ -371,25 +372,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"status";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    // 获得cell
+    HWStatusCell *cell = [HWStatusCell cellWithTableView:tableView];
     
-    // 取出这行对应的微博字典
-    HWStatus *status = self.statuses[indexPath.row];
-    
-    // 取出这条微博的作者（用户）
-    HWUser *user = status.user;
-    cell.textLabel.text = user.name;
-    
-    // 设置微博的文字
-    cell.detailTextLabel.text = status.text;
-    
-    // 设置头像
-    UIImage *placehoder = [UIImage imageNamed:@"avatar_default_small"];
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:user.profile_image_url] placeholderImage:placehoder];
+    // 给cell传递模型数据
+    cell.status = self.statuses[indexPath.row];
     
     return cell;
 }
