@@ -10,6 +10,17 @@
 //  3.存放着一个数据模型HWStatus
 
 #import <Foundation/Foundation.h>
+
+// 昵称字体
+#define HWStatusCellNameFont [UIFont systemFontOfSize:15]
+// 时间字体
+#define HWStatusCellTimeFont [UIFont systemFontOfSize:12]
+// 来源字体
+#define HWStatusCellSourceFont HWStatusCellTimeFont
+// 正文字体
+#define HWStatusCellContentFont [UIFont systemFontOfSize:14]
+
+
 @class HWStatus;
 
 @interface HWStatusFrame : NSObject

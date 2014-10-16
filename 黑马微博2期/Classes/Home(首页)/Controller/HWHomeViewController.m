@@ -18,22 +18,23 @@
 #import "MJExtension.h"
 #import "HWLoadMoreFooter.h"
 #import "HWStatusCell.h"
+#import "HWStatusFrame.h"
 
 @interface HWHomeViewController () <HWDropdownMenuDelegate>
 /**
- *  微博数组（里面放的都是HWStatus模型，一个HWStatus对象就代表一条微博）
+ *  微博数组（里面放的都是HWStatusFrame模型，一个HWStatusFrame对象就代表一条微博）
  */
-@property (nonatomic, strong) NSMutableArray *statuses;
+@property (nonatomic, strong) NSMutableArray *statusFrames;
 @end
 
 @implementation HWHomeViewController
 
-- (NSMutableArray *)statuses
+- (NSMutableArray *)statusFrames
 {
-    if (!_statuses) {
-        self.statuses = [NSMutableArray array];
+    if (!_statusFrames) {
+        self.statusFrames = [NSMutableArray array];
     }
-    return _statuses;
+    return _statusFrames;
 }
 
 - (void)viewDidLoad
@@ -126,6 +127,20 @@
 }
 
 /**
+ *  将HWStatus模型转为HWStatusFrame模型
+ */
+- (NSArray *)stausFramesWithStatuses:(NSArray *)statuses
+{
+    NSMutableArray *frames = [NSMutableArray array];
+    for (HWStatus *status in statuses) {
+        HWStatusFrame *f = [[HWStatusFrame alloc] init];
+        f.status = status;
+        [frames addObject:f];
+    }
+    return frames;
+}
+
+/**
  *  UIRefreshControl进入刷新状态：加载最新的数据
  */
 - (void)loadNewStatus:(UIRefreshControl *)control
@@ -139,21 +154,26 @@
     params[@"access_token"] = account.access_token;
     
     // 取出最前面的微博（最新的微博，ID最大的微博）
-    HWStatus *firstStatus = [self.statuses firstObject];
-    if (firstStatus) {
+    HWStatusFrame *firstStatusF = [self.statusFrames firstObject];
+    if (firstStatusF) {
         // 若指定此参数，则返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0
-        params[@"since_id"] = firstStatus.idstr;
+        params[@"since_id"] = firstStatusF.status.idstr;
     }
     
     // 3.发送请求
     [mgr GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        HWLog(@"%@", responseObject);
+        
         // 将 "微博字典"数组 转为 "微博模型"数组
         NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
         
+        // 将 HWStatus数组 转为 HWStatusFrame数组
+        NSArray *newFrames = [self stausFramesWithStatuses:newStatuses];
+        
         // 将最新的微博数据，添加到总数组的最前面
-        NSRange range = NSMakeRange(0, newStatuses.count);
+        NSRange range = NSMakeRange(0, newFrames.count);
         NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:range];
-        [self.statuses insertObjects:newStatuses atIndexes:set];
+        [self.statusFrames insertObjects:newFrames atIndexes:set];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -185,11 +205,11 @@
     params[@"access_token"] = account.access_token;
     
     // 取出最后面的微博（最新的微博，ID最大的微博）
-    HWStatus *lastStatus = [self.statuses lastObject];
-    if (lastStatus) {
+    HWStatusFrame *lastStatusF = [self.statusFrames lastObject];
+    if (lastStatusF) {
         // 若指定此参数，则返回ID小于或等于max_id的微博，默认为0。
         // id这种数据一般都是比较大的，一般转成整数的话，最好是long long类型
-        long long maxId = lastStatus.idstr.longLongValue - 1;
+        long long maxId = lastStatusF.status.idstr.longLongValue - 1;
         params[@"max_id"] = @(maxId);
     }
     
@@ -198,8 +218,11 @@
         // 将 "微博字典"数组 转为 "微博模型"数组
         NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
         
+        // 将 HWStatus数组 转为 HWStatusFrame数组
+        NSArray *newFrames = [self stausFramesWithStatuses:newStatuses];
+        
         // 将更多的微博数据，添加到总数组的最后面
-        [self.statuses addObjectsFromArray:newStatuses];
+        [self.statusFrames addObjectsFromArray:newFrames];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -367,7 +390,7 @@
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.statuses.count;
+    return self.statusFrames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -376,7 +399,7 @@
     HWStatusCell *cell = [HWStatusCell cellWithTableView:tableView];
     
     // 给cell传递模型数据
-    cell.status = self.statuses[indexPath.row];
+    cell.statusFrame = self.statusFrames[indexPath.row];
     
     return cell;
 }
@@ -385,7 +408,7 @@
 {
     //    scrollView == self.tableView == self.view
     // 如果tableView还没有数据，就直接返回
-    if (self.statuses.count == 0 || self.tableView.tableFooterView.isHidden == NO) return;
+    if (self.statusFrames.count == 0 || self.tableView.tableFooterView.isHidden == NO) return;
     
     CGFloat offsetY = scrollView.contentOffset.y;
     // 当最后一个cell完全显示在眼前时，contentOffset的y值
@@ -397,5 +420,11 @@
         // 加载更多的微博数据
         [self loadMoreStatus];
     }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HWStatusFrame *frame = self.statusFrames[indexPath.row];
+    return frame.cellHeight;
 }
 @end
