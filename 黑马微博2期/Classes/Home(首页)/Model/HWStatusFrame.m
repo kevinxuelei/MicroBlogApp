@@ -80,12 +80,22 @@
     self.contentLabelF = (CGRect){{contentX, contentY}, contentSize};
     
     /** 配图 */
+    CGFloat originalH = 0;
+    if (status.pic_urls.count) { // 有配图
+        CGFloat photoWH = 100;
+        CGFloat photoX = contentX;
+        CGFloat photoY = CGRectGetMaxY(self.contentLabelF) + HWStatusCellBorderW;
+        self.photoViewF = CGRectMake(photoX, photoY, photoWH, photoWH);
+        
+        originalH = CGRectGetMaxY(self.photoViewF) + HWStatusCellBorderW;
+    } else { // 没配图
+        originalH = CGRectGetMaxY(self.contentLabelF) + HWStatusCellBorderW;
+    }
     
     /** 原创微博整体 */
     CGFloat originalX = 0;
     CGFloat originalY = 0;
     CGFloat originalW = cellW;
-    CGFloat originalH = CGRectGetMaxY(self.contentLabelF) + HWStatusCellBorderW;
     self.originalViewF = CGRectMake(originalX, originalY, originalW, originalH);
     
     

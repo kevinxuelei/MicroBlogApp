@@ -57,6 +57,7 @@
 		183BD44619E7DF2700C0A26A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BD43B19E7DF2700C0A26A /* AFURLRequestSerialization.m */; };
 		183BD44719E7DF2700C0A26A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BD43D19E7DF2700C0A26A /* AFURLResponseSerialization.m */; };
 		183BD44819E7DF2700C0A26A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BD43F19E7DF2700C0A26A /* AFURLSessionManager.m */; };
+		18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */; };
 		18728E2B19E37EB8008F3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2A19E37EB8008F3BFE /* Foundation.framework */; };
 		18728E2D19E37EB8008F3BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */; };
 		18728E2F19E37EB8008F3BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2E19E37EB8008F3BFE /* UIKit.framework */; };
@@ -204,6 +205,8 @@
 		183BD43D19E7DF2700C0A26A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		183BD43E19E7DF2700C0A26A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		183BD43F19E7DF2700C0A26A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		18421E8D19EF4CB600AFDFC8 /* HWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPhoto.h; sourceTree = "<group>"; };
+		18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPhoto.m; sourceTree = "<group>"; };
 		18728E2719E37EB8008F3BFE /* 黑马微博2期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑马微博2期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18728E2A19E37EB8008F3BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -573,6 +576,8 @@
 				181BBED919EA6CDC0077569F /* HWStatus.m */,
 				18D9F91719ED19D0009ACA4D /* HWStatusFrame.h */,
 				18D9F91819ED19D0009ACA4D /* HWStatusFrame.m */,
+				18421E8D19EF4CB600AFDFC8 /* HWPhoto.h */,
+				18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -908,6 +913,7 @@
 				181BBED219EA6AF00077569F /* UIImageView+HighlightedWebCache.m in Sources */,
 				183BD44419E7DF2700C0A26A /* AFSecurityPolicy.m in Sources */,
 				180E084619EA2115001D9142 /* UIWindow+Extension.m in Sources */,
+				18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */,
 				181BBF4219EA79F10077569F /* MJIvar.m in Sources */,
 				183BD44019E7DF2700C0A26A /* AFHTTPRequestOperation.m in Sources */,
 				181BBECF19EA6AF00077569F /* UIImage+GIF.m in Sources */,

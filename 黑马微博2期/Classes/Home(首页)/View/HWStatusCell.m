@@ -10,6 +10,7 @@
 #import "HWStatus.h"
 #import "HWUser.h"
 #import "HWStatusFrame.h"
+#import "HWPhoto.h"
 #import "UIImageView+WebCache.h"
 
 @interface HWStatusCell()
@@ -55,6 +56,7 @@
     if (self) {
         /** 原创微博整体 */
         UIView *originalView = [[UIView alloc] init];
+        originalView.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:originalView];
         self.originalView = originalView;
         
@@ -131,8 +133,15 @@
     }
     
     /** 配图 */
-    self.photoView.frame = statusFrame.photoViewF;
-    self.photoView.backgroundColor = [UIColor redColor];
+    if (status.pic_urls.count) {
+        self.photoView.frame = statusFrame.photoViewF;
+        HWPhoto *photo = [status.pic_urls firstObject];
+        [self.photoView sd_setImageWithURL:[NSURL URLWithString:photo.thumbnail_pic] placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
+        
+        self.photoView.hidden = NO;
+    } else {
+        self.photoView.hidden = YES;
+    }
     
     /** 昵称 */
     self.nameLabel.text = user.name;
