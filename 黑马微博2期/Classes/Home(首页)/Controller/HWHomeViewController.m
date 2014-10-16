@@ -41,6 +41,10 @@
 {
     [super viewDidLoad];
     
+    self.tableView.backgroundColor = HWColor(211, 211, 211);
+//    self.tableView.contentInset = UIEdgeInsetsMake(HWStatusCellMargin, 0, 0, 0);
+//    HWLog(@"viewDidLoad---%@", NSStringFromUIEdgeInsets(self.tableView.contentInset));
+    
     // 设置导航栏内容
     [self setupNav];
     
@@ -57,6 +61,13 @@
 //    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(setupUnreadCount) userInfo:nil repeats:YES];
 //    // 主线程也会抽时间处理一下timer（不管主线程是否正在其他事件）
 //    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+//    HWLog(@"viewDidAppear---%@", NSStringFromUIEdgeInsets(self.tableView.contentInset));
 }
 
 /**
@@ -145,6 +156,31 @@
  */
 - (void)loadNewStatus:(UIRefreshControl *)control
 {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSDictionary *responseObject = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fakeStatus" ofType:@"plist"]];
+        // 将 "微博字典"数组 转为 "微博模型"数组
+        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        
+        // 将 HWStatus数组 转为 HWStatusFrame数组
+        NSArray *newFrames = [self stausFramesWithStatuses:newStatuses];
+        
+        // 将最新的微博数据，添加到总数组的最前面
+        NSRange range = NSMakeRange(0, newFrames.count);
+        NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:range];
+        [self.statusFrames insertObjects:newFrames atIndexes:set];
+        
+        // 刷新表格
+        [self.tableView reloadData];
+        
+        // 结束刷新
+        [control endRefreshing];
+        
+        // 显示最新微博的数量
+        [self showNewStatusCount:newStatuses.count];
+    });
+    
+    return;
+    
     // 1.请求管理者
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
     
@@ -426,5 +462,10 @@
 {
     HWStatusFrame *frame = self.statusFrames[indexPath.row];
     return frame.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    HWLog(@"didSelectRowAtIndexPath---%@", NSStringFromUIEdgeInsets(self.tableView.contentInset));
 }
 @end

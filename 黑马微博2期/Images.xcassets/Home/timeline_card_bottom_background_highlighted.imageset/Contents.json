@@ -5,9 +5,23 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "fill",
+          "width" : 1,
+          "height" : 1
+        },
+        "capInsets" : {
+          "bottom" : 36,
+          "top" : 35,
+          "right" : 22,
+          "left" : 21
+        }
+      },
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "timeline_card_bottom_background_highlighted@2x.png"
+      "filename" : "timeline_card_bottom_background_highlighted@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
