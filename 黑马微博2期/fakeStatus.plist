@@ -10,7 +10,7 @@
 			<key>comments_count</key>
 			<integer>0</integer>
 			<key>created_at</key>
-			<string>Thu Oct 16 17:06:25 +0800 2014</string>
+			<string>Sat Oct 18 10:20:00 +0800 2014</string>
 			<key>idstr</key>
 			<string>3766346254704913</string>
 			<key>pic_urls</key>
@@ -35,7 +35,7 @@
 			<key>reposts_count</key>
 			<integer>0</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>保持阳光心态，积极面对人生。每个人，都沿着不同的轨道在活着，人生是一趟单程车，我们最应该做的，就是好好善待自己，珍惜今天，期待明天。图：上海可爱女孩@_Ayaka_</string>
 			<key>user</key>
@@ -60,7 +60,7 @@
 			<key>comments_count</key>
 			<integer>4</integer>
 			<key>created_at</key>
-			<string>Thu Oct 16 17:06:07 +0800 2014</string>
+			<string>Thu Oct 11 19:06:07 +0800 2014</string>
 			<key>idstr</key>
 			<string>3766346179542626</string>
 			<key>pic_urls</key>
@@ -73,7 +73,7 @@
 			<key>reposts_count</key>
 			<integer>6</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/62N3i" rel="nofollow"&gt;冷笑话精选&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/62N3i&quot; rel=&quot;nofollow&quot;&gt;冷笑话精选&lt;/a&gt;</string>
 			<key>text</key>
 			<string>这应该是我最喜欢的一道菜了。。。[呵呵]</string>
 			<key>user</key>
@@ -111,7 +111,7 @@
 			<key>reposts_count</key>
 			<integer>9</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>每个人都不希望别人从他人口中了解自己，口口相传的误会是灾难性的。可你回头想想，问问自己，是否也曾经因为别人的一句话，对陌生人心存芥蒂。以己度人，多反思，收起你的自以为是和小心机，也许路就会更宽一点。—— 咸贵人</string>
 			<key>user</key>
@@ -136,7 +136,7 @@
 			<key>comments_count</key>
 			<integer>1</integer>
 			<key>created_at</key>
-			<string>Thu Oct 16 17:05:34 +0800 2014</string>
+			<string>Thu Oct 17 17:05:34 +0800 2014</string>
 			<key>idstr</key>
 			<string>3766346040703175</string>
 			<key>pic_urls</key>
@@ -149,7 +149,7 @@
 			<key>reposts_count</key>
 			<integer>1</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>工作不行，恋爱不行，化妆不行，唱K不行，长相不行，身材不行，经济实力不行。我一直都在思考一个问题：到底是什么支撑我活了这么多年。。。[拜拜]</string>
 			<key>user</key>
@@ -174,7 +174,7 @@
 			<key>comments_count</key>
 			<integer>0</integer>
 			<key>created_at</key>
-			<string>Thu Oct 16 17:05:24 +0800 2014</string>
+			<string>Thu Dec 15 17:06:25 +0800 2013</string>
 			<key>idstr</key>
 			<string>3766345994908290</string>
 			<key>pic_urls</key>
@@ -187,7 +187,7 @@
 			<key>reposts_count</key>
 			<integer>0</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/2llosp" rel="nofollow"&gt;OPPO_N1mini&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/2llosp&quot; rel=&quot;nofollow&quot;&gt;OPPO_N1mini&lt;/a&gt;</string>
 			<key>text</key>
 			<string>我们之所以会心累，就是常常徘徊在坚持和放弃之间；我们之所以会痛苦，就是追求的太多；不是我们拥有的太少，而是我们计较的太多。多数的错失，是因为不坚持，不努力，不挽留，然后催眠自己说一切都是命运。  #高校千万打造封神台#</string>
 			<key>user</key>
@@ -234,7 +234,7 @@
 				<key>reposts_count</key>
 				<integer>94</integer>
 				<key>source</key>
-				<string>&lt;a href="http://app.weibo.com/t/feed/3G5oUM" rel="nofollow"&gt;iPhone 5s&lt;/a&gt;</string>
+				<string>&lt;a href=&quot;http://app.weibo.com/t/feed/3G5oUM&quot; rel=&quot;nofollow&quot;&gt;iPhone 5s&lt;/a&gt;</string>
 				<key>text</key>
 				<string>北京地铁据说要涨价了，教大家一个省钱的办法。比如你从A出发，去B上班，那就找一个从B出发，去A上班的小伙伴。途中微信联系，约好在同一站下车，互换交通卡，搞定！下班的时候同样的办法换回来，单途最高可省7元，一天14元，一个月300元，一年省3600元。</string>
 				<key>user</key>
@@ -254,7 +254,7 @@
 				</dict>
 			</dict>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/2XqJO3" rel="nofollow"&gt;UC浏览器&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/2XqJO3&quot; rel=&quot;nofollow&quot;&gt;UC浏览器&lt;/a&gt;</string>
 			<key>text</key>
 			<string>思想穷，一世穷，不怕人穷，只怕穷相。</string>
 			<key>user</key>
@@ -292,7 +292,7 @@
 			<key>reposts_count</key>
 			<integer>29</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>十秒钟测出最适合你的外号，响亮酷炫，优雅大气，走在街上被人喊，瞬间成为焦点……（规则：姓氏首字母+名字首字母，如杨幂为Y+M，张学友为Z+X）</string>
 			<key>user</key>
@@ -362,7 +362,7 @@
 			<key>reposts_count</key>
 			<integer>5</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>几个动作收缩你的腰部 ..再见水桶腰[心]</string>
 			<key>user</key>
@@ -446,7 +446,7 @@
 				<key>reposts_count</key>
 				<integer>43</integer>
 				<key>source</key>
-				<string>&lt;a href="http://app.weibo.com/t/feed/3auC5p" rel="nofollow"&gt;皮皮时光机&lt;/a&gt;</string>
+				<string>&lt;a href=&quot;http://app.weibo.com/t/feed/3auC5p&quot; rel=&quot;nofollow&quot;&gt;皮皮时光机&lt;/a&gt;</string>
 				<key>text</key>
 				<string>山村的秋天，阴天并不多见，却美得如梦似幻。天上的流云灰蒙蒙的，与地上的轻烟融合。天地没有界限，一半是浮云一半是烟霭。山朦胧,水朦胧,楼朦胧,树朦胧,鸟朦胧,人朦胧...仿佛渺远的岁月，悠长的时光，没有尽头。阴而不沉，一切都是薄薄的，轻轻的。村民行走在流云雾霭的山路上，像在美丽的梦中穿行。</string>
 				<key>user</key>
@@ -466,7 +466,7 @@
 				</dict>
 			</dict>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>烟雨中，雾千重，冷夜罢梦，怜那花叶不相逢。描笔勾销相思浓，埋首繁卷，再叹词穷。寻尽人间百花丛，不解烟雨嫁东风，朦胧，朦胧，谁可应梦。</string>
 			<key>user</key>
@@ -504,7 +504,7 @@
 			<key>reposts_count</key>
 			<integer>0</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/2o92Kh" rel="nofollow"&gt;vivo_Xplay&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/2o92Kh&quot; rel=&quot;nofollow&quot;&gt;vivo_Xplay&lt;/a&gt;</string>
 			<key>text</key>
 			<string>1931年3月26日 (农历二月初八)，日本军人为发动侵华战争造舆论。日本关东军高级参谋板垣征四郎大佐在日本陆军学校讲话，鼓吹占领满蒙（中国东北）对于决定“日本国命运”的重大意义。</string>
 			<key>user</key>
@@ -574,7 +574,7 @@
 			<key>reposts_count</key>
 			<integer>25</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>痞帅！布拉德·皮特登上《Details》杂志封面及内页美图欣赏！男神老了也有韵味儿~~~[花心][亲亲][得意地笑]</string>
 			<key>user</key>
@@ -642,7 +642,7 @@
 				<key>reposts_count</key>
 				<integer>60</integer>
 				<key>source</key>
-				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 				<key>text</key>
 				<string>电视剧《1931年的爱情》@张亮Sean 戏份杀青，并感激导演元德的细心指教。从电影中角色迅速脱离穿越民国戏，由于时间限制，他每日要完成约16场戏份量，这也是考验一个演员体力和心力的时候。无论拍摄节奏多快，他坦言：“自己的戏份别人无法代替，只想收拾好心态尽力演好”。新浪：http://t.cn/R7LWLAc</string>
 				<key>user</key>
@@ -662,7 +662,7 @@
 				</dict>
 			</dict>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/5yiHuw" rel="nofollow"&gt;iPhone 6 Plus&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/5yiHuw&quot; rel=&quot;nofollow&quot;&gt;iPhone 6 Plus&lt;/a&gt;</string>
 			<key>text</key>
 			<string>沈悦杀青了！从此，佘山镇车墩村儿的乡亲们又恢复了往日的平静……火红的太阳冉冉升起，街道上又可以看到人来人往，幸福……（此处拉长音）又回来了……#1931年的爱情# </string>
 			<key>user</key>
@@ -695,7 +695,7 @@
 			<key>reposts_count</key>
 			<integer>5</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/1tqBja&quot; rel=&quot;nofollow&quot;&gt;360安全浏览器&lt;/a&gt;</string>
 			<key>text</key>
 			<string>【10月16日17时头条新闻要闻回顾】习近平：不要搞奇奇怪怪的建筑；明夜起京津冀等地雾霾再起，局地有重度霾；香港占中引拥堵，周润发郭富城等被迫乘地铁；独家对话加藤嘉一：对中日关系不乐观不悲观；东莞官员被曝通奸 涉事女子称他把我当性伴侣(图)。详见：http://t.cn/R7L3rs9</string>
 			<key>user</key>
@@ -761,7 +761,7 @@
 			<key>reposts_count</key>
 			<integer>1</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/3o33sO" rel="nofollow"&gt;iPhone 6&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/3o33sO&quot; rel=&quot;nofollow&quot;&gt;iPhone 6&lt;/a&gt;</string>
 			<key>text</key>
 			<string>前天打开微博发现密码错误自动被退出。被盗号替我做很多事。本来不想说此事。现在又来各种假微信来冒充我。同时两个假微信。提醒大家，我微信不加不认识的朋友，如果你加了我，一定不是我。不要受骗。ps 刚刚那个不是我的手机号，因为换号很久了。pps刚才有几人留言她们也和假微信有联系。真是水逆。</string>
 			<key>user</key>
@@ -799,7 +799,7 @@
 			<key>reposts_count</key>
 			<integer>1</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/3j6BDx" rel="nofollow"&gt;孔明社交管理&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/3j6BDx&quot; rel=&quot;nofollow&quot;&gt;孔明社交管理&lt;/a&gt;</string>
 			<key>text</key>
 			<string>隐遁之术！次奥！被愚蠢的人类发现了！[哼]</string>
 			<key>user</key>
@@ -837,7 +837,7 @@
 			<key>reposts_count</key>
 			<integer>1</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/1tqBja&quot; rel=&quot;nofollow&quot;&gt;360安全浏览器&lt;/a&gt;</string>
 			<key>text</key>
 			<string>#燕都提醒#【[话筒]下月1日-12日，承德限号！】10月20日起至11月12日，承德交警将在市区开展车辆限制行驶行动，承德市所有社会、单位车辆均在限行之列。24日至31日，对违反限行规定的，将进行教育引导。11月1日起，不按规定行车的，将面临处罚。（@河北交通承德站 ）</string>
 			<key>user</key>
@@ -921,7 +921,7 @@
 				<key>reposts_count</key>
 				<integer>375</integer>
 				<key>source</key>
-				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 				<key>text</key>
 				<string>【手把手教你做水煮鱼】无辣不欢的吃货们还等啥？一点都不难，赶紧上啊！[馋嘴] @999道美食精选</string>
 				<key>user</key>
@@ -941,7 +941,7 @@
 				</dict>
 			</dict>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/1tqBja&quot; rel=&quot;nofollow&quot;&gt;360安全浏览器&lt;/a&gt;</string>
 			<key>text</key>
 			<string>【手把手教你做水煮鱼】[话筒]</string>
 			<key>user</key>
@@ -979,7 +979,7 @@
 			<key>reposts_count</key>
 			<integer>0</integer>
 			<key>source</key>
-			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 			<key>text</key>
 			<string>进个乌龙球都这么拼，也是醉了！</string>
 			<key>user</key>
@@ -1017,7 +1017,7 @@
 			<key>reposts_count</key>
 			<integer>2</integer>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/tn6Tg" rel="nofollow"&gt;笑话学前班&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/tn6Tg&quot; rel=&quot;nofollow&quot;&gt;笑话学前班&lt;/a&gt;</string>
 			<key>text</key>
 			<string>【高校雷人Cosplay公告!!】禁止Cos钢铁侠，提倡学生Cos喜洋洋，虹猫蓝兔等国产动漫人物。。。 #高校千万打造封神台#</string>
 			<key>user</key>
@@ -1069,7 +1069,7 @@
 				<key>reposts_count</key>
 				<integer>11</integer>
 				<key>source</key>
-				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<string>&lt;a href=&quot;http://weibo.com/&quot; rel=&quot;nofollow&quot;&gt;微博 weibo.com&lt;/a&gt;</string>
 				<key>text</key>
 				<string>【公安县民警被授予“荆州市见义勇为先进分子”称号】日前，荆州市见义勇为促进会授予苏国军“荆州市见义勇为先进分子”荣誉称号，颁发奖金3000元。苏国军是公安县公安局退休民警，今年8月18日晚，他面对交通肇事撞死1人逃逸、后又行凶伤人的犯罪分子，在身体负伤的情况下，带领现场群众将歹徒擒获。</string>
 				<key>user</key>
@@ -1089,7 +1089,7 @@
 				</dict>
 			</dict>
 			<key>source</key>
-			<string>&lt;a href="http://app.weibo.com/t/feed/e0WUS" rel="nofollow"&gt;微博桌面&lt;/a&gt;</string>
+			<string>&lt;a href=&quot;http://app.weibo.com/t/feed/e0WUS&quot; rel=&quot;nofollow&quot;&gt;微博桌面&lt;/a&gt;</string>
 			<key>text</key>
 			<string>#荆州微记者团# [good]//@fun4娱乐主播:#荆州微记者团#@楚网 @荆州晚报 浩然正气，致敬！ @-愿无岁月可回头- @公安县生活网 @平安公安 //@荆州交警一大队:【公安县民警被授予“荆州市见义勇为先进分子”称号】@湖北高速交警公安大队@fun4娱乐主播 @龙在楚天</string>
 			<key>user</key>

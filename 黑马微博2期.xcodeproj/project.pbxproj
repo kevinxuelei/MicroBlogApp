@@ -93,6 +93,7 @@
 		18D9F91619ED167D009ACA4D /* HWStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91519ED167D009ACA4D /* HWStatusCell.m */; };
 		18D9F91919ED19D0009ACA4D /* HWStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91819ED19D0009ACA4D /* HWStatusFrame.m */; };
 		18ECFACF19E527300009431B /* HWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECFACE19E527300009431B /* HWTabBar.m */; };
+		18EFB79619F2045E003D4148 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79519F2045E003D4148 /* NSDate+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,6 +267,8 @@
 		18D9F91819ED19D0009ACA4D /* HWStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusFrame.m; sourceTree = "<group>"; };
 		18ECFACD19E527300009431B /* HWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTabBar.h; sourceTree = "<group>"; };
 		18ECFACE19E527300009431B /* HWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTabBar.m; sourceTree = "<group>"; };
+		18EFB79419F2045E003D4148 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		18EFB79519F2045E003D4148 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -629,6 +632,8 @@
 				189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */,
 				180E084419EA2115001D9142 /* UIWindow+Extension.h */,
 				180E084519EA2115001D9142 /* UIWindow+Extension.m */,
+				18EFB79419F2045E003D4148 /* NSDate+Extension.h */,
+				18EFB79519F2045E003D4148 /* NSDate+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -891,6 +896,7 @@
 			files = (
 				181BBF4119EA79F10077569F /* MJFoundation.m in Sources */,
 				181BBEDA19EA6CDC0077569F /* HWStatus.m in Sources */,
+				18EFB79619F2045E003D4148 /* NSDate+Extension.m in Sources */,
 				181BBEC919EA6AF00077569F /* SDWebImageDecoder.m in Sources */,
 				181BBF4019EA79F10077569F /* MJConst.m in Sources */,
 				181BBECC19EA6AF00077569F /* SDWebImageManager.m in Sources */,
@@ -1078,6 +1084,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "黑马微博2期/黑马微博2期-Prefix.pch";
 				INFOPLIST_FILE = "黑马微博2期/黑马微博2期-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1091,6 +1098,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "黑马微博2期/黑马微博2期-Prefix.pch";
 				INFOPLIST_FILE = "黑马微博2期/黑马微博2期-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
