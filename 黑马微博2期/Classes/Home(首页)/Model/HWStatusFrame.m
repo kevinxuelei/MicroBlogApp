@@ -6,9 +6,32 @@
 //  Copyright (c) 2014年 heima. All rights reserved.
 //
 
+//    int rows = 0;
+//    if (count % 3 == 0) { // count = 3\6\9
+//        rows = count / 3;
+//    } else { // count = 1\2\4\5\7\8
+//        rows = count / 3 + 1;
+//    }
+
+//    int rows = count / 3;
+//    if (count % 3 != 0) {
+//        rows += 1;
+//    }
+
+// 100条数据
+// 每页20条
+// 共5页
+
+// 268条
+// 每页18条
+// 共页
+// pages = (count + pageSize - 1) / pageSize;
+// pages = (268 + 18 - 1) / 18;
+
 #import "HWStatusFrame.h"
 #import "HWStatus.h"
 #import "HWUser.h"
+#import "HWStatusPhotosView.h"
 
 @implementation HWStatusFrame
 
@@ -66,12 +89,12 @@
     /** 配图 */
     CGFloat originalH = 0;
     if (status.pic_urls.count) { // 有配图
-        CGFloat photoWH = 100;
-        CGFloat photoX = contentX;
-        CGFloat photoY = CGRectGetMaxY(self.contentLabelF) + HWStatusCellBorderW;
-        self.photoViewF = CGRectMake(photoX, photoY, photoWH, photoWH);
+        CGFloat photosX = contentX;
+        CGFloat photosY = CGRectGetMaxY(self.contentLabelF) + HWStatusCellBorderW;
+        CGSize photosSize = [HWStatusPhotosView sizeWithCount:status.pic_urls.count];
+        self.photosViewF = (CGRect){{photosX, photosY}, photosSize};
         
-        originalH = CGRectGetMaxY(self.photoViewF) + HWStatusCellBorderW;
+        originalH = CGRectGetMaxY(self.photosViewF) + HWStatusCellBorderW;
     } else { // 没配图
         originalH = CGRectGetMaxY(self.contentLabelF) + HWStatusCellBorderW;
     }
@@ -98,12 +121,12 @@
         /** 被转发微博配图 */
         CGFloat retweetH = 0;
         if (retweeted_status.pic_urls.count) { // 转发微博有配图
-            CGFloat retweetPhotoWH = 100;
-            CGFloat retweetPhotoX = retweetContentX;
-            CGFloat retweetPhotoY = CGRectGetMaxY(self.retweetContentLabelF) + HWStatusCellBorderW;
-            self.retweetPhotoViewF = CGRectMake(retweetPhotoX, retweetPhotoY, retweetPhotoWH, retweetPhotoWH);
+            CGFloat retweetPhotosX = retweetContentX;
+            CGFloat retweetPhotosY = CGRectGetMaxY(self.retweetContentLabelF) + HWStatusCellBorderW;
+            CGSize retweetPhotosSize = [HWStatusPhotosView sizeWithCount:retweeted_status.pic_urls.count];
+            self.retweetPhotosViewF = (CGRect){{retweetPhotosX, retweetPhotosY}, retweetPhotosSize};
             
-            retweetH = CGRectGetMaxY(self.retweetPhotoViewF) + HWStatusCellBorderW;
+            retweetH = CGRectGetMaxY(self.retweetPhotosViewF) + HWStatusCellBorderW;
         } else { // 转发微博没有配图
             retweetH = CGRectGetMaxY(self.retweetContentLabelF) + HWStatusCellBorderW;
         }

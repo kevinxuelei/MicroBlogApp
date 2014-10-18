@@ -95,6 +95,8 @@
 		18ECFACF19E527300009431B /* HWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECFACE19E527300009431B /* HWTabBar.m */; };
 		18EFB79619F2045E003D4148 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79519F2045E003D4148 /* NSDate+Extension.m */; };
 		18EFB79919F20D30003D4148 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79819F20D30003D4148 /* NSString+Extension.m */; };
+		18EFB79C19F21479003D4148 /* HWStatusPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79B19F21479003D4148 /* HWStatusPhotosView.m */; };
+		18EFB79F19F254EB003D4148 /* HWStatusPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79E19F254EB003D4148 /* HWStatusPhotoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +274,10 @@
 		18EFB79519F2045E003D4148 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		18EFB79719F20D30003D4148 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		18EFB79819F20D30003D4148 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		18EFB79A19F21479003D4148 /* HWStatusPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusPhotosView.h; sourceTree = "<group>"; };
+		18EFB79B19F21479003D4148 /* HWStatusPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusPhotosView.m; sourceTree = "<group>"; };
+		18EFB79D19F254EB003D4148 /* HWStatusPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusPhotoView.h; sourceTree = "<group>"; };
+		18EFB79E19F254EB003D4148 /* HWStatusPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusPhotoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -608,6 +614,10 @@
 				18D9F91519ED167D009ACA4D /* HWStatusCell.m */,
 				18421F1B19EFA59900AFDFC8 /* HWStatusToolbar.h */,
 				18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */,
+				18EFB79A19F21479003D4148 /* HWStatusPhotosView.h */,
+				18EFB79B19F21479003D4148 /* HWStatusPhotosView.m */,
+				18EFB79D19F254EB003D4148 /* HWStatusPhotoView.h */,
+				18EFB79E19F254EB003D4148 /* HWStatusPhotoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -935,11 +945,13 @@
 				183BD44419E7DF2700C0A26A /* AFSecurityPolicy.m in Sources */,
 				180E084619EA2115001D9142 /* UIWindow+Extension.m in Sources */,
 				18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */,
+				18EFB79F19F254EB003D4148 /* HWStatusPhotoView.m in Sources */,
 				181BBF4219EA79F10077569F /* MJIvar.m in Sources */,
 				183BD44019E7DF2700C0A26A /* AFHTTPRequestOperation.m in Sources */,
 				181BBECF19EA6AF00077569F /* UIImage+GIF.m in Sources */,
 				181BBEC819EA6AF00077569F /* SDWebImageCompat.m in Sources */,
 				181BBF4319EA79F10077569F /* MJMember.m in Sources */,
+				18EFB79C19F21479003D4148 /* HWStatusPhotosView.m in Sources */,
 				189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */,
 				18728EC019E3D91D008F3BFE /* HWDiscoverViewController.m in Sources */,
 				18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */,
