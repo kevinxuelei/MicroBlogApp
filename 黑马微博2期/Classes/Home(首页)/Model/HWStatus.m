@@ -47,7 +47,7 @@
     // s:秒
     // y:年
     fmt.dateFormat = @"EEE MMM dd HH:mm:ss Z yyyy";
-//    _created_at = @"Tue Sep 30 17:06:25 +0800 2014";
+//    _created_at = @"Tue Sep 30 17:06:25 +0600 2014";
     
     // 微博的创建日期
     NSDate *createDate = [fmt dateFromString:_created_at];
@@ -83,26 +83,15 @@
     }
 }
 
-/*
- if ([self isThisYear:createDate]) { // 今年
- if ([self isYesterday:createDate]) { // 昨天
- fmt.dateFormat = @"昨天 HH:mm";
- return [fmt stringFromDate:createDate];
- } else if ([self isToday:createDate]) { // 今天
- if (cmps.hour >= 1) {
- return [NSString stringWithFormat:@"%d小时前", cmps.hour];
- } else if (cmps.minute >= 1) {
- return [NSString stringWithFormat:@"%d分钟前", cmps.minute];
- } else {
- return @"刚刚";
- }
- } else { // 今年的其他日子
- fmt.dateFormat = @"MM-dd HH:mm";
- return [fmt stringFromDate:createDate];
- }
- } else { // 非今年
- fmt.dateFormat = @"yyyy-MM-dd HH:mm";
- return [fmt stringFromDate:createDate];
- }
- */
+// source == <a href="http://app.weibo.com/t/feed/2llosp" rel="nofollow">OPPO_N1mini</a>
+- (void)setSource:(NSString *)source
+{
+    // 正则表达式 NSRegularExpression
+    // 截串 NSString
+    NSRange range;
+    range.location = [source rangeOfString:@">"].location + 1;
+    range.length = [source rangeOfString:@"</"].location - range.location;
+//    range.length = [source rangeOfString:@"<" options:NSBackwardsSearch];
+    _source = [NSString stringWithFormat:@"来自%@", [source substringWithRange:range]];
+}
 @end

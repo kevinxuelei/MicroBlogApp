@@ -94,6 +94,7 @@
 		18D9F91919ED19D0009ACA4D /* HWStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91819ED19D0009ACA4D /* HWStatusFrame.m */; };
 		18ECFACF19E527300009431B /* HWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECFACE19E527300009431B /* HWTabBar.m */; };
 		18EFB79619F2045E003D4148 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79519F2045E003D4148 /* NSDate+Extension.m */; };
+		18EFB79919F20D30003D4148 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB79819F20D30003D4148 /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +270,8 @@
 		18ECFACE19E527300009431B /* HWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTabBar.m; sourceTree = "<group>"; };
 		18EFB79419F2045E003D4148 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		18EFB79519F2045E003D4148 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		18EFB79719F20D30003D4148 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		18EFB79819F20D30003D4148 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -634,6 +637,8 @@
 				180E084519EA2115001D9142 /* UIWindow+Extension.m */,
 				18EFB79419F2045E003D4148 /* NSDate+Extension.h */,
 				18EFB79519F2045E003D4148 /* NSDate+Extension.m */,
+				18EFB79719F20D30003D4148 /* NSString+Extension.h */,
+				18EFB79819F20D30003D4148 /* NSString+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -901,6 +906,7 @@
 				181BBF4019EA79F10077569F /* MJConst.m in Sources */,
 				181BBECC19EA6AF00077569F /* SDWebImageManager.m in Sources */,
 				183BD44619E7DF2700C0A26A /* AFURLRequestSerialization.m in Sources */,
+				18EFB79919F20D30003D4148 /* NSString+Extension.m in Sources */,
 				180E084819EA29C8001D9142 /* Foundation+Log.m in Sources */,
 				180E083D19EA0DCB001D9142 /* MBProgressHUD+MJ.m in Sources */,
 				183BD44519E7DF2700C0A26A /* AFURLConnectionOperation.m in Sources */,

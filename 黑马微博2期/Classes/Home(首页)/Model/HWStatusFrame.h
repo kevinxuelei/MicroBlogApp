@@ -26,6 +26,9 @@
 // cell之间的间距
 #define HWStatusCellMargin 15
 
+// cell的边框宽度
+#define HWStatusCellBorderW 10
+
 
 @class HWStatus;
 
