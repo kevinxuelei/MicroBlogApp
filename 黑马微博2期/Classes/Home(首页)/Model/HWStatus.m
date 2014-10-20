@@ -67,9 +67,9 @@
             return [fmt stringFromDate:createDate];
         } else if ([createDate isToday]) { // 今天
             if (cmps.hour >= 1) {
-                return [NSString stringWithFormat:@"%d小时前", cmps.hour];
+                return [NSString stringWithFormat:@"%d小时前", (int)cmps.hour];
             } else if (cmps.minute >= 1) {
-                return [NSString stringWithFormat:@"%d分钟前", cmps.minute];
+                return [NSString stringWithFormat:@"%d分钟前", (int)cmps.minute];
             } else {
                 return @"刚刚";
             }
@@ -91,7 +91,6 @@
     NSRange range;
     range.location = [source rangeOfString:@">"].location + 1;
     range.length = [source rangeOfString:@"</"].location - range.location;
-//    range.length = [source rangeOfString:@"<" options:NSBackwardsSearch];
     _source = [NSString stringWithFormat:@"来自%@", [source substringWithRange:range]];
 }
 @end

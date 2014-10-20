@@ -6,450 +6,241 @@
 	<array>
 		<dict>
 			<key>attitudes_count</key>
-			<integer>1</integer>
-			<key>comments_count</key>
-			<integer>0</integer>
-			<key>created_at</key>
-			<string>2分钟前</string>
-			<key>idstr</key>
-			<string>3767069277027517</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/642beb18gw1elff1ahteoj20c80bat9a.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>0</integer>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>自称身高1米6的女孩，百分之百都是1米58；但是自称175的女生通常都不止175。自称170的男孩，百分之百都是168，介绍人称170的男孩，百分之百168都不到！[拜拜]</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1680599832</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>搞笑大百科</string>
-				<key>profile_image_url</key>
-				<string>http://tp1.sinaimg.cn/1680599832/50/40021338240/0</string>
-				<key>verified_type</key>
-				<integer>-1</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
 			<integer>0</integer>
 			<key>comments_count</key>
 			<integer>0</integer>
 			<key>created_at</key>
-			<string>2分钟前</string>
+			<string>Mon Oct 20 08:37:54 +0800 2014</string>
 			<key>idstr</key>
-			<string>3767069189106490</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/6797d866jw1elff0q2hk1j20b406idga.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>0</integer>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>【新郑饭店用郑州盐被罚 官方：跨区域用盐】黄先生在河南新郑开了家面馆，几天前，因用了从郑州带回的食盐，被新郑市盐业管理局认定“跨区域用盐”，没收部分食盐并罚款200元。当地官员称，对盐区域性管理，是为保障吃上放心盐，严格说，带食盐回异地家中吃也是违法的。（央广网）http://t.cn/R74xT3Z</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1738004582</string>
-				<key>mbrank</key>
-				<integer>0</integer>
-				<key>mbtype</key>
-				<integer>0</integer>
-				<key>name</key>
-				<string>燕赵都市报</string>
-				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/1738004582/50/22845170776/1</string>
-				<key>verified_type</key>
-				<integer>3</integer>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>0</integer>
-			<key>comments_count</key>
-			<integer>0</integer>
-			<key>created_at</key>
-			<string>2分钟前</string>
-			<key>idstr</key>
-			<string>3767069176521424</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/6797d866jw1elff11z76cj20fk07840p.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>0</integer>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>#永昌冲超#即时比分：武汉卓尔0-1深圳红钻、沈阳中泽2-0延边泉阳泉、青岛中能1-0天津松江、新疆0-0石家庄</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1738004582</string>
-				<key>mbrank</key>
-				<integer>0</integer>
-				<key>mbtype</key>
-				<integer>0</integer>
-				<key>name</key>
-				<string>燕赵都市报</string>
-				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/1738004582/50/22845170776/1</string>
-				<key>verified_type</key>
-				<integer>3</integer>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>29</integer>
-			<key>comments_count</key>
-			<integer>2</integer>
-			<key>created_at</key>
-			<string>3分钟前</string>
-			<key>idstr</key>
-			<string>3767069021869283</string>
+			<string>3767667834346118</string>
 			<key>pic_urls</key>
 			<array/>
 			<key>reposts_count</key>
-			<integer>10</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>681</integer>
-				<key>comments_count</key>
-				<integer>76</integer>
-				<key>created_at</key>
-				<string>昨天 21:03</string>
-				<key>idstr</key>
-				<string>3766768276909193</string>
-				<key>pic_urls</key>
-				<array>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww1.sinaimg.cn/thumbnail/8eda1a63tw1eleggzylwyj205k05kq2z.jpg</string>
-					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>643</integer>
-				<key>source</key>
-				<string>来自微博 weibo.com</string>
-				<key>text</key>
-				<string>在大学，比秀恩爱更让人牙痒痒的是秀家近。。[拜拜]</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>2396658275</string>
-					<key>mbrank</key>
-					<integer>6</integer>
-					<key>mbtype</key>
-					<integer>12</integer>
-					<key>name</key>
-					<string>趣闻搞笑</string>
-					<key>profile_image_url</key>
-					<string>http://tp4.sinaimg.cn/2396658275/50/5665483006/1</string>
-					<key>verified_type</key>
-					<integer>-1</integer>
-					<key>vip</key>
-					<integer>1</integer>
-				</dict>
-			</dict>
+			<integer>0</integer>
 			<key>source</key>
-			<string>来自微博 weibo.com</string>
+			<string>&lt;a href="http://app.weibo.com/t/feed/6atlQk" rel="nofollow"&gt;贴吧客户端&lt;/a&gt;</string>
 			<key>text</key>
-			<string>转发微博</string>
+			<string>【动物尖叫合辑】猫头鹰这么尖叫、老鼠这么尖叫、兔子这么尖叫、莫名奇妙的笑到最后！~ http://t.cn/zYBuKZ8</string>
 			<key>user</key>
 			<dict>
 				<key>idstr</key>
-				<string>2396658275</string>
+				<string>3131824485</string>
 				<key>mbrank</key>
-				<integer>6</integer>
+				<integer>0</integer>
 				<key>mbtype</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>name</key>
-				<string>趣闻搞笑</string>
+				<string>精致宠物</string>
 				<key>profile_image_url</key>
-				<string>http://tp4.sinaimg.cn/2396658275/50/5665483006/1</string>
+				<string>http://tp2.sinaimg.cn/3131824485/50/22856341216/1</string>
 				<key>verified_type</key>
-				<integer>-1</integer>
+				<integer>220</integer>
 				<key>vip</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>attitudes_count</key>
-			<integer>1</integer>
+			<integer>13</integer>
 			<key>comments_count</key>
-			<integer>0</integer>
+			<integer>19</integer>
 			<key>created_at</key>
-			<string>3分钟前</string>
+			<string>Mon Oct 20 08:37:20 +0800 2014</string>
 			<key>idstr</key>
-			<string>3767069012763777</string>
+			<string>3767667690891626</string>
 			<key>pic_urls</key>
 			<array>
 				<dict>
 					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/9e00b862jw1elff0f3vzsj20c81z2kb9.jpg</string>
+					<string>http://ww1.sinaimg.cn/thumbnail/561ee475jw1elhbncosu4j20qo18gjvr.jpg</string>
 				</dict>
 			</array>
 			<key>reposts_count</key>
-			<integer>0</integer>
+			<integer>5</integer>
 			<key>source</key>
-			<string>来自孔明社交管理</string>
+			<string>&lt;a href="http://app.weibo.com/t/feed/503Oti" rel="nofollow"&gt;魅族 MX4&lt;/a&gt;</string>
 			<key>text</key>
-			<string>去超市这样买东西，我保证收银员不会把你们打死。。。。</string>
+			<string>#文化不苦旅# 雄赳赳气昂昂出发，然后...活活被輜 重堵死在路上</string>
 			<key>user</key>
 			<dict>
 				<key>idstr</key>
-				<string>2650847330</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>冷笑话图文</string>
-				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/2650847330/50/5696992871/0</string>
-				<key>verified_type</key>
-				<integer>-1</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>2</integer>
-			<key>comments_count</key>
-			<integer>1</integer>
-			<key>created_at</key>
-			<string>3分钟前</string>
-			<key>idstr</key>
-			<string>3767069000890450</string>
-			<key>pic_urls</key>
-			<array/>
-			<key>reposts_count</key>
-			<integer>1</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>219</integer>
-				<key>comments_count</key>
-				<integer>10</integer>
-				<key>created_at</key>
-				<string>2小时前</string>
-				<key>idstr</key>
-				<string>3767039246610843</string>
-				<key>pic_urls</key>
-				<array>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww3.sinaimg.cn/thumbnail/c1016504jw1elfblc9yqzg205f077b29.gif</string>
-					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>160</integer>
-				<key>source</key>
-				<string>来自皮皮时光机</string>
-				<key>text</key>
-				<string>英国女王伊丽莎白二世从8岁到85岁在货币上面的容颜变化.。。。</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>3238094084</string>
-					<key>mbrank</key>
-					<integer>1</integer>
-					<key>mbtype</key>
-					<integer>2</integer>
-					<key>name</key>
-					<string>热门搞笑总排行</string>
-					<key>profile_image_url</key>
-					<string>http://tp1.sinaimg.cn/3238094084/50/22883952798/0</string>
-					<key>verified_type</key>
-					<integer>200</integer>
-					<key>vip</key>
-					<integer>0</integer>
-				</dict>
-			</dict>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>转发微博</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>3238094084</string>
+				<string>1444865141</string>
 				<key>mbrank</key>
 				<integer>1</integer>
 				<key>mbtype</key>
 				<integer>2</integer>
 				<key>name</key>
-				<string>热门搞笑总排行</string>
+				<string>马伯庸</string>
 				<key>profile_image_url</key>
-				<string>http://tp1.sinaimg.cn/3238094084/50/22883952798/0</string>
+				<string>http://tp2.sinaimg.cn/1444865141/50/5708501090/1</string>
 				<key>verified_type</key>
-				<integer>200</integer>
+				<integer>0</integer>
 				<key>vip</key>
 				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>attitudes_count</key>
-			<integer>4</integer>
-			<key>comments_count</key>
-			<integer>1</integer>
-			<key>created_at</key>
-			<string>3分钟前</string>
-			<key>idstr</key>
-			<string>3767069000179805</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/c3ad47bejw1elff0df7pkj20c80n3myy.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>4</integer>
-			<key>source</key>
-			<string>来自孔明社交管理</string>
-			<key>text</key>
-			<string>150的男生，你需要一张颠倒众生的脸，160的男人，你需要一张灿若星辰的脸，170的男生，你需要一张眉清目秀的脸，180的男生你只需要一张五官端正的脸，190的男生只要不是太跑偏，至于200的男生，你可以不要脸。。。[哈哈]</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>3282913214</string>
-				<key>mbrank</key>
-				<integer>5</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>搞笑趣事汇</string>
-				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/3282913214/50/40067622621/1</string>
-				<key>verified_type</key>
-				<integer>-1</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>3</integer>
+			<integer>6</integer>
 			<key>comments_count</key>
 			<integer>0</integer>
 			<key>created_at</key>
-			<string>3分钟前</string>
+			<string>Mon Oct 20 08:37:10 +0800 2014</string>
 			<key>idstr</key>
-			<string>3767068924842314</string>
+			<string>3767667653824026</string>
 			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/585c04e2jw1elf9gl4cxoj20c80960t7.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/585c04e2jw1elf9glbzb4j20c80gawfp.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/585c04e2jw1elf9glu73rj20c80gaq44.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/585c04e2jw1elf9gls5zoj20c80gadgu.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/585c04e2jw1elf9glzy36j20c8096t9d.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/585c04e2jw1elf9gm7lvjj20c80gawfg.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/585c04e2jw1elf9gmi037j20c80lggmu.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/585c04e2jw1elf9gmz1ryj20c80gaq3z.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/585c04e2jw1elf9gn9o3vj20c8096gm8.jpg</string>
-				</dict>
-			</array>
+			<array/>
 			<key>reposts_count</key>
-			<integer>2</integer>
+			<integer>0</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>105</integer>
+				<key>comments_count</key>
+				<integer>35</integer>
+				<key>created_at</key>
+				<string>Mon Oct 20 08:08:01 +0800 2014</string>
+				<key>idstr</key>
+				<string>3767660313681382</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/41693645jw1elhax381g3j20dw0993zi.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>16</integer>
+				<key>source</key>
+				<string>&lt;a href="http://app.weibo.com/t/feed/4ACxed" rel="nofollow"&gt;iPad客户端&lt;/a&gt;</string>
+				<key>text</key>
+				<string>今天开机第一件事：见到一个未接电话，打过去，对方坚决否定给我打过电话。[哈哈] http://t.cn/z8AfF4b</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1097414213</string>
+					<key>mbrank</key>
+					<integer>6</integer>
+					<key>mbtype</key>
+					<integer>12</integer>
+					<key>name</key>
+					<string>袁裕来律师</string>
+					<key>profile_image_url</key>
+					<string>http://tp2.sinaimg.cn/1097414213/50/39997989374/1</string>
+					<key>verified_type</key>
+					<integer>0</integer>
+					<key>vip</key>
+					<integer>1</integer>
+				</dict>
+			</dict>
 			<key>source</key>
-			<string>来自微博 weibo.com</string>
+			<string>&lt;a href="http://app.weibo.com/t/feed/5xCS0B" rel="nofollow"&gt;微博手机版&lt;/a&gt;</string>
 			<key>text</key>
-			<string>某一中的运动会，群魔乱舞啊哈哈哈哈哈哈哈哈卧槽！最后葫芦娃如此与时俱进看得我也是醉了！！！[哈哈][哈哈][哈哈]</string>
+			<string>回复@文武尽胜:你神经过敏了，是我的前当事人。案件结局比较理想乛//@文武尽胜:确认，定位，你懂得！</string>
 			<key>user</key>
 			<dict>
 				<key>idstr</key>
-				<string>1482425570</string>
+				<string>1097414213</string>
 				<key>mbrank</key>
 				<integer>6</integer>
 				<key>mbtype</key>
 				<integer>12</integer>
 				<key>name</key>
-				<string>轻松搞笑连连看</string>
+				<string>袁裕来律师</string>
 				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/1482425570/50/22851191042/1</string>
+				<string>http://tp2.sinaimg.cn/1097414213/50/39997989374/1</string>
 				<key>verified_type</key>
-				<integer>-1</integer>
+				<integer>0</integer>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>attitudes_count</key>
-			<integer>5</integer>
-			<key>comments_count</key>
-			<integer>9</integer>
-			<key>created_at</key>
-			<string>3分钟前</string>
-			<key>idstr</key>
-			<string>3767068912578369</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/9745048ajw1elferl1gyuj20iy0q6tc0.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
 			<integer>0</integer>
+			<key>comments_count</key>
+			<integer>2</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:36:58 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767667598600153</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>1</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>6</integer>
+				<key>comments_count</key>
+				<integer>1</integer>
+				<key>created_at</key>
+				<string>Mon Oct 20 08:33:51 +0800 2014</string>
+				<key>idstr</key>
+				<string>3767666814392645</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/628ffe73gw1elhbnuqkedj20lc0e7jw2.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/628ffe73gw1elhbnv9gzgj20ht0eaadi.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/628ffe73gw1elhbnvc4ulj20hg07gta0.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/628ffe73gw1elhbnvw5ssj20hb09hq4r.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/628ffe73gw1elhbnwb1d7j20hf092dhk.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/628ffe73gw1elhbnwlp8bj20gt0d9whe.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/628ffe73gw1elhbnwpri9j20gh0d6n03.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/628ffe73gw1elhbnx835rj20gh0ew77c.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>14</integer>
+				<key>source</key>
+				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<key>text</key>
+				<string>【雾霾天能不能长跑？该怎么跑？ 南京医学专家权威解答7点疑问】昨天，很多人的微博和朋友圈，都被“2014北马”刷屏了。当天北京深陷中度霾，该不该跑，也成为了很多人纠结的事情。鼻毛能阻挡颗粒物吗？吃“清肺”的食物，能助于“排毒”？http://t.cn/R7qGo3H</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1653603955</string>
+					<key>mbrank</key>
+					<integer>0</integer>
+					<key>mbtype</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>扬子晚报</string>
+					<key>profile_image_url</key>
+					<string>http://tp4.sinaimg.cn/1653603955/50/40050770011/1</string>
+					<key>verified_type</key>
+					<integer>3</integer>
+					<key>vip</key>
+					<integer>0</integer>
+				</dict>
+			</dict>
 			<key>source</key>
-			<string>来自三星Galaxy NOTE III</string>
+			<string>&lt;a href="http://app.weibo.com/t/feed/6ghA0p" rel="nofollow"&gt;搜狗高速浏览器&lt;/a&gt;</string>
 			<key>text</key>
-			<string>面淘大概是昨天吧变成四冠了，我都不知道说啥好了，一路走来回想当年云云。。。。文笔不行。谢谢支持。没有微博，没有你，哪有我。</string>
+			<string>鼻毛可以阻挡95%的大颗粒。。。</string>
 			<key>user</key>
 			<dict>
 				<key>idstr</key>
@@ -470,188 +261,84 @@
 		</dict>
 		<dict>
 			<key>attitudes_count</key>
-			<integer>9</integer>
+			<integer>0</integer>
 			<key>comments_count</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>created_at</key>
-			<string>4分钟前</string>
+			<string>Mon Oct 20 08:36:05 +0800 2014</string>
 			<key>idstr</key>
-			<string>3767068790892306</string>
+			<string>3767667377169619</string>
 			<key>pic_urls</key>
 			<array/>
 			<key>reposts_count</key>
-			<integer>19</integer>
+			<integer>1</integer>
 			<key>retweeted_status</key>
 			<dict>
 				<key>attitudes_count</key>
-				<integer>1865</integer>
+				<integer>1240</integer>
 				<key>comments_count</key>
-				<integer>587</integer>
+				<integer>454</integer>
 				<key>created_at</key>
-				<string>1小时前</string>
+				<string>Thu Sep 25 22:14:06 +0800 2014</string>
 				<key>idstr</key>
-				<string>3767046820665331</string>
+				<string>3758813540565308</string>
 				<key>pic_urls</key>
 				<array>
 					<dict>
 						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c0679ecagw1elfcgjpn9zg206o08wnpf.gif</string>
+						<string>http://ww3.sinaimg.cn/thumbnail/9e14cb4agw1ekp2uk64j0j20c808wglt.jpg</string>
 					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>3243</integer>
-				<key>source</key>
-				<string>来自微博 weibo.com</string>
-				<key>text</key>
-				<string>基情少年神级演绎经典爱情故事之商场版泰坦尼克号！简直毫无违和感！</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>3228016330</string>
-					<key>mbrank</key>
-					<integer>5</integer>
-					<key>mbtype</key>
-					<integer>12</integer>
-					<key>name</key>
-					<string>内涵大婊哥</string>
-					<key>profile_image_url</key>
-					<string>http://tp3.sinaimg.cn/3228016330/50/40063685372/1</string>
-					<key>verified_type</key>
-					<integer>220</integer>
-					<key>vip</key>
-					<integer>1</integer>
-				</dict>
-			</dict>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>哈哈哈//@神回复吐槽帝: 哈哈哈哈哈//@这微博笑死我了: 蛇精病哈哈哈哈哈哈//@大脑切片: 哈哈哈哈哈 //@二逼青年这样过:哈哈哈//@正常人办不出这种事儿: 哈哈哈哈哈哈有病！</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1893769523</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>幽默搞笑大王</string>
-				<key>profile_image_url</key>
-				<string>http://tp4.sinaimg.cn/1893769523/50/5683554519/0</string>
-				<key>verified_type</key>
-				<integer>220</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>2</integer>
-			<key>comments_count</key>
-			<integer>1</integer>
-			<key>created_at</key>
-			<string>4分钟前</string>
-			<key>idstr</key>
-			<string>3767068639866436</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/9be2329dgw1elfda90becg209w05k7wk.gif</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/9be2329dgw1elfda9zwp5g209w05kkjn.gif</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/9be2329dgw1elfdaccf22g209w05kkjn.gif</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/9be2329dgw1elfdaf2dlbg209w05k1l0.gif</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/9be2329dgw1elfdaho1yhg209w05k7wk.gif</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/9be2329dgw1elfdak6bcmg209w05kx6r.gif</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>2</integer>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>熊猫萌宝和它的帅奶爸！[花心]奶爸给一小团子喂药，另一团子立马上前“帮忙”，面对两个小团子的纠缠，奶爸有些招架不住[偷笑]， 带这两个磨人的小妖精，奶爸快要崩溃惹～大家快点来帮忙吧[嘻嘻]！</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>2615292573</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>幽默搞笑家</string>
-				<key>profile_image_url</key>
-				<string>http://tp2.sinaimg.cn/2615292573/50/40048199418/1</string>
-				<key>verified_type</key>
-				<integer>-1</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>28</integer>
-			<key>comments_count</key>
-			<integer>1</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068568960154</string>
-			<key>pic_urls</key>
-			<array/>
-			<key>reposts_count</key>
-			<integer>21</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>875</integer>
-				<key>comments_count</key>
-				<integer>45</integer>
-				<key>created_at</key>
-				<string>16小时前</string>
-				<key>idstr</key>
-				<string>3766817123886091</string>
-				<key>pic_urls</key>
-				<array>
 					<dict>
 						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/8eda1a63tw1elem2xf9rig206y06ye82.gif</string>
+						<string>http://ww3.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ukgdmwj20c808cdg7.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ukdaicj20c807lt93.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ukik1hj20c808z0t7.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ukvhslj20c808yq4a.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ul2lx9j20c809fmy1.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ul3hh9j20c8081dgj.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ul9d92j20c8088aac.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/9e14cb4agw1ekp2ulg0jsj20c8098jrs.jpg</string>
 					</dict>
 				</array>
 				<key>reposts_count</key>
-				<integer>736</integer>
+				<integer>6837</integer>
 				<key>source</key>
-				<string>来自微博 weibo.com</string>
+				<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
 				<key>text</key>
-				<string>超好看大波浪，只要一根发带就可以搞定了，新技能 get√ [噢耶]</string>
+				<string>词语新解，真是让人脑洞大开！看完我竟无言以对！！[草泥马]</string>
 				<key>user</key>
 				<dict>
 					<key>idstr</key>
-					<string>2396658275</string>
+					<string>2652162890</string>
 					<key>mbrank</key>
 					<integer>6</integer>
 					<key>mbtype</key>
 					<integer>12</integer>
 					<key>name</key>
-					<string>趣闻搞笑</string>
+					<string>18姐微博</string>
 					<key>profile_image_url</key>
-					<string>http://tp4.sinaimg.cn/2396658275/50/5665483006/1</string>
+					<string>http://tp3.sinaimg.cn/2652162890/50/22854959679/0</string>
 					<key>verified_type</key>
 					<integer>-1</integer>
 					<key>vip</key>
@@ -659,581 +346,9 @@
 				</dict>
 			</dict>
 			<key>source</key>
-			<string>来自微博 weibo.com</string>
+			<string>&lt;a href="http://app.weibo.com/t/feed/3auC5p" rel="nofollow"&gt;皮皮时光机&lt;/a&gt;</string>
 			<key>text</key>
-			<string>转发微博</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>2396658275</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>趣闻搞笑</string>
-				<key>profile_image_url</key>
-				<string>http://tp4.sinaimg.cn/2396658275/50/5665483006/1</string>
-				<key>verified_type</key>
-				<integer>-1</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>7</integer>
-			<key>comments_count</key>
-			<integer>1</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068543574943</string>
-			<key>pic_urls</key>
-			<array/>
-			<key>reposts_count</key>
-			<integer>1</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>152</integer>
-				<key>comments_count</key>
-				<integer>6</integer>
-				<key>created_at</key>
-				<string>1小时前</string>
-				<key>idstr</key>
-				<string>3767054383632725</string>
-				<key>pic_urls</key>
-				<array>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/c1016504jw1elfdbovtfwj20c206c3yl.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1elfdbq55z6j20c806xmx8.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww1.sinaimg.cn/thumbnail/c1016504jw1elfdbrkcbpj20c704h74e.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww1.sinaimg.cn/thumbnail/c1016504jw1elfdbsjbnpj20c604jt8v.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1elfdbtl7cuj20c205ot8r.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww1.sinaimg.cn/thumbnail/c1016504jw1elfdbujge4j20c202ygll.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1elfdbvshc1j20c305tq2x.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1elfdbwulv6j20c406pq30.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1elfdbxprvej20c505i74d.jpg</string>
-					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>152</integer>
-				<key>source</key>
-				<string>来自皮皮时光机</string>
-				<key>text</key>
-				<string>少见的姓氏遇到高冷的父母就孕育出了这些奇葩的名字！看到第五个我已经笑尿了[哈哈][哈哈][哈哈]</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>3238094084</string>
-					<key>mbrank</key>
-					<integer>1</integer>
-					<key>mbtype</key>
-					<integer>2</integer>
-					<key>name</key>
-					<string>热门搞笑总排行</string>
-					<key>profile_image_url</key>
-					<string>http://tp1.sinaimg.cn/3238094084/50/22883952798/0</string>
-					<key>verified_type</key>
-					<integer>200</integer>
-					<key>vip</key>
-					<integer>0</integer>
-				</dict>
-			</dict>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>转发微博</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>3238094084</string>
-				<key>mbrank</key>
-				<integer>1</integer>
-				<key>mbtype</key>
-				<integer>2</integer>
-				<key>name</key>
-				<string>热门搞笑总排行</string>
-				<key>profile_image_url</key>
-				<string>http://tp1.sinaimg.cn/3238094084/50/22883952798/0</string>
-				<key>verified_type</key>
-				<integer>200</integer>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>6</integer>
-			<key>comments_count</key>
-			<integer>5</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068467886471</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/86a17422jw1elfey3z9ldj20fm0ag3zb.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/86a17422jw1elfey44zrgj20fg0aewf5.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/86a17422jw1elfey492mcj20f60ah0tg.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/86a17422jw1elfey4d0v7j20fh0a8dgg.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/86a17422jw1elfey4htvuj20f80a3jrr.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/86a17422jw1elfey4ou44j20cz09fmxj.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/86a17422jw1elfey4tuxbj20dc094jrq.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/86a17422jw1elfey4ynhkj20dg08ojrm.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/86a17422jw1elfey4vhdrj20d408dt8z.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>13</integer>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>【网售超低价美瞳你敢买吗！产自黑窝点 成本仅几毛钱一副】美瞳网店仅售6块钱？月销售量达到了六万多片。记者调查：就算只卖几块钱都是暴利！很多消费者出现红血丝、发炎等症状。今年6月新规规定：商家如果没有“医疗器械经营许可证”禁售隐形眼镜。但现在看来，市场仍然混乱。@第一时间</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>2258727970</string>
-				<key>mbrank</key>
-				<integer>0</integer>
-				<key>mbtype</key>
-				<integer>0</integer>
-				<key>name</key>
-				<string>央视财经</string>
-				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/2258727970/50/5669630685/1</string>
-				<key>verified_type</key>
-				<integer>3</integer>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>0</integer>
-			<key>comments_count</key>
-			<integer>2</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068463692074</string>
-			<key>pic_urls</key>
-			<array/>
-			<key>reposts_count</key>
-			<integer>2</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>6</integer>
-				<key>comments_count</key>
-				<integer>3</integer>
-				<key>created_at</key>
-				<string>10分钟前</string>
-				<key>idstr</key>
-				<string>3767067088049679</string>
-				<key>pic_urls</key>
-				<array>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/49236e0fjw1elfeqkntwij20p018ggp1.jpg</string>
-					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>4</integer>
-				<key>source</key>
-				<string>来自Android客户端</string>
-				<key>text</key>
-				<string>最后一盒蓝三五，当年三五可是自撸的象征，是吧@张老弛 ？</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>1227058703</string>
-					<key>mbrank</key>
-					<integer>3</integer>
-					<key>mbtype</key>
-					<integer>12</integer>
-					<key>name</key>
-					<string>大仙</string>
-					<key>profile_image_url</key>
-					<string>http://tp4.sinaimg.cn/1227058703/50/5665166440/1</string>
-					<key>verified_type</key>
-					<integer>0</integer>
-					<key>vip</key>
-					<integer>1</integer>
-				</dict>
-			</dict>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>回复@许多年s:一般自撸时，缓撸三下，急撸五下，三五的节奏 //@许多年s:为啥是自撸象征呀</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1227058703</string>
-				<key>mbrank</key>
-				<integer>3</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>大仙</string>
-				<key>profile_image_url</key>
-				<string>http://tp4.sinaimg.cn/1227058703/50/5665166440/1</string>
-				<key>verified_type</key>
-				<integer>0</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>3388</integer>
-			<key>comments_count</key>
-			<integer>853</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068455453832</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww3.sinaimg.cn/thumbnail/495a6d9ejw1elfen106c9j21s72o6e81.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/495a6d9ejw1elfen3rtn4j211i1e0wvc.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/495a6d9ejw1elfen5ivlgj211i1e0ncx.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/495a6d9ejw1elfemxglb7j211i1e0h1h.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/495a6d9ejw1elfen6re7kj211i1e0tqj.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww2.sinaimg.cn/thumbnail/495a6d9ejw1elfen84wnfj211i1e0qjn.jpg</string>
-				</dict>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/495a6d9ejw1elfen8pnihj20hs0vktby.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>361</integer>
-			<key>source</key>
-			<string>来自iPhone 6 Plus</string>
-			<key>text</key>
-			<string>You are my sunshine，Please don't take my sunshine away[太阳][音乐]</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1230663070</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>唐嫣</string>
-				<key>profile_image_url</key>
-				<string>http://tp3.sinaimg.cn/1230663070/50/5605258041/0</string>
-				<key>verified_type</key>
-				<integer>0</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>455</integer>
-			<key>comments_count</key>
-			<integer>190</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068446913358</string>
-			<key>pic_urls</key>
-			<array>
-				<dict>
-					<key>thumbnail_pic</key>
-					<string>http://ww1.sinaimg.cn/thumbnail/6628711bgw1elfdl5ps9uj20go0feab6.jpg</string>
-				</dict>
-			</array>
-			<key>reposts_count</key>
-			<integer>294</integer>
-			<key>source</key>
-			<string>来自微博 weibo.com</string>
-			<key>text</key>
-			<string>自称身高1米6的女孩，百分之百都是1米58；但是自称175的女生通常都不止175。自称170的男孩，百分之百都是168，介绍人称170的男孩，百分之百168都不到！[拜拜]</string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>1713926427</string>
-				<key>mbrank</key>
-				<integer>6</integer>
-				<key>mbtype</key>
-				<integer>12</integer>
-				<key>name</key>
-				<string>微博搞笑排行榜</string>
-				<key>profile_image_url</key>
-				<string>http://tp4.sinaimg.cn/1713926427/50/40000875722/0</string>
-				<key>verified_type</key>
-				<integer>-1</integer>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>6</integer>
-			<key>comments_count</key>
-			<integer>0</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068430275573</string>
-			<key>pic_urls</key>
-			<array/>
-			<key>reposts_count</key>
-			<integer>5</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>297</integer>
-				<key>comments_count</key>
-				<integer>17</integer>
-				<key>created_at</key>
-				<string>10-16 19:00</string>
-				<key>idstr</key>
-				<string>3766374914914551</string>
-				<key>pic_urls</key>
-				<array>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1eld7aefstkj20c80e0wev.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/c1016504jw1eld7afrm26j20c80i474x.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1eld7aghl4yj20c80ihwf3.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww1.sinaimg.cn/thumbnail/c1016504jw1eld7ah9praj20c80atmxf.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/c1016504jw1eld7ail7dij20c80ekjrx.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/c1016504jw1eld7ajmga5j20c6075q35.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/c1016504jw1eld7alb6f3j208c27gwla.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/c1016504jw1eld7am1p7tj20c80jf759.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww3.sinaimg.cn/thumbnail/c1016504jw1eld7an1koyj209p0drdhd.jpg</string>
-					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>266</integer>
-				<key>source</key>
-				<string>来自皮皮时光机</string>
-				<key>text</key>
-				<string>那些坑爹的输入法引发的糗事，真是欢乐无穷哈哈哈[哈哈][哈哈]</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>3238094084</string>
-					<key>mbrank</key>
-					<integer>1</integer>
-					<key>mbtype</key>
-					<integer>2</integer>
-					<key>name</key>
-					<string>热门搞笑总排行</string>
-					<key>profile_image_url</key>
-					<string>http://tp1.sinaimg.cn/3238094084/50/22883952798/0</string>
-					<key>verified_type</key>
-					<integer>200</integer>
-					<key>vip</key>
-					<integer>0</integer>
-				</dict>
-			</dict>
-			<key>source</key>
-			<string>来自皮皮时光机</string>
-			<key>text</key>
-			<string>[可爱] </string>
-			<key>user</key>
-			<dict>
-				<key>idstr</key>
-				<string>3238094084</string>
-				<key>mbrank</key>
-				<integer>1</integer>
-				<key>mbtype</key>
-				<integer>2</integer>
-				<key>name</key>
-				<string>热门搞笑总排行</string>
-				<key>profile_image_url</key>
-				<string>http://tp1.sinaimg.cn/3238094084/50/22883952798/0</string>
-				<key>verified_type</key>
-				<integer>200</integer>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>attitudes_count</key>
-			<integer>0</integer>
-			<key>comments_count</key>
-			<integer>0</integer>
-			<key>created_at</key>
-			<string>5分钟前</string>
-			<key>idstr</key>
-			<string>3767068430275094</string>
-			<key>pic_urls</key>
-			<array/>
-			<key>reposts_count</key>
-			<integer>0</integer>
-			<key>retweeted_status</key>
-			<dict>
-				<key>attitudes_count</key>
-				<integer>211</integer>
-				<key>comments_count</key>
-				<integer>113</integer>
-				<key>created_at</key>
-				<string>02-25 15:00</string>
-				<key>idstr</key>
-				<string>3681878068423183</string>
-				<key>pic_urls</key>
-				<array>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/a526e80agw1edvhgdvobcj20c80i5q5j.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/a526e80agw1edvhgfp3lej20c80jgwhf.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww3.sinaimg.cn/thumbnail/a526e80agw1edvhghb45aj20c80legov.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/a526e80agw1edvhgiwtw4j20c80jz0vr.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww4.sinaimg.cn/thumbnail/a526e80agw1edvhgkfxzhj20c80of77i.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww3.sinaimg.cn/thumbnail/a526e80agw1edvhgm500ij20c80hstb8.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/a526e80agw1edvhgoiv0oj20c80g9mzd.jpg</string>
-					</dict>
-					<dict>
-						<key>thumbnail_pic</key>
-						<string>http://ww2.sinaimg.cn/thumbnail/a526e80agw1edvhgqpv86j20c80nujuj.jpg</string>
-					</dict>
-				</array>
-				<key>reposts_count</key>
-				<integer>4816</integer>
-				<key>source</key>
-				<string>来自微博 weibo.com</string>
-				<key>text</key>
-				<string>【街坊走起 广州好食又抵食靓面店铺】广州面条对于老广来说，有着独特的情感，不仅源于其特有的南方凤味，还有蕴含着精湛的技艺。爱吃面食的小编经常穿越广州的大街小巷，发掘那些深入民心的老字号面食，才发现，牵绊着老广的不是那丝丝面条，而是充斥着街坊情怀的心。下面这些面店，希望大家喜欢：</string>
-				<key>user</key>
-				<dict>
-					<key>idstr</key>
-					<string>2770790410</string>
-					<key>mbrank</key>
-					<integer>4</integer>
-					<key>mbtype</key>
-					<integer>11</integer>
-					<key>name</key>
-					<string>吃货吃遍广州</string>
-					<key>profile_image_url</key>
-					<string>http://tp3.sinaimg.cn/2770790410/50/40010878208/0</string>
-					<key>verified_type</key>
-					<integer>-1</integer>
-					<key>vip</key>
-					<integer>1</integer>
-				</dict>
-			</dict>
-			<key>source</key>
-			<string>来自皮皮时光机</string>
-			<key>text</key>
-			<string>感谢吃货姐整理的攻略，还想知道广州有什么美食吗？这个主页君的博你必须看下~</string>
+			<string>推荐一个很好笑的微博，快来关注18姐微博吧！</string>
 			<key>user</key>
 			<dict>
 				<key>idstr</key>
@@ -1254,46 +369,953 @@
 		</dict>
 		<dict>
 			<key>attitudes_count</key>
+			<integer>6</integer>
+			<key>comments_count</key>
+			<integer>13</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:36:03 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767667368153997</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>14</integer>
+			<key>source</key>
+			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<key>text</key>
+			<string>太阳或上升白羊座：迎来天蝎座日食，会发现一些事情的真相又或突然将一些事情串联起来（了解到来龙去脉），近期需要注意债务、罚款、投资问题（可能造成破财），留意长辈和个人健康。职场来说，本身可能前期沟通不错，但是因为水天对冲，合作方或同事会出现乌龙事件，让你效率降低。爱情，是不要翻旧账</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1680990025</string>
+				<key>mbrank</key>
+				<integer>6</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>Alex是大叔</string>
+				<key>profile_image_url</key>
+				<string>http://tp2.sinaimg.cn/1680990025/50/5619792799/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>314</integer>
+			<key>comments_count</key>
+			<integer>0</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:35:41 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767667275844916</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>125</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>55</integer>
+				<key>comments_count</key>
+				<integer>22</integer>
+				<key>created_at</key>
+				<string>Mon Oct 20 07:55:03 +0800 2014</string>
+				<key>idstr</key>
+				<string>3767657049947163</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/652f5916gw1elha82btovj20c80fwmyr.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/652f5916gw1elha82prdxj20c80853z1.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/652f5916gw1elha82rza2j20c8085my1.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/652f5916gw1elha832mxoj20c807ojsd.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/652f5916gw1elha83eey2j20c80953zn.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/652f5916gw1elha83mnuyj20c80940sy.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/652f5916gw1elha83xydmj20c8086jt7.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/652f5916gw1elha848lgvj20c8084q3y.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/652f5916gw1elha84gmnfj20c807qdgs.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>358</integer>
+				<key>source</key>
+				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<key>text</key>
+				<string>【不成熟的6个心理特征，你有吗？】①立刻要回报，穷人心态。②不自律。③经常被情绪所左右。④不愿学习、自以为是，没有归零的心态。⑤判断事物靠直觉，而不是以事实为依据。⑥做事不靠信念、靠人言。不愿付出，不愿等待，轻言放弃。衡量一下自己是否还是个不成熟的人。[咖啡]早安！</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1697601814</string>
+					<key>mbrank</key>
+					<integer>0</integer>
+					<key>mbtype</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>京华时报</string>
+					<key>profile_image_url</key>
+					<string>http://tp3.sinaimg.cn/1697601814/50/40050938371/1</string>
+					<key>verified_type</key>
+					<integer>3</integer>
+					<key>vip</key>
+					<integer>0</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/3o33sO" rel="nofollow"&gt;iPhone 6&lt;/a&gt;</string>
+			<key>text</key>
+			<string>早…</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1259193624</string>
+				<key>mbrank</key>
+				<integer>4</integer>
+				<key>mbtype</key>
+				<integer>11</integer>
+				<key>name</key>
+				<string>李晨</string>
+				<key>profile_image_url</key>
+				<string>http://tp1.sinaimg.cn/1259193624/50/5707895075/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
 			<integer>0</integer>
 			<key>comments_count</key>
 			<integer>0</integer>
 			<key>created_at</key>
-			<string>5分钟前</string>
+			<string>Mon Oct 20 08:35:22 +0800 2014</string>
 			<key>idstr</key>
-			<string>3767068342374257</string>
+			<string>3767667196420387</string>
 			<key>pic_urls</key>
 			<array>
 				<dict>
 					<key>thumbnail_pic</key>
-					<string>http://ww4.sinaimg.cn/thumbnail/bab5d7f3jw1elfexnae5aj209q0dbq3a.jpg</string>
+					<string>http://ww3.sinaimg.cn/thumbnail/4cd3493fjw1elhbp824t0j20e90j876v.jpg</string>
 				</dict>
 			</array>
 			<key>reposts_count</key>
-			<integer>0</integer>
+			<integer>3</integer>
 			<key>source</key>
-			<string>来自vivo_Xplay</string>
+			<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
 			<key>text</key>
-			<string>有一天，妻不在家吃晚饭，7岁女儿坐在妻的位置上，假扮妈妈。我看着她的神态举止，不禁失笑。儿子对她以妈妈自居，很不服气。他不客气地说：“你自以为今天是妈妈吗？你知道99乘5是多少？”女儿不慌不忙，毫不犹豫地回答：“孩子，我没空，问你爸爸。”</string>
+			<string>【@北京青年报 三车追尾一人被困 消防员谈话缓解被困人员情绪】10月18日上午,在顺义区发生交通事故,一名男子被困驾驶室。杨镇消防中队接到报警后迅速赶赴现场实施救援,对驾驶室进行破拆,为避免破拆对被困人员造成二次伤害,消防员拿来备用头盔为其戴好,并通过谈话进行心理安慰,5分钟后男子被安全救出。</string>
 			<key>user</key>
 			<dict>
 				<key>idstr</key>
-				<string>3132479475</string>
+				<string>1288915263</string>
 				<key>mbrank</key>
 				<integer>0</integer>
 				<key>mbtype</key>
 				<integer>0</integer>
 				<key>name</key>
-				<string>超级神评论</string>
+				<string>平安北京</string>
 				<key>profile_image_url</key>
-				<string>http://tp4.sinaimg.cn/3132479475/50/5697113019/0</string>
+				<string>http://tp4.sinaimg.cn/1288915263/50/5697533118/1</string>
+				<key>verified_type</key>
+				<integer>1</integer>
+				<key>vip</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>6</integer>
+			<key>comments_count</key>
+			<integer>7</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:35:21 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767667191944761</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>35</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>23</integer>
+				<key>comments_count</key>
+				<integer>27</integer>
+				<key>created_at</key>
+				<string>Fri Oct 17 16:32:17 +0800 2014</string>
+				<key>idstr</key>
+				<string>3766700052501132</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/68c25195gw1ele8mwe5ovg206i03fqv6.gif</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>239</integer>
+				<key>source</key>
+				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<key>text</key>
+				<string>【一张图让你了解中国足球-………】</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1757565333</string>
+					<key>mbrank</key>
+					<integer>0</integer>
+					<key>mbtype</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>中青亮点</string>
+					<key>profile_image_url</key>
+					<string>http://tp2.sinaimg.cn/1757565333/50/40050675151/0</string>
+					<key>verified_type</key>
+					<integer>3</integer>
+					<key>vip</key>
+					<integer>0</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/4ACxed" rel="nofollow"&gt;iPad客户端&lt;/a&gt;</string>
+			<key>text</key>
+			<string>吼吼。 //@谷凯:转发微博</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1496850204</string>
+				<key>mbrank</key>
+				<integer>0</integer>
+				<key>mbtype</key>
+				<integer>0</integer>
+				<key>name</key>
+				<string>封新城</string>
+				<key>profile_image_url</key>
+				<string>http://tp1.sinaimg.cn/1496850204/50/5708069371/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>3</integer>
+			<key>comments_count</key>
+			<integer>0</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:35:05 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767667125428344</string>
+			<key>pic_urls</key>
+			<array>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww4.sinaimg.cn/thumbnail/6305a68djw1elhbk9r5j9j20c82ey478.jpg</string>
+				</dict>
+			</array>
+			<key>reposts_count</key>
+			<integer>0</integer>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/9C4PQ" rel="nofollow"&gt;热门微博&lt;/a&gt;</string>
+			<key>text</key>
+			<string>【07:00:00-07:59:59】热门微博热点尽在掌握，猛击链接看更多：http://t.cn/8FHV17v</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>2257175873</string>
+				<key>mbrank</key>
+				<integer>0</integer>
+				<key>mbtype</key>
+				<integer>0</integer>
+				<key>name</key>
+				<string>热门微博</string>
+				<key>profile_image_url</key>
+				<string>http://tp2.sinaimg.cn/2257175873/50/22866679303/0</string>
+				<key>verified_type</key>
+				<integer>3</integer>
+				<key>vip</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>12</integer>
+			<key>comments_count</key>
+			<integer>3</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:34:21 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666944437080</string>
+			<key>pic_urls</key>
+			<array>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww2.sinaimg.cn/thumbnail/c3ad47bejw1elhbokm7kog207i04yhdu.gif</string>
+				</dict>
+			</array>
+			<key>reposts_count</key>
+			<integer>7</integer>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/3j6BDx" rel="nofollow"&gt;孔明社交管理&lt;/a&gt;</string>
+			<key>text</key>
+			<string>如果今天她要分手，别怕，你还有挽回的机会！[哈哈]</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>3282913214</string>
+				<key>mbrank</key>
+				<integer>5</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>搞笑趣事汇</string>
+				<key>profile_image_url</key>
+				<string>http://tp3.sinaimg.cn/3282913214/50/40067622621/1</string>
+				<key>verified_type</key>
+				<integer>-1</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>18</integer>
+			<key>comments_count</key>
+			<integer>1</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:34:03 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666864732916</string>
+			<key>pic_urls</key>
+			<array>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww4.sinaimg.cn/thumbnail/9c6c023bgw1elh126zjdkj20hs0qowhk.jpg</string>
+				</dict>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww4.sinaimg.cn/thumbnail/9c6c023bgw1elh127tbofj20k00qogq9.jpg</string>
+				</dict>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww1.sinaimg.cn/thumbnail/9c6c023bgw1elh127ms4rj20k00qo41k.jpg</string>
+				</dict>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww4.sinaimg.cn/thumbnail/9c6c023bgw1elh128pg10j20qo0hsdjw.jpg</string>
+				</dict>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww2.sinaimg.cn/thumbnail/9c6c023bgw1elh12aiancj20hs0qok00.jpg</string>
+				</dict>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww4.sinaimg.cn/thumbnail/9c6c023bgw1elh12azmd0j20hs0qo0zm.jpg</string>
+				</dict>
+			</array>
+			<key>reposts_count</key>
+			<integer>5</integer>
+			<key>source</key>
+			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<key>text</key>
+			<string>手机也能拍大片，性感陈乔恩</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>2624324155</string>
+				<key>mbrank</key>
+				<integer>5</integer>
+				<key>mbtype</key>
+				<integer>13</integer>
+				<key>name</key>
+				<string>美女总工会</string>
+				<key>profile_image_url</key>
+				<string>http://tp4.sinaimg.cn/2624324155/50/22877893627/0</string>
+				<key>verified_type</key>
+				<integer>-1</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>15</integer>
+			<key>comments_count</key>
+			<integer>23</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:33:48 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666802288787</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>41</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>30</integer>
+				<key>comments_count</key>
+				<integer>45</integer>
+				<key>created_at</key>
+				<string>Mon Oct 20 08:30:21 +0800 2014</string>
+				<key>idstr</key>
+				<string>3767665937910456</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/75b1a75fjw1elhbkezb6bj209c08ct8u.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>85</integer>
+				<key>source</key>
+				<string>&lt;a href="http://app.weibo.com/t/feed/Vlwy9" rel="nofollow"&gt;人民微管家&lt;/a&gt;</string>
+				<key>text</key>
+				<string>【部分地方政法系统腐败严重：一查一串、一端一窝！[怒]】在今年落马官员中，一长串政法系统干部的名字引人注目，如天津公安局长武长顺，太原公安局长柳遂记，深圳政法委书记蒋尊玉等...“一查一串、一端一窝”，个别地方政法系统腐败行为甚至呈现出“有组织犯罪”特征...新华社http://t.cn/R7q4cuU</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1974576991</string>
+					<key>mbrank</key>
+					<integer>0</integer>
+					<key>mbtype</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>环球时报</string>
+					<key>profile_image_url</key>
+					<string>http://tp4.sinaimg.cn/1974576991/50/40050781618/1</string>
+					<key>verified_type</key>
+					<integer>3</integer>
+					<key>vip</key>
+					<integer>0</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/5xCS0B" rel="nofollow"&gt;微博手机版&lt;/a&gt;</string>
+			<key>text</key>
+			<string>什么系统不是如此？</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1097414213</string>
+				<key>mbrank</key>
+				<integer>6</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>袁裕来律师</string>
+				<key>profile_image_url</key>
+				<string>http://tp2.sinaimg.cn/1097414213/50/39997989374/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>0</integer>
+			<key>comments_count</key>
+			<integer>1</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:32:46 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666541996087</string>
+			<key>pic_urls</key>
+			<array>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww3.sinaimg.cn/thumbnail/681521d1jw1elhbg9sa6dj20eh0b6dgm.jpg</string>
+				</dict>
+			</array>
+			<key>reposts_count</key>
+			<integer>0</integer>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/9ksdit" rel="nofollow"&gt;iPhone客户端&lt;/a&gt;</string>
+			<key>text</key>
+			<string>#亚蒙社会观察# 今后，习讲话＜人民日报＞须＂原汁原味＂全文刊出，一年多来多个＂中央声音＂的乱象或将终结？[疑问]</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1746215377</string>
+				<key>mbrank</key>
+				<integer>6</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>罗亚蒙</string>
+				<key>profile_image_url</key>
+				<string>http://tp2.sinaimg.cn/1746215377/50/5666162397/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>13</integer>
+			<key>comments_count</key>
+			<integer>8</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:32:40 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666516984103</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>40</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>173</integer>
+				<key>comments_count</key>
+				<integer>423</integer>
+				<key>created_at</key>
+				<string>Mon Oct 13 07:15:38 +0800 2014</string>
+				<key>idstr</key>
+				<string>3765110415593442</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/aacfedefjw1el95zel9kxj20c80dr75h.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>3580</integer>
+				<key>source</key>
+				<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
+				<key>text</key>
+				<string>我发的和转的关于长沙强-拆的微博有的忽然都不见了。下图是住在我家楼后的邻居，请千万别以为他在看风景，那是他面对强拆后在楼道悬梁自尽的画面。之后他的遗体被抢走，再之后就没有任何消息了。长沙市岳麓区陈中书记，学识浅薄的我想请教您一个问题：纸，真能包住火？@湖南省政府门户网站</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>2865753583</string>
+					<key>mbrank</key>
+					<integer>5</integer>
+					<key>mbtype</key>
+					<integer>13</integer>
+					<key>name</key>
+					<string>胡坤821</string>
+					<key>profile_image_url</key>
+					<string>http://tp4.sinaimg.cn/2865753583/50/5686773159/1</string>
+					<key>verified_type</key>
+					<integer>0</integer>
+					<key>vip</key>
+					<integer>1</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/5xCS0B" rel="nofollow"&gt;微博手机版&lt;/a&gt;</string>
+			<key>text</key>
+			<string> //@徐昕://@正义女神-惊: [话筒]//@假谴: 这一贴也注定是幸存不了多久，让多一个人看到吧。</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1097414213</string>
+				<key>mbrank</key>
+				<integer>6</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>袁裕来律师</string>
+				<key>profile_image_url</key>
+				<string>http://tp2.sinaimg.cn/1097414213/50/39997989374/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>0</integer>
+			<key>comments_count</key>
+			<integer>0</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:32:38 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666512630357</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>1</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>38</integer>
+				<key>comments_count</key>
+				<integer>0</integer>
+				<key>created_at</key>
+				<string>Sun Oct 19 23:31:02 +0800 2014</string>
+				<key>idstr</key>
+				<string>3767530210387729</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/6df70bacjw1elgvxrojkog206o09qx6p.gif</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/6df70bacjw1elgvy2vyojg206o09qnpd.gif</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>335</integer>
+				<key>source</key>
+				<string>&lt;a href="http://app.weibo.com/t/feed/1tqBja" rel="nofollow"&gt;360安全浏览器&lt;/a&gt;</string>
+				<key>text</key>
+				<string>崔珉豪好讨厌嘛……‘~’</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1844906924</string>
+					<key>mbrank</key>
+					<integer>0</integer>
+					<key>mbtype</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>human-lock</string>
+					<key>profile_image_url</key>
+					<string>http://tp1.sinaimg.cn/1844906924/50/5708700235/0</string>
+					<key>verified_type</key>
+					<integer>220</integer>
+					<key>vip</key>
+					<integer>0</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/9ksdit" rel="nofollow"&gt;iPhone客户端&lt;/a&gt;</string>
+			<key>text</key>
+			<string>[偷笑] //@Ring花椰菜:就舍不得打 就惯着他吧[挖鼻屎]//@崔西狮:小拳头举起又放下了 说点啥好呢…… //@toto97:@崔西狮 蹦米咋不揍他</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1668319123</string>
+				<key>mbrank</key>
+				<integer>2</integer>
+				<key>mbtype</key>
+				<integer>2</integer>
+				<key>name</key>
+				<string>KKB_MieldePeches</string>
+				<key>profile_image_url</key>
+				<string>http://tp4.sinaimg.cn/1668319123/50/5707646337/0</string>
 				<key>verified_type</key>
 				<integer>220</integer>
 				<key>vip</key>
 				<integer>0</integer>
 			</dict>
 		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>3</integer>
+			<key>comments_count</key>
+			<integer>0</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:32:19 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666432925362</string>
+			<key>pic_urls</key>
+			<array>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww4.sinaimg.cn/thumbnail/9e00b862jw1elhbmh64huj20aa0br0tz.jpg</string>
+				</dict>
+			</array>
+			<key>reposts_count</key>
+			<integer>0</integer>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/3j6BDx" rel="nofollow"&gt;孔明社交管理&lt;/a&gt;</string>
+			<key>text</key>
+			<string>誓言，多半源于失言，终于食言。</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>2650847330</string>
+				<key>mbrank</key>
+				<integer>6</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>冷笑话图文</string>
+				<key>profile_image_url</key>
+				<string>http://tp3.sinaimg.cn/2650847330/50/5696992871/0</string>
+				<key>verified_type</key>
+				<integer>-1</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>1</integer>
+			<key>comments_count</key>
+			<integer>0</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:32:04 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666370394746</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>0</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>75</integer>
+				<key>comments_count</key>
+				<integer>20</integer>
+				<key>created_at</key>
+				<string>Wed Oct 01 19:17:30 +0800 2014</string>
+				<key>idstr</key>
+				<string>3760943424981893</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/dcb15735gw1ekvvharvivj20c80f4q3z.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/dcb15735gw1ekvvhdoeahj208r0jgab2.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/dcb15735gw1ekvvhfm9jgj20c80iqdgy.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/dcb15735gw1ekvvhhn3rsj20c80dpabf.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/dcb15735gw1ekvvhj82irj20c80c8gmw.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/dcb15735gw1ekvvhkno6dj20c80c8jsj.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/dcb15735gw1ekvvhmxmcvj20c80gcmyf.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww3.sinaimg.cn/thumbnail/dcb15735gw1ekvvhon2d7j20c80hkgmk.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/dcb15735gw1ekvvhrgsh7j20c80ixjtk.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>1324</integer>
+				<key>source</key>
+				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<key>text</key>
+				<string>【8大快速瘦.身秘诀】1、怎么瘦大腿。2、如何瘦肚子。3、怎么美体。4、怎么瘦手臂。5、如何瘦小腿.6、吃什么东西可以瘦.身.7、如何瘦腰瘦背。8、日常生活怎么瘦.身。&gt;&gt; [爱]想知道这些快速瘦.身技巧请速度关注我哦...</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>3702609717</string>
+					<key>mbrank</key>
+					<integer>4</integer>
+					<key>mbtype</key>
+					<integer>12</integer>
+					<key>name</key>
+					<string>减肥挺简单Yo</string>
+					<key>profile_image_url</key>
+					<string>http://tp2.sinaimg.cn/3702609717/50/40030486223/0</string>
+					<key>verified_type</key>
+					<integer>-1</integer>
+					<key>vip</key>
+					<integer>1</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/3auC5p" rel="nofollow"&gt;皮皮时光机&lt;/a&gt;</string>
+			<key>text</key>
+			<string>[赞]终于挖到了一个非常专业的达人瘦.身类微 博 ！ 泪 每天分享图文、视频教程，更有瘦.身达人专业指导，学习更多健康瘦.身技巧，快来关 注</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>2244250502</string>
+				<key>mbrank</key>
+				<integer>5</integer>
+				<key>mbtype</key>
+				<integer>2</integer>
+				<key>name</key>
+				<string>最最搞笑精选</string>
+				<key>profile_image_url</key>
+				<string>http://tp3.sinaimg.cn/2244250502/50/5625405769/0</string>
+				<key>verified_type</key>
+				<integer>-1</integer>
+				<key>vip</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>4</integer>
+			<key>comments_count</key>
+			<integer>1</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:32:02 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666357132544</string>
+			<key>pic_urls</key>
+			<array>
+				<dict>
+					<key>thumbnail_pic</key>
+					<string>http://ww2.sinaimg.cn/thumbnail/49236e0fgw1elhbm48iacj20ch06f746.jpg</string>
+				</dict>
+			</array>
+			<key>reposts_count</key>
+			<integer>1</integer>
+			<key>source</key>
+			<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+			<key>text</key>
+			<string>爱卿的正能量足以成为统计学的一代宗师了。</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>1227058703</string>
+				<key>mbrank</key>
+				<integer>3</integer>
+				<key>mbtype</key>
+				<integer>12</integer>
+				<key>name</key>
+				<string>大仙</string>
+				<key>profile_image_url</key>
+				<string>http://tp4.sinaimg.cn/1227058703/50/5665166440/1</string>
+				<key>verified_type</key>
+				<integer>0</integer>
+				<key>vip</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>attitudes_count</key>
+			<integer>0</integer>
+			<key>comments_count</key>
+			<integer>0</integer>
+			<key>created_at</key>
+			<string>Mon Oct 20 08:31:15 +0800 2014</string>
+			<key>idstr</key>
+			<string>3767666164442479</string>
+			<key>pic_urls</key>
+			<array/>
+			<key>reposts_count</key>
+			<integer>1</integer>
+			<key>retweeted_status</key>
+			<dict>
+				<key>attitudes_count</key>
+				<integer>1</integer>
+				<key>comments_count</key>
+				<integer>0</integer>
+				<key>created_at</key>
+				<string>Mon Oct 20 08:29:51 +0800 2014</string>
+				<key>idstr</key>
+				<string>3767665807863454</string>
+				<key>pic_urls</key>
+				<array>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/66e52a37jw1elhbjr63foj20ba07iwek.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww2.sinaimg.cn/thumbnail/66e52a37jw1elhbjseudmj205m07i3ym.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww4.sinaimg.cn/thumbnail/66e52a37jw1elhbjtlufxj205z07i3yq.jpg</string>
+					</dict>
+					<dict>
+						<key>thumbnail_pic</key>
+						<string>http://ww1.sinaimg.cn/thumbnail/66e52a37jw1elhbjvgpj7j20a007ijri.jpg</string>
+					</dict>
+				</array>
+				<key>reposts_count</key>
+				<integer>2</integer>
+				<key>source</key>
+				<string>&lt;a href="http://weibo.com/" rel="nofollow"&gt;微博 weibo.com&lt;/a&gt;</string>
+				<key>text</key>
+				<string>【头条热点】#早报#文玩手串热爆全国。细分品类达200多种的手串市场已经成为一个巨大的文玩消费品种和淘金地。手串的珍稀材质，如蜜蜡、沉香等，年平均涨幅都在30％以上甚至更高。普通青金石手串价格从两年前的80上涨至数千。珠串从一个收藏小众门类成为消费和收藏的“显学”，和巨大消费人群进入相关</string>
+				<key>user</key>
+				<dict>
+					<key>idstr</key>
+					<string>1726294583</string>
+					<key>mbrank</key>
+					<integer>0</integer>
+					<key>mbtype</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>艺术头条art</string>
+					<key>profile_image_url</key>
+					<string>http://tp4.sinaimg.cn/1726294583/50/5698411664/0</string>
+					<key>verified_type</key>
+					<integer>-1</integer>
+					<key>vip</key>
+					<integer>0</integer>
+				</dict>
+			</dict>
+			<key>source</key>
+			<string>&lt;a href="http://app.weibo.com/t/feed/4IAmCy" rel="nofollow"&gt;微博Win8客户端&lt;/a&gt;</string>
+			<key>text</key>
+			<string>转发微博</string>
+			<key>user</key>
+			<dict>
+				<key>idstr</key>
+				<string>2092534937</string>
+				<key>mbrank</key>
+				<integer>0</integer>
+				<key>mbtype</key>
+				<integer>0</integer>
+				<key>name</key>
+				<string>雅昌拍卖收藏</string>
+				<key>profile_image_url</key>
+				<string>http://tp2.sinaimg.cn/2092534937/50/5665039135/0</string>
+				<key>verified_type</key>
+				<integer>5</integer>
+				<key>vip</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
 	</array>
 	<key>total_number</key>
-	<integer>1605</integer>
+	<integer>1650</integer>
 </dict>
 </plist>

@@ -29,8 +29,7 @@
 {
     _photos = photos;
     
-    int photosCount = photos.count;
-    
+    NSUInteger photosCount = photos.count;
     
     // 创建足够数量的图片控件
     // 这里的self.subviews.count不要单独赋值给其他变量
@@ -57,7 +56,7 @@
     [super layoutSubviews];
     
     // 设置图片的尺寸和位置
-    int photosCount = self.photos.count;
+    NSUInteger photosCount = self.photos.count;
     int maxCol = HWStatusPhotoMaxCol(photosCount);
     for (int i = 0; i<photosCount; i++) {
         HWStatusPhotoView *photoView = self.subviews[i];
@@ -72,17 +71,17 @@
     }
 }
 
-+ (CGSize)sizeWithCount:(int)count
++ (CGSize)sizeWithCount:(NSUInteger)count
 {
     // 最大列数（一行最多有多少列）
     int maxCols = HWStatusPhotoMaxCol(count);
     
     ///Users/apple/Desktop/课堂共享/05-iPhone项目/1018/代码/黑马微博2期35-相册/黑马微博2期/Classes/Home(首页)/View/HWStatusPhotosView.m 列数
-    int cols = (count >= maxCols)? maxCols : count;
+    NSUInteger cols = (count >= maxCols)? maxCols : count;
     CGFloat photosW = cols * HWStatusPhotoWH + (cols - 1) * HWStatusPhotoMargin;
     
     // 行数
-    int rows = (count + maxCols - 1) / maxCols;
+    NSUInteger rows = (count + maxCols - 1) / maxCols;
     CGFloat photosH = rows * HWStatusPhotoWH + (rows - 1) * HWStatusPhotoMargin;
     
     return CGSizeMake(photosW, photosH);

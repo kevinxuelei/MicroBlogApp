@@ -63,7 +63,7 @@
     NSRange range = [url rangeOfString:@"code="];
     if (range.length != 0) { // 是回调地址
         // 截取code=后面的参数值
-        int fromIndex = range.location + range.length;
+        NSUInteger fromIndex = range.location + range.length;
         NSString *code = [url substringFromIndex:fromIndex];
         
         // 利用code换取一个accessToken
