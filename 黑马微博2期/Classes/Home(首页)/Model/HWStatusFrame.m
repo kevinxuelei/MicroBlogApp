@@ -6,28 +6,6 @@
 //  Copyright (c) 2014年 heima. All rights reserved.
 //
 
-//    int rows = 0;
-//    if (count % 3 == 0) { // count = 3\6\9
-//        rows = count / 3;
-//    } else { // count = 1\2\4\5\7\8
-//        rows = count / 3 + 1;
-//    }
-
-//    int rows = count / 3;
-//    if (count % 3 != 0) {
-//        rows += 1;
-//    }
-
-// 100条数据
-// 每页20条
-// 共5页
-
-// 268条
-// 每页18条
-// 共页
-// pages = (count + pageSize - 1) / pageSize;
-// pages = (268 + 18 - 1) / 18;
-
 #import "HWStatusFrame.h"
 #import "HWStatus.h"
 #import "HWUser.h"

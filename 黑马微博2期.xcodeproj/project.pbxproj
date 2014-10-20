@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804CFA619F2662800D3B0D9 /* fakeStatus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1804CFA519F2662800D3B0D9 /* fakeStatus.plist */; };
+		1804CFA919F2682100D3B0D9 /* HWIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804CFA819F2682100D3B0D9 /* HWIconView.m */; };
 		180E083619EA0AC9001D9142 /* HWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E083519EA0AC9001D9142 /* HWAccount.m */; };
 		180E083D19EA0DCB001D9142 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E083919EA0DCB001D9142 /* MBProgressHUD+MJ.m */; };
 		180E083E19EA0DCB001D9142 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180E083A19EA0DCB001D9142 /* MBProgressHUD.bundle */; };
@@ -59,7 +61,6 @@
 		183BD44819E7DF2700C0A26A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BD43F19E7DF2700C0A26A /* AFURLSessionManager.m */; };
 		18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */; };
 		18421F1D19EFA59900AFDFC8 /* HWStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */; };
-		18421F6A19EFC24400AFDFC8 /* fakeStatus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18421F6919EFC24400AFDFC8 /* fakeStatus.plist */; };
 		18728E2B19E37EB8008F3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2A19E37EB8008F3BFE /* Foundation.framework */; };
 		18728E2D19E37EB8008F3BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */; };
 		18728E2F19E37EB8008F3BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2E19E37EB8008F3BFE /* UIKit.framework */; };
@@ -110,6 +111,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1804CFA519F2662800D3B0D9 /* fakeStatus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fakeStatus.plist; sourceTree = "<group>"; };
+		1804CFA719F2682100D3B0D9 /* HWIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIconView.h; sourceTree = "<group>"; };
+		1804CFA819F2682100D3B0D9 /* HWIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWIconView.m; sourceTree = "<group>"; };
 		180E083419EA0AC9001D9142 /* HWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAccount.h; sourceTree = "<group>"; };
 		180E083519EA0AC9001D9142 /* HWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWAccount.m; sourceTree = "<group>"; };
 		180E083819EA0DCB001D9142 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
@@ -215,7 +219,6 @@
 		18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPhoto.m; sourceTree = "<group>"; };
 		18421F1B19EFA59900AFDFC8 /* HWStatusToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusToolbar.h; sourceTree = "<group>"; };
 		18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusToolbar.m; sourceTree = "<group>"; };
-		18421F6919EFC24400AFDFC8 /* fakeStatus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fakeStatus.plist; sourceTree = "<group>"; };
 		18728E2719E37EB8008F3BFE /* 黑马微博2期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑马微博2期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18728E2A19E37EB8008F3BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -491,7 +494,7 @@
 		18728E3119E37EB8008F3BFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				18421F6919EFC24400AFDFC8 /* fakeStatus.plist */,
+				1804CFA519F2662800D3B0D9 /* fakeStatus.plist */,
 				18728E4219E37EB8008F3BFE /* Images.xcassets */,
 				18728E3219E37EB8008F3BFE /* 黑马微博2期-Info.plist */,
 				18728E3319E37EB8008F3BFE /* InfoPlist.strings */,
@@ -701,6 +704,8 @@
 				1839F66A19E4E09A00280C20 /* HWDropdownMenu.m */,
 				18ECFACD19E527300009431B /* HWTabBar.h */,
 				18ECFACE19E527300009431B /* HWTabBar.m */,
+				1804CFA719F2682100D3B0D9 /* HWIconView.h */,
+				1804CFA819F2682100D3B0D9 /* HWIconView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -888,7 +893,7 @@
 				18728ECC19E3D91D008F3BFE /* HWTest2ViewController.xib in Resources */,
 				187433FB19ECB012009F4EDC /* HWLoadMoreFooter.xib in Resources */,
 				18728E3519E37EB8008F3BFE /* InfoPlist.strings in Resources */,
-				18421F6A19EFC24400AFDFC8 /* fakeStatus.plist in Resources */,
+				1804CFA619F2662800D3B0D9 /* fakeStatus.plist in Resources */,
 				18728ECE19E3D91D008F3BFE /* HWTest3ViewController.xib in Resources */,
 				180E083E19EA0DCB001D9142 /* MBProgressHUD.bundle in Resources */,
 			);
@@ -932,6 +937,7 @@
 				183BD44819E7DF2700C0A26A /* AFURLSessionManager.m in Sources */,
 				181BBED719EA6CD00077569F /* HWUser.m in Sources */,
 				181BBED119EA6AF00077569F /* UIImage+WebP.m in Sources */,
+				1804CFA919F2682100D3B0D9 /* HWIconView.m in Sources */,
 				18728EC119E3D91D008F3BFE /* HWHomeViewController.m in Sources */,
 				181BBEC719EA6AF00077569F /* SDImageCache.m in Sources */,
 				18728EC319E3D91D008F3BFE /* HWNavigationController.m in Sources */,

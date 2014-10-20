@@ -11,6 +11,10 @@
 #import "HWAccountTool.h"
 #import "SDWebImageManager.h"
 
+@interface HWAppDelegate()
+@property (nonatomic, assign) UIBackgroundTaskIdentifier task;
+@end
+
 @implementation HWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -51,12 +55,31 @@
      *  4.后台运行状态
      */
     // 向操作系统申请后台运行的资格，能维持多久，是不确定的
-    UIBackgroundTaskIdentifier task = [application beginBackgroundTaskWithExpirationHandler:^{
+//    self.task = [application beginBackgroundTaskWithExpirationHandler:^{
+//        // 当申请的后台运行时间已经结束（过期），就会调用这个block
+//        
+//        // 赶紧结束任务
+//        [application endBackgroundTask:self.task];
+//    }];
+    __block UIBackgroundTaskIdentifier task = [application beginBackgroundTaskWithExpirationHandler:^{
+        // 当申请的后台运行时间已经结束（过期），就会调用这个block
+
+        // 赶紧结束任务
+        [application endBackgroundTask:task];
+    }];
+    
+    /**
+    1.定义变量UIBackgroundTaskIdentifier task
+    2.执行右边的代码
+    [application beginBackgroundTaskWithExpirationHandler:^{
         // 当申请的后台运行时间已经结束（过期），就会调用这个block
         
         // 赶紧结束任务
         [application endBackgroundTask:task];
     }];
+     3.将右边方法的返回值赋值给task
+     */
+    
     
     // 在Info.plst中设置后台模式：Required background modes == App plays audio or streams audio/video using AirPlay
     // 搞一个0kb的MP3文件，没有声音
