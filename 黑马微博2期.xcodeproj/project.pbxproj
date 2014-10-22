@@ -67,6 +67,7 @@
 		1865F0D019F734BF00EA5A3B /* HWEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */; };
 		1865F0D319F7364700EA5A3B /* HWEmotionTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */; };
 		1865F0D619F736E200EA5A3B /* HWEmotionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D519F736E200EA5A3B /* HWEmotionListView.m */; };
+		1865F0D919F74D6900EA5A3B /* HWEmotionTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D819F74D6900EA5A3B /* HWEmotionTabBarButton.m */; };
 		18728E2B19E37EB8008F3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2A19E37EB8008F3BFE /* Foundation.framework */; };
 		18728E2D19E37EB8008F3BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */; };
 		18728E2F19E37EB8008F3BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2E19E37EB8008F3BFE /* UIKit.framework */; };
@@ -238,6 +239,8 @@
 		1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionTabBar.m; sourceTree = "<group>"; };
 		1865F0D419F736E200EA5A3B /* HWEmotionListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionListView.h; sourceTree = "<group>"; };
 		1865F0D519F736E200EA5A3B /* HWEmotionListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionListView.m; sourceTree = "<group>"; };
+		1865F0D719F74D6900EA5A3B /* HWEmotionTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTabBarButton.h; sourceTree = "<group>"; };
+		1865F0D819F74D6900EA5A3B /* HWEmotionTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionTabBarButton.m; sourceTree = "<group>"; };
 		18728E2719E37EB8008F3BFE /* 黑马微博2期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑马微博2期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18728E2A19E37EB8008F3BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -457,6 +460,8 @@
 				1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */,
 				1865F0D119F7364700EA5A3B /* HWEmotionTabBar.h */,
 				1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */,
+				1865F0D719F74D6900EA5A3B /* HWEmotionTabBarButton.h */,
+				1865F0D819F74D6900EA5A3B /* HWEmotionTabBarButton.m */,
 				1865F0D419F736E200EA5A3B /* HWEmotionListView.h */,
 				1865F0D519F736E200EA5A3B /* HWEmotionListView.m */,
 			);
@@ -1051,6 +1056,7 @@
 				18728EC819E3D91D008F3BFE /* HWProfileViewController.m in Sources */,
 				18421F1D19EFA59900AFDFC8 /* HWStatusToolbar.m in Sources */,
 				183BD44319E7DF2700C0A26A /* AFNetworkReachabilityManager.m in Sources */,
+				1865F0D919F74D6900EA5A3B /* HWEmotionTabBarButton.m in Sources */,
 				183BD44719E7DF2700C0A26A /* AFURLResponseSerialization.m in Sources */,
 				181BBECE19EA6AF00077569F /* UIButton+WebCache.m in Sources */,
 				181BBECA19EA6AF00077569F /* SDWebImageDownloader.m in Sources */,

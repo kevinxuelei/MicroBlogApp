@@ -22,13 +22,25 @@
 @property (nonatomic, weak) HWComposeToolbar *toolbar;
 /** 相册（存放拍照或者相册中选择的图片） */
 @property (nonatomic, weak) HWComposePhotosView *photosView;
+#warning 一定要用strong
 /** 表情键盘 */
-@property (nonatomic, weak) HWEmotionKeyboard *emotionKeyboard;
+@property (nonatomic, strong) HWEmotionKeyboard *emotionKeyboard;
 /** 是否正在切换键盘 */
 @property (nonatomic, assign) BOOL switchingKeybaord;
 @end
 
 @implementation HWComposeViewController
+#pragma mark - 懒加载
+- (HWEmotionKeyboard *)emotionKeyboard
+{
+    if (!_emotionKeyboard) {
+        self.emotionKeyboard = [[HWEmotionKeyboard alloc] init];
+        self.emotionKeyboard.width = self.view.width;
+        self.emotionKeyboard.height = 216;
+    }
+    return _emotionKeyboard;
+}
+
 #pragma mark - 系统方法
 - (void)viewDidLoad
 {
@@ -293,12 +305,15 @@
 {
     // self.textView.inputView == nil : 使用的是系统自带的键盘
     if (self.textView.inputView == nil) { // 切换为自定义的表情键盘
-        HWEmotionKeyboard *emotionKeyboard = [[HWEmotionKeyboard alloc] init];
-        emotionKeyboard.width = self.view.width;
-        emotionKeyboard.height = 216;
-        self.textView.inputView = emotionKeyboard;
+        self.textView.inputView = self.emotionKeyboard;
+        
+        // 显示键盘按钮
+        self.toolbar.showKeyboardButton = YES;
     } else { // 切换为系统自带的键盘
         self.textView.inputView = nil;
+        
+        // 显示表情按钮
+        self.toolbar.showKeyboardButton = NO;
     }
     
     // 开始切换键盘
@@ -306,9 +321,6 @@
     
     // 退出键盘
     [self.textView endEditing:YES];
-//    [self.view endEditing:YES];
-//    [self.view.window endEditing:YES];
-//    [self.textView resignFirstResponder];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 弹出键盘

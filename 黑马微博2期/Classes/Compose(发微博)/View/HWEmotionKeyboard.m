@@ -10,7 +10,7 @@
 #import "HWEmotionListView.h"
 #import "HWEmotionTabBar.h"
 
-@interface HWEmotionKeyboard()
+@interface HWEmotionKeyboard() <HWEmotionTabBarDelegate>
 /** 表情内容 */
 @property (nonatomic, weak) HWEmotionListView *listView;
 /** tabbar */
@@ -31,7 +31,7 @@
         
         // 2.tabbar
         HWEmotionTabBar *tabBar = [[HWEmotionTabBar alloc] init];
-        tabBar.backgroundColor = HWRandomColor;
+        tabBar.delegate = self;
         [self addSubview:tabBar];
         self.tabBar = tabBar;
     }
@@ -44,7 +44,7 @@
     
     // 1.tabbar
     self.tabBar.width = self.width;
-    self.tabBar.height = 44;
+    self.tabBar.height = 37;
     self.tabBar.x = 0;
     self.tabBar.y = self.height - self.tabBar.height;
     
@@ -52,6 +52,28 @@
     self.listView.x = self.listView.y = 0;
     self.listView.width = self.width;
     self.listView.height = self.tabBar.y;
+}
+
+#pragma mark - HWEmotionTabBarDelegate
+- (void)emotionTabBar:(HWEmotionTabBar *)tabBar didSelectButton:(HWEmotionTabBarButtonType)buttonType
+{
+    switch (buttonType) {
+        case HWEmotionTabBarButtonTypeRecent: // 最近
+            HWLog(@"最近");
+            break;
+            
+        case HWEmotionTabBarButtonTypeDefault: // 默认
+            HWLog(@"默认");
+            break;
+            
+        case HWEmotionTabBarButtonTypeEmoji: // Emoji
+            HWLog(@"Emoji");
+            break;
+            
+        case HWEmotionTabBarButtonTypeLxh: // Lxh
+            HWLog(@"Lxh");
+            break;
+    }
 }
 
 @end
