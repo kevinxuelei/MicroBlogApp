@@ -48,6 +48,7 @@
 		1830271219F491FC00ED7435 /* fakeStatus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1830271119F491FC00ED7435 /* fakeStatus.plist */; };
 		1830271719F492ED00ED7435 /* HWComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830271619F492ED00ED7435 /* HWComposeViewController.m */; };
 		1830271A19F4A78B00ED7435 /* HWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830271919F4A78B00ED7435 /* HWTextView.m */; };
+		1830271E19F4E80B00ED7435 /* HWComposeToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830271D19F4E80B00ED7435 /* HWComposeToolbar.m */; };
 		1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66719E4CE8C00280C20 /* HWSearchBar.m */; };
 		1839F66B19E4E09A00280C20 /* HWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66A19E4E09A00280C20 /* HWDropdownMenu.m */; };
 		1839F66E19E4E67900280C20 /* HWTitleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839F66D19E4E67900280C20 /* HWTitleMenuViewController.m */; };
@@ -90,6 +91,7 @@
 		18728ECE19E3D91D008F3BFE /* HWTest3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18728EBF19E3D91D008F3BFE /* HWTest3ViewController.xib */; };
 		187433F919ECAFFF009F4EDC /* HWLoadMoreFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 187433F819ECAFFF009F4EDC /* HWLoadMoreFooter.m */; };
 		187433FB19ECB012009F4EDC /* HWLoadMoreFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187433FA19ECB012009F4EDC /* HWLoadMoreFooter.xib */; };
+		18745B1019F501F50029A57A /* HWComposePhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18745B0F19F501F50029A57A /* HWComposePhotosView.m */; };
 		189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */; };
 		189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */; };
 		18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */; };
@@ -194,6 +196,8 @@
 		1830271619F492ED00ED7435 /* HWComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWComposeViewController.m; sourceTree = "<group>"; };
 		1830271819F4A78B00ED7435 /* HWTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTextView.h; sourceTree = "<group>"; };
 		1830271919F4A78B00ED7435 /* HWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTextView.m; sourceTree = "<group>"; };
+		1830271C19F4E80B00ED7435 /* HWComposeToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWComposeToolbar.h; sourceTree = "<group>"; };
+		1830271D19F4E80B00ED7435 /* HWComposeToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWComposeToolbar.m; sourceTree = "<group>"; };
 		1839F66619E4CE8C00280C20 /* HWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchBar.h; sourceTree = "<group>"; };
 		1839F66719E4CE8C00280C20 /* HWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchBar.m; sourceTree = "<group>"; };
 		1839F66919E4E09A00280C20 /* HWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDropdownMenu.h; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 		187433F719ECAFFF009F4EDC /* HWLoadMoreFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWLoadMoreFooter.h; sourceTree = "<group>"; };
 		187433F819ECAFFF009F4EDC /* HWLoadMoreFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWLoadMoreFooter.m; sourceTree = "<group>"; };
 		187433FA19ECB012009F4EDC /* HWLoadMoreFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWLoadMoreFooter.xib; sourceTree = "<group>"; };
+		18745B0E19F501F50029A57A /* HWComposePhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWComposePhotosView.h; sourceTree = "<group>"; };
+		18745B0F19F501F50029A57A /* HWComposePhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWComposePhotosView.m; sourceTree = "<group>"; };
 		189B5CE819E3DC5300C3CEB4 /* HWItemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWItemTool.h; path = ../HWItemTool.h; sourceTree = "<group>"; };
 		189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWItemTool.m; path = ../HWItemTool.m; sourceTree = "<group>"; };
 		189B5CEB19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -416,6 +422,7 @@
 		1830271319F492D900ED7435 /* Compose(发微博) */ = {
 			isa = PBXGroup;
 			children = (
+				1830271B19F4E7F500ED7435 /* View */,
 				1830271419F492D900ED7435 /* Controller */,
 			);
 			path = "Compose(发微博)";
@@ -428,6 +435,17 @@
 				1830271619F492ED00ED7435 /* HWComposeViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		1830271B19F4E7F500ED7435 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1830271C19F4E80B00ED7435 /* HWComposeToolbar.h */,
+				1830271D19F4E80B00ED7435 /* HWComposeToolbar.m */,
+				18745B0E19F501F50029A57A /* HWComposePhotosView.h */,
+				18745B0F19F501F50029A57A /* HWComposePhotosView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		183BD41E19E7D1A600C0A26A /* OAuth(授权) */ = {
@@ -947,6 +965,7 @@
 				181BBF4019EA79F10077569F /* MJConst.m in Sources */,
 				181BBECC19EA6AF00077569F /* SDWebImageManager.m in Sources */,
 				183BD44619E7DF2700C0A26A /* AFURLRequestSerialization.m in Sources */,
+				1830271E19F4E80B00ED7435 /* HWComposeToolbar.m in Sources */,
 				18EFB79919F20D30003D4148 /* NSString+Extension.m in Sources */,
 				180E084819EA29C8001D9142 /* Foundation+Log.m in Sources */,
 				180E083D19EA0DCB001D9142 /* MBProgressHUD+MJ.m in Sources */,
@@ -960,6 +979,7 @@
 				181BBF4719EA79F10077569F /* NSObject+MJCoding.m in Sources */,
 				181BBF3F19EA79F10077569F /* MJArgument.m in Sources */,
 				181BBF4819EA79F10077569F /* NSObject+MJKeyValue.m in Sources */,
+				18745B1019F501F50029A57A /* HWComposePhotosView.m in Sources */,
 				183BD44819E7DF2700C0A26A /* AFURLSessionManager.m in Sources */,
 				1830271A19F4A78B00ED7435 /* HWTextView.m in Sources */,
 				181BBED719EA6CD00077569F /* HWUser.m in Sources */,

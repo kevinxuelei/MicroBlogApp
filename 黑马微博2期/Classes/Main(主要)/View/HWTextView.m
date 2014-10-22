@@ -14,9 +14,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // 不要设置自己的delegate为自己
-//        self.delegate = self;
-        
         // 通知
         // 当UITextView的文字发生改变时，UITextView自己会发出一个UITextViewTextDidChangeNotification通知
         [HWNotificationCenter addObserver:self selector:@selector(textDidChange) name:UITextViewTextDidChangeNotification object:self];
