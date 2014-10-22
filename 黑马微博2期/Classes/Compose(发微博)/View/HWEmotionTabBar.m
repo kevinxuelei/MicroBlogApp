@@ -19,7 +19,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupBtn:NSLocalizedString(@"recent", nil) buttonType:HWEmotionTabBarButtonTypeRecent];
+        [self setupBtn:@"最近" buttonType:HWEmotionTabBarButtonTypeRecent];
         [self setupBtn:@"默认" buttonType:HWEmotionTabBarButtonTypeDefault];
 //        [self btnClick:[self setupBtn:@"默认" buttonType:HWEmotionTabBarButtonTypeDefault]];
         [self setupBtn:@"Emoji" buttonType:HWEmotionTabBarButtonTypeEmoji];
@@ -41,11 +41,6 @@
     btn.tag = buttonType;
     [btn setTitle:title forState:UIControlStateNormal];
     [self addSubview:btn];
-    
-    // 选中“默认”按钮
-    if (buttonType == HWEmotionTabBarButtonTypeDefault) {
-        [self btnClick:btn];
-    }
     
     // 设置背景图片
     NSString *image = @"compose_emotion_table_mid_normal";
@@ -79,6 +74,14 @@
         btn.x = i * btnW;
         btn.height = btnH;
     }
+}
+
+- (void)setDelegate:(id<HWEmotionTabBarDelegate>)delegate
+{
+    _delegate = delegate;
+    
+    // 选中“默认”按钮
+    [self btnClick:(HWEmotionTabBarButton *)[self viewWithTag:HWEmotionTabBarButtonTypeDefault]];
 }
 
 /**

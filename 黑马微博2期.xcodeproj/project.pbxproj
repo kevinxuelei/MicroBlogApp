@@ -64,10 +64,12 @@
 		183BD44819E7DF2700C0A26A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BD43F19E7DF2700C0A26A /* AFURLSessionManager.m */; };
 		18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */; };
 		18421F1D19EFA59900AFDFC8 /* HWStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */; };
+		185B770819F7895100738FC7 /* HWEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B770719F7895100738FC7 /* HWEmotion.m */; };
 		1865F0D019F734BF00EA5A3B /* HWEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */; };
 		1865F0D319F7364700EA5A3B /* HWEmotionTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */; };
 		1865F0D619F736E200EA5A3B /* HWEmotionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D519F736E200EA5A3B /* HWEmotionListView.m */; };
 		1865F0D919F74D6900EA5A3B /* HWEmotionTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D819F74D6900EA5A3B /* HWEmotionTabBarButton.m */; };
+		1865F29F19F75BEF00EA5A3B /* EmotionIcons in Resources */ = {isa = PBXBuildFile; fileRef = 1865F29E19F75BEF00EA5A3B /* EmotionIcons */; };
 		18728E2B19E37EB8008F3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2A19E37EB8008F3BFE /* Foundation.framework */; };
 		18728E2D19E37EB8008F3BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */; };
 		18728E2F19E37EB8008F3BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2E19E37EB8008F3BFE /* UIKit.framework */; };
@@ -233,6 +235,8 @@
 		18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPhoto.m; sourceTree = "<group>"; };
 		18421F1B19EFA59900AFDFC8 /* HWStatusToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusToolbar.h; sourceTree = "<group>"; };
 		18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusToolbar.m; sourceTree = "<group>"; };
+		185B770619F7895100738FC7 /* HWEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotion.h; sourceTree = "<group>"; };
+		185B770719F7895100738FC7 /* HWEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotion.m; sourceTree = "<group>"; };
 		1865F0CE19F734BF00EA5A3B /* HWEmotionKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionKeyboard.h; sourceTree = "<group>"; };
 		1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionKeyboard.m; sourceTree = "<group>"; };
 		1865F0D119F7364700EA5A3B /* HWEmotionTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTabBar.h; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 		1865F0D519F736E200EA5A3B /* HWEmotionListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionListView.m; sourceTree = "<group>"; };
 		1865F0D719F74D6900EA5A3B /* HWEmotionTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTabBarButton.h; sourceTree = "<group>"; };
 		1865F0D819F74D6900EA5A3B /* HWEmotionTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionTabBarButton.m; sourceTree = "<group>"; };
+		1865F29E19F75BEF00EA5A3B /* EmotionIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmotionIcons; sourceTree = "<group>"; };
 		18728E2719E37EB8008F3BFE /* 黑马微博2期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑马微博2期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18728E2A19E37EB8008F3BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -434,6 +439,7 @@
 		1830271319F492D900ED7435 /* Compose(发微博) */ = {
 			isa = PBXGroup;
 			children = (
+				185B770519F7893F00738FC7 /* Model */,
 				1830271B19F4E7F500ED7435 /* View */,
 				1830271419F492D900ED7435 /* Controller */,
 			);
@@ -513,6 +519,15 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		185B770519F7893F00738FC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185B770619F7895100738FC7 /* HWEmotion.h */,
+				185B770719F7895100738FC7 /* HWEmotion.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		18728E1E19E37EB8008F3BFE = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +570,7 @@
 		18728E3119E37EB8008F3BFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1865F29E19F75BEF00EA5A3B /* EmotionIcons */,
 				1830271119F491FC00ED7435 /* fakeStatus.plist */,
 				18728E4219E37EB8008F3BFE /* Images.xcassets */,
 				18728E3219E37EB8008F3BFE /* 黑马微博2期-Info.plist */,
@@ -958,6 +974,7 @@
 				187433FB19ECB012009F4EDC /* HWLoadMoreFooter.xib in Resources */,
 				18728E3519E37EB8008F3BFE /* InfoPlist.strings in Resources */,
 				1830271219F491FC00ED7435 /* fakeStatus.plist in Resources */,
+				1865F29F19F75BEF00EA5A3B /* EmotionIcons in Resources */,
 				18728ECE19E3D91D008F3BFE /* HWTest3ViewController.xib in Resources */,
 				180E083E19EA0DCB001D9142 /* MBProgressHUD.bundle in Resources */,
 			);
@@ -1042,6 +1059,7 @@
 				183BD44219E7DF2700C0A26A /* AFHTTPSessionManager.m in Sources */,
 				1839F66E19E4E67900280C20 /* HWTitleMenuViewController.m in Sources */,
 				18728ECD19E3D91D008F3BFE /* HWTest3ViewController.m in Sources */,
+				185B770819F7895100738FC7 /* HWEmotion.m in Sources */,
 				18728ECB19E3D91D008F3BFE /* HWTest2ViewController.m in Sources */,
 				181BBED319EA6AF00077569F /* UIImageView+WebCache.m in Sources */,
 				183BD44119E7DF2700C0A26A /* AFHTTPRequestOperationManager.m in Sources */,
