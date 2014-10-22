@@ -13,6 +13,7 @@
 #import "AFNetworking.h"
 #import "HWComposeToolbar.h"
 #import "HWComposePhotosView.h"
+#import "HWEmotionKeyboard.h"
 
 @interface HWComposeViewController () <UITextViewDelegate, HWComposeToolbarDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 /** 输入控件 */
@@ -21,8 +22,10 @@
 @property (nonatomic, weak) HWComposeToolbar *toolbar;
 /** 相册（存放拍照或者相册中选择的图片） */
 @property (nonatomic, weak) HWComposePhotosView *photosView;
-
-//@property (nonatomic, assign) BOOL  picking;
+/** 表情键盘 */
+@property (nonatomic, weak) HWEmotionKeyboard *emotionKeyboard;
+/** 是否正在切换键盘 */
+@property (nonatomic, assign) BOOL switchingKeybaord;
 @end
 
 @implementation HWComposeViewController
@@ -45,17 +48,6 @@
     // 添加相册
     [self setupPhotosView];
 }
-
-
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//
-//    HWLog(@"viewWillAppear");
-//
-//    // 成为第一响应者（能输入文本的控件一旦成为第一响应者，就会叫出相应的键盘）
-//    [self.textView becomeFirstResponder];
-//}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -96,10 +88,6 @@
     toolbar.delegate = self;
     [self.view addSubview:toolbar];
     self.toolbar = toolbar;
-    // inputAccessoryView设置显示在键盘顶部的内容
-//    self.textView.inputAccessoryView = toolbar;
-    // inputView设置键盘
-//    self.textView.inputView = [UIButton buttonWithType:UIButtonTypeContactAdd];
 }
 
 /**
@@ -157,14 +145,6 @@
     
     // 键盘通知
     // 键盘的frame发生改变时发出的通知（位置和尺寸）
-    //    UIKeyboardWillChangeFrameNotification
-    //    UIKeyboardDidChangeFrameNotification
-    // 键盘显示时发出的通知
-    //    UIKeyboardWillShowNotification
-    //    UIKeyboardDidShowNotification
-    // 键盘隐藏时发出的通知
-    //    UIKeyboardWillHideNotification
-    //    UIKeyboardDidHideNotification
     [HWNotificationCenter addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
 }
 
@@ -174,17 +154,8 @@
  */
 - (void)keyboardWillChangeFrame:(NSNotification *)notification
 {
-//    if (self.picking) return;
-    /**
-     notification.userInfo = @{
-     // 键盘弹出\隐藏后的frame
-     UIKeyboardFrameEndUserInfoKey = NSRect: {{0, 352}, {320, 216}},
-     // 键盘弹出\隐藏所耗费的时间
-     UIKeyboardAnimationDurationUserInfoKey = 0.25,
-     // 键盘弹出\隐藏动画的执行节奏（先快后慢，匀速）
-     UIKeyboardAnimationCurveUserInfoKey = 7
-     }
-     */
+    // 如果正在切换键盘，就不要执行后面的代码
+    if (self.switchingKeybaord) return;
     
     NSDictionary *userInfo = notification.userInfo;
     // 动画的持续时间
@@ -200,7 +171,6 @@
         } else {
             self.toolbar.y = keyboardF.origin.y - self.toolbar.height;
         }
-        HWLog(@"%@", NSStringFromCGRect(self.toolbar.frame));
     }];
 }
 
@@ -310,12 +280,45 @@
             break;
             
         case HWComposeToolbarButtonTypeEmotion: // 表情\键盘
-            HWLog(@"--- 表情");
+            [self switchKeyboard];
             break;
     }
 }
 
 #pragma mark - 其他方法
+/**
+ *  切换键盘
+ */
+- (void)switchKeyboard
+{
+    // self.textView.inputView == nil : 使用的是系统自带的键盘
+    if (self.textView.inputView == nil) { // 切换为自定义的表情键盘
+        HWEmotionKeyboard *emotionKeyboard = [[HWEmotionKeyboard alloc] init];
+        emotionKeyboard.width = self.view.width;
+        emotionKeyboard.height = 216;
+        self.textView.inputView = emotionKeyboard;
+    } else { // 切换为系统自带的键盘
+        self.textView.inputView = nil;
+    }
+    
+    // 开始切换键盘
+    self.switchingKeybaord = YES;
+    
+    // 退出键盘
+    [self.textView endEditing:YES];
+//    [self.view endEditing:YES];
+//    [self.view.window endEditing:YES];
+//    [self.textView resignFirstResponder];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // 弹出键盘
+        [self.textView becomeFirstResponder];
+        
+        // 结束切换键盘
+        self.switchingKeybaord = NO;
+    });
+}
+
 - (void)openCamera
 {
     [self openImagePickerController:UIImagePickerControllerSourceTypeCamera];
@@ -331,8 +334,6 @@
 - (void)openImagePickerController:(UIImagePickerControllerSourceType)type
 {
     if (![UIImagePickerController isSourceTypeAvailable:type]) return;
-    
-//    self.picking = YES;
     
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
     ipc.sourceType = type;
@@ -353,17 +354,11 @@
     
     // 添加图片到photosView中
     [self.photosView addPhoto:image];
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.picking = NO;
-//    });
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.picking = NO;
-//    });
+    
 }
 
 @end

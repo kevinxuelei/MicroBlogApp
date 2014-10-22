@@ -64,6 +64,9 @@
 		183BD44819E7DF2700C0A26A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BD43F19E7DF2700C0A26A /* AFURLSessionManager.m */; };
 		18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */; };
 		18421F1D19EFA59900AFDFC8 /* HWStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */; };
+		1865F0D019F734BF00EA5A3B /* HWEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */; };
+		1865F0D319F7364700EA5A3B /* HWEmotionTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */; };
+		1865F0D619F736E200EA5A3B /* HWEmotionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D519F736E200EA5A3B /* HWEmotionListView.m */; };
 		18728E2B19E37EB8008F3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2A19E37EB8008F3BFE /* Foundation.framework */; };
 		18728E2D19E37EB8008F3BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */; };
 		18728E2F19E37EB8008F3BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18728E2E19E37EB8008F3BFE /* UIKit.framework */; };
@@ -229,6 +232,12 @@
 		18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPhoto.m; sourceTree = "<group>"; };
 		18421F1B19EFA59900AFDFC8 /* HWStatusToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusToolbar.h; sourceTree = "<group>"; };
 		18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusToolbar.m; sourceTree = "<group>"; };
+		1865F0CE19F734BF00EA5A3B /* HWEmotionKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionKeyboard.h; sourceTree = "<group>"; };
+		1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionKeyboard.m; sourceTree = "<group>"; };
+		1865F0D119F7364700EA5A3B /* HWEmotionTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTabBar.h; sourceTree = "<group>"; };
+		1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionTabBar.m; sourceTree = "<group>"; };
+		1865F0D419F736E200EA5A3B /* HWEmotionListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionListView.h; sourceTree = "<group>"; };
+		1865F0D519F736E200EA5A3B /* HWEmotionListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionListView.m; sourceTree = "<group>"; };
 		18728E2719E37EB8008F3BFE /* 黑马微博2期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑马微博2期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18728E2A19E37EB8008F3BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18728E2C19E37EB8008F3BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -444,6 +453,12 @@
 				1830271D19F4E80B00ED7435 /* HWComposeToolbar.m */,
 				18745B0E19F501F50029A57A /* HWComposePhotosView.h */,
 				18745B0F19F501F50029A57A /* HWComposePhotosView.m */,
+				1865F0CE19F734BF00EA5A3B /* HWEmotionKeyboard.h */,
+				1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */,
+				1865F0D119F7364700EA5A3B /* HWEmotionTabBar.h */,
+				1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */,
+				1865F0D419F736E200EA5A3B /* HWEmotionListView.h */,
+				1865F0D519F736E200EA5A3B /* HWEmotionListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -959,6 +974,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181BBF4119EA79F10077569F /* MJFoundation.m in Sources */,
+				1865F0D619F736E200EA5A3B /* HWEmotionListView.m in Sources */,
 				181BBEDA19EA6CDC0077569F /* HWStatus.m in Sources */,
 				18EFB79619F2045E003D4148 /* NSDate+Extension.m in Sources */,
 				181BBEC919EA6AF00077569F /* SDWebImageDecoder.m in Sources */,
@@ -977,6 +993,7 @@
 				181BBEC519EA6AF00077569F /* MKAnnotationView+WebCache.m in Sources */,
 				18728EC419E3D91D008F3BFE /* HWTabBarViewController.m in Sources */,
 				181BBF4719EA79F10077569F /* NSObject+MJCoding.m in Sources */,
+				1865F0D319F7364700EA5A3B /* HWEmotionTabBar.m in Sources */,
 				181BBF3F19EA79F10077569F /* MJArgument.m in Sources */,
 				181BBF4819EA79F10077569F /* NSObject+MJKeyValue.m in Sources */,
 				18745B1019F501F50029A57A /* HWComposePhotosView.m in Sources */,
@@ -1015,6 +1032,7 @@
 				18728EC619E3D91D008F3BFE /* main.m in Sources */,
 				1830271719F492ED00ED7435 /* HWComposeViewController.m in Sources */,
 				1839F66819E4CE8C00280C20 /* HWSearchBar.m in Sources */,
+				1865F0D019F734BF00EA5A3B /* HWEmotionKeyboard.m in Sources */,
 				189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */,
 				183BD44219E7DF2700C0A26A /* AFHTTPSessionManager.m in Sources */,
 				1839F66E19E4E67900280C20 /* HWTitleMenuViewController.m in Sources */,
