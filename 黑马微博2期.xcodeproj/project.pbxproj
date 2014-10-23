@@ -102,6 +102,7 @@
 		18745B1019F501F50029A57A /* HWComposePhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18745B0F19F501F50029A57A /* HWComposePhotosView.m */; };
 		189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */; };
 		189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */; };
+		189D88D819F8EE64005459E5 /* HWEmotionAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D88D719F8EE64005459E5 /* HWEmotionAttachment.m */; };
 		18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */; };
 		18BD6D9C19F8871900C47122 /* HWEmotionPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6D9B19F8871900C47122 /* HWEmotionPopView.m */; };
 		18BD6D9E19F8873000C47122 /* HWEmotionPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */; };
@@ -305,6 +306,8 @@
 		189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWItemTool.m; path = ../HWItemTool.m; sourceTree = "<group>"; };
 		189B5CEB19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		189D88D619F8EE64005459E5 /* HWEmotionAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionAttachment.h; sourceTree = "<group>"; };
+		189D88D719F8EE64005459E5 /* HWEmotionAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionAttachment.m; sourceTree = "<group>"; };
 		18B35D7719E7633300A00499 /* HWNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNewfeatureViewController.h; sourceTree = "<group>"; };
 		18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNewfeatureViewController.m; sourceTree = "<group>"; };
 		18BD6D9A19F8871900C47122 /* HWEmotionPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionPopView.h; sourceTree = "<group>"; };
@@ -553,6 +556,8 @@
 			children = (
 				185B770619F7895100738FC7 /* HWEmotion.h */,
 				185B770719F7895100738FC7 /* HWEmotion.m */,
+				189D88D619F8EE64005459E5 /* HWEmotionAttachment.h */,
+				189D88D719F8EE64005459E5 /* HWEmotionAttachment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1114,6 +1119,7 @@
 				18728EC819E3D91D008F3BFE /* HWProfileViewController.m in Sources */,
 				18421F1D19EFA59900AFDFC8 /* HWStatusToolbar.m in Sources */,
 				183BD44319E7DF2700C0A26A /* AFNetworkReachabilityManager.m in Sources */,
+				189D88D819F8EE64005459E5 /* HWEmotionAttachment.m in Sources */,
 				1865F0D919F74D6900EA5A3B /* HWEmotionTabBarButton.m in Sources */,
 				183BD44719E7DF2700C0A26A /* AFURLResponseSerialization.m in Sources */,
 				181BBECE19EA6AF00077569F /* UIButton+WebCache.m in Sources */,

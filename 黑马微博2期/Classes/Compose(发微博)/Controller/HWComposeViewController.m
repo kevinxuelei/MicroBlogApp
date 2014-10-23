@@ -163,9 +163,20 @@
     
     // 表情选中的通知
     [HWNotificationCenter addObserver:self selector:@selector(emotionDidSelect:) name:HWEmotionDidSelectNotification object:nil];
+    
+    // 删除文字的通知
+    [HWNotificationCenter addObserver:self selector:@selector(emotionDidDelete) name:HWEmotionDidDeleteNotification object:nil];
 }
 
 #pragma mark - 监听方法
+/**
+ *  删除文字
+ */
+- (void)emotionDidDelete
+{
+    [self.textView deleteBackward];
+}
+
 /**
  *  表情被选中了
  */
@@ -231,7 +242,7 @@
     // 2.拼接请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = [HWAccountTool account].access_token;
-    params[@"status"] = self.textView.text;
+    params[@"status"] = self.textView.fullText;
     
     // 3.发送请求
     [mgr POST:@"https://upload.api.weibo.com/2/statuses/upload.json" parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
@@ -261,7 +272,7 @@
     // 2.拼接请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = [HWAccountTool account].access_token;
-    params[@"status"] = self.textView.text;
+    params[@"status"] = self.textView.fullText;
     
     // 3.发送请求
     [mgr POST:@"https://api.weibo.com/2/statuses/update.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
@@ -336,12 +347,12 @@
     // 退出键盘
     [self.textView endEditing:YES];
     
+    // 结束切换键盘
+    self.switchingKeybaord = NO;
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 弹出键盘
         [self.textView becomeFirstResponder];
-        
-        // 结束切换键盘
-        self.switchingKeybaord = NO;
     });
 }
 

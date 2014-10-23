@@ -21,7 +21,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-        
         // 1.UIScollView
         UIScrollView *scrollView = [[UIScrollView alloc] init];
         scrollView.pagingEnabled = YES;

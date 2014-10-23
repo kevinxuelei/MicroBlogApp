@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class HWEmotion;
+@class HWEmotion, HWEmotionButton;
+
 @interface HWEmotionPopView : UIView
 + (instancetype)popView;
 
-@property (nonatomic, strong) HWEmotion *emotion;
+- (void)showFrom:(HWEmotionButton *)button;
 @end

@@ -11,4 +11,6 @@
 
 @interface HWEmotionTextView : HWTextView
 - (void)insertEmotion:(HWEmotion *)emotion;
+
+- (NSString *)fullText;
 @end

@@ -40,4 +40,6 @@
 // 表情选中的通知
 #define HWEmotionDidSelectNotification @"HWEmotionDidSelectNotification"
 #define HWSelectEmotionKey @"HWSelectEmotionKey"
+// 删除文字的通知
+#define HWEmotionDidDeleteNotification @"HWEmotionDidDeleteNotification"
 #endif
