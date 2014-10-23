@@ -58,6 +58,13 @@
     [self setNeedsDisplay];
 }
 
+- (void)setAttributedText:(NSAttributedString *)attributedText
+{
+    [super setAttributedText:attributedText];
+    
+    [self setNeedsDisplay];
+}
+
 - (void)setFont:(UIFont *)font
 {
     [super setFont:font];
@@ -67,8 +74,6 @@
 
 - (void)drawRect:(CGRect)rect
 {
-//    [HWRandomColor set];
-//    UIRectFill(CGRectMake(20, 20, 30, 30));
     // 如果有输入文字，就直接返回，不画占位文字
     if (self.hasText) return;
     

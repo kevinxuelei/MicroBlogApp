@@ -34,9 +34,17 @@
     return self;
 }
 
+//- (void)setHighlighted:(BOOL)highlighted {
+//    
+//}
+
 - (void)setup
 {
     self.titleLabel.font = [UIFont systemFontOfSize:32];
+    
+    // 按钮高亮的时候。不要去调整图片（不要调整图片会灰色）
+    self.adjustsImageWhenHighlighted = NO;
+//    self.adjustsImageWhenDisabled
 }
 
 /**

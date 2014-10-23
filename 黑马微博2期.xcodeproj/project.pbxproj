@@ -106,6 +106,8 @@
 		18BD6D9C19F8871900C47122 /* HWEmotionPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6D9B19F8871900C47122 /* HWEmotionPopView.m */; };
 		18BD6D9E19F8873000C47122 /* HWEmotionPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */; };
 		18BD6DA119F88D3300C47122 /* HWEmotionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DA019F88D3300C47122 /* HWEmotionButton.m */; };
+		18BD6DA419F8A39700C47122 /* HWEmotionTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DA319F8A39700C47122 /* HWEmotionTextView.m */; };
+		18BD6DA719F8A92F00C47122 /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DA619F8A92F00C47122 /* UITextView+Extension.m */; };
 		18D9F91619ED167D009ACA4D /* HWStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91519ED167D009ACA4D /* HWStatusCell.m */; };
 		18D9F91919ED19D0009ACA4D /* HWStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91819ED19D0009ACA4D /* HWStatusFrame.m */; };
 		18ECFACF19E527300009431B /* HWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECFACE19E527300009431B /* HWTabBar.m */; };
@@ -310,6 +312,10 @@
 		18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEmotionPopView.xib; sourceTree = "<group>"; };
 		18BD6D9F19F88D3300C47122 /* HWEmotionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionButton.h; sourceTree = "<group>"; };
 		18BD6DA019F88D3300C47122 /* HWEmotionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionButton.m; sourceTree = "<group>"; };
+		18BD6DA219F8A39700C47122 /* HWEmotionTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTextView.h; sourceTree = "<group>"; };
+		18BD6DA319F8A39700C47122 /* HWEmotionTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionTextView.m; sourceTree = "<group>"; };
+		18BD6DA519F8A92F00C47122 /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		18BD6DA619F8A92F00C47122 /* UITextView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 		18D9F91419ED167D009ACA4D /* HWStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusCell.h; sourceTree = "<group>"; };
 		18D9F91519ED167D009ACA4D /* HWStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusCell.m; sourceTree = "<group>"; };
 		18D9F91719ED19D0009ACA4D /* HWStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusFrame.h; sourceTree = "<group>"; };
@@ -491,6 +497,8 @@
 				18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */,
 				18BD6D9F19F88D3300C47122 /* HWEmotionButton.h */,
 				18BD6DA019F88D3300C47122 /* HWEmotionButton.m */,
+				18BD6DA219F8A39700C47122 /* HWEmotionTextView.h */,
+				18BD6DA319F8A39700C47122 /* HWEmotionTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -753,6 +761,8 @@
 				18EFB79519F2045E003D4148 /* NSDate+Extension.m */,
 				18EFB79719F20D30003D4148 /* NSString+Extension.h */,
 				18EFB79819F20D30003D4148 /* NSString+Extension.m */,
+				18BD6DA519F8A92F00C47122 /* UITextView+Extension.h */,
+				18BD6DA619F8A92F00C47122 /* UITextView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1056,9 +1066,11 @@
 				181BBEA219EA5B6B0077569F /* HWTitleButton.m in Sources */,
 				18D9F91619ED167D009ACA4D /* HWStatusCell.m in Sources */,
 				187433F919ECAFFF009F4EDC /* HWLoadMoreFooter.m in Sources */,
+				18BD6DA719F8A92F00C47122 /* UITextView+Extension.m in Sources */,
 				18D9F91919ED19D0009ACA4D /* HWStatusFrame.m in Sources */,
 				181BBED019EA6AF00077569F /* UIImage+MultiFormat.m in Sources */,
 				181BBED219EA6AF00077569F /* UIImageView+HighlightedWebCache.m in Sources */,
+				18BD6DA419F8A39700C47122 /* HWEmotionTextView.m in Sources */,
 				183BD44419E7DF2700C0A26A /* AFSecurityPolicy.m in Sources */,
 				180E084619EA2115001D9142 /* UIWindow+Extension.m in Sources */,
 				18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */,

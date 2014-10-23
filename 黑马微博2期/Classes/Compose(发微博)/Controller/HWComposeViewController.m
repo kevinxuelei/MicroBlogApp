@@ -8,16 +8,17 @@
 
 #import "HWComposeViewController.h"
 #import "HWAccountTool.h"
-#import "HWTextView.h"
+#import "HWEmotionTextView.h"
 #import "MBProgressHUD+MJ.h"
 #import "AFNetworking.h"
 #import "HWComposeToolbar.h"
 #import "HWComposePhotosView.h"
 #import "HWEmotionKeyboard.h"
+#import "HWEmotion.h"
 
 @interface HWComposeViewController () <UITextViewDelegate, HWComposeToolbarDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 /** 输入控件 */
-@property (nonatomic, weak) HWTextView *textView;
+@property (nonatomic, weak) HWEmotionTextView *textView;
 /** 键盘顶部的工具条 */
 @property (nonatomic, weak) HWComposeToolbar *toolbar;
 /** 相册（存放拍照或者相册中选择的图片） */
@@ -38,11 +39,6 @@
         // 键盘的宽度
         self.emotionKeyboard.width = self.view.width;
         self.emotionKeyboard.height = 216;
-        
-        // 如果键盘宽度不为0，那么系统就会强制让键盘的宽度等于屏幕的宽度：320
-//        if (self.emotionKeyboard.width > 0) {
-//            self.emotionKeyboard.width = [UIScreen mainScreen].bounds.size.width;
-//        }
     }
     return _emotionKeyboard;
 }
@@ -148,7 +144,7 @@
 - (void)setupTextView
 {
     // 在这个控制器中，textView的contentInset.top默认会等于64
-    HWTextView *textView = [[HWTextView alloc] init];
+    HWEmotionTextView *textView = [[HWEmotionTextView alloc] init];
     // 垂直方向上永远可以拖拽（有弹簧效果）
     textView.alwaysBounceVertical = YES;
     textView.frame = self.view.bounds;
@@ -164,9 +160,21 @@
     // 键盘通知
     // 键盘的frame发生改变时发出的通知（位置和尺寸）
     [HWNotificationCenter addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
+    // 表情选中的通知
+    [HWNotificationCenter addObserver:self selector:@selector(emotionDidSelect:) name:HWEmotionDidSelectNotification object:nil];
 }
 
 #pragma mark - 监听方法
+/**
+ *  表情被选中了
+ */
+- (void)emotionDidSelect:(NSNotification *)notification
+{
+    HWEmotion *emotion = notification.userInfo[HWSelectEmotionKey];
+    [self.textView insertEmotion:emotion];
+}
+
 /**
  * 键盘的frame发生改变时调用（显示、隐藏等）
  */
