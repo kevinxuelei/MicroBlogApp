@@ -65,6 +65,8 @@
 		18421E8F19EF4CB600AFDFC8 /* HWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421E8E19EF4CB600AFDFC8 /* HWPhoto.m */; };
 		18421F1D19EFA59900AFDFC8 /* HWStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */; };
 		185B770819F7895100738FC7 /* HWEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B770719F7895100738FC7 /* HWEmotion.m */; };
+		185B770B19F7AA8900738FC7 /* HWEmotionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B770A19F7AA8900738FC7 /* HWEmotionPageView.m */; };
+		185B770E19F7B09300738FC7 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B770D19F7B09300738FC7 /* NSString+Emoji.m */; };
 		1865F0D019F734BF00EA5A3B /* HWEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */; };
 		1865F0D319F7364700EA5A3B /* HWEmotionTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D219F7364700EA5A3B /* HWEmotionTabBar.m */; };
 		1865F0D619F736E200EA5A3B /* HWEmotionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865F0D519F736E200EA5A3B /* HWEmotionListView.m */; };
@@ -237,6 +239,10 @@
 		18421F1C19EFA59900AFDFC8 /* HWStatusToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusToolbar.m; sourceTree = "<group>"; };
 		185B770619F7895100738FC7 /* HWEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotion.h; sourceTree = "<group>"; };
 		185B770719F7895100738FC7 /* HWEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotion.m; sourceTree = "<group>"; };
+		185B770919F7AA8900738FC7 /* HWEmotionPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionPageView.h; sourceTree = "<group>"; };
+		185B770A19F7AA8900738FC7 /* HWEmotionPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionPageView.m; sourceTree = "<group>"; };
+		185B770C19F7B09300738FC7 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		185B770D19F7B09300738FC7 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		1865F0CE19F734BF00EA5A3B /* HWEmotionKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionKeyboard.h; sourceTree = "<group>"; };
 		1865F0CF19F734BF00EA5A3B /* HWEmotionKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionKeyboard.m; sourceTree = "<group>"; };
 		1865F0D119F7364700EA5A3B /* HWEmotionTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTabBar.h; sourceTree = "<group>"; };
@@ -470,6 +476,8 @@
 				1865F0D819F74D6900EA5A3B /* HWEmotionTabBarButton.m */,
 				1865F0D419F736E200EA5A3B /* HWEmotionListView.h */,
 				1865F0D519F736E200EA5A3B /* HWEmotionListView.m */,
+				185B770919F7AA8900738FC7 /* HWEmotionPageView.h */,
+				185B770A19F7AA8900738FC7 /* HWEmotionPageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -719,6 +727,8 @@
 		18728E9B19E3D91D008F3BFE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				185B770C19F7B09300738FC7 /* NSString+Emoji.h */,
+				185B770D19F7B09300738FC7 /* NSString+Emoji.m */,
 				180E084719EA29C8001D9142 /* Foundation+Log.m */,
 				18728E9C19E3D91D008F3BFE /* UIView+Extension.h */,
 				18728E9D19E3D91D008F3BFE /* UIView+Extension.m */,
@@ -1001,6 +1011,7 @@
 				18EFB79619F2045E003D4148 /* NSDate+Extension.m in Sources */,
 				181BBEC919EA6AF00077569F /* SDWebImageDecoder.m in Sources */,
 				181BBF4019EA79F10077569F /* MJConst.m in Sources */,
+				185B770B19F7AA8900738FC7 /* HWEmotionPageView.m in Sources */,
 				181BBECC19EA6AF00077569F /* SDWebImageManager.m in Sources */,
 				183BD44619E7DF2700C0A26A /* AFURLRequestSerialization.m in Sources */,
 				1830271E19F4E80B00ED7435 /* HWComposeToolbar.m in Sources */,
@@ -1050,6 +1061,7 @@
 				180E083F19EA0DCB001D9142 /* MBProgressHUD.m in Sources */,
 				181BBECB19EA6AF00077569F /* SDWebImageDownloaderOperation.m in Sources */,
 				180E083619EA0AC9001D9142 /* HWAccount.m in Sources */,
+				185B770E19F7B09300738FC7 /* NSString+Emoji.m in Sources */,
 				180E084319EA191F001D9142 /* HWAccountTool.m in Sources */,
 				18728EC619E3D91D008F3BFE /* main.m in Sources */,
 				1830271719F492ED00ED7435 /* HWComposeViewController.m in Sources */,

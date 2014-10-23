@@ -35,8 +35,14 @@
 {
     if (!_emotionKeyboard) {
         self.emotionKeyboard = [[HWEmotionKeyboard alloc] init];
+        // 键盘的宽度
         self.emotionKeyboard.width = self.view.width;
         self.emotionKeyboard.height = 216;
+        
+        // 如果键盘宽度不为0，那么系统就会强制让键盘的宽度等于屏幕的宽度：320
+//        if (self.emotionKeyboard.width > 0) {
+//            self.emotionKeyboard.width = [UIScreen mainScreen].bounds.size.width;
+//        }
     }
     return _emotionKeyboard;
 }
