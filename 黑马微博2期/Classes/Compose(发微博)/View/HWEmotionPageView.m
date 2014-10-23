@@ -8,7 +8,23 @@
 
 #import "HWEmotionPageView.h"
 #import "HWEmotion.h"
+#import "HWEmotionPopView.h"
+#import "HWEmotionButton.h"
+
+@interface HWEmotionPageView()
+/** 点击表情后弹出的放大镜 */
+@property (nonatomic, strong) HWEmotionPopView *popView;
+@end
+
 @implementation HWEmotionPageView
+
+- (HWEmotionPopView *)popView
+{
+    if (!_popView) {
+        self.popView = [HWEmotionPopView popView];
+    }
+    return _popView;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -25,18 +41,14 @@
     
     NSUInteger count = emotions.count;
     for (int i = 0; i<count; i++) {
-        UIButton *btn = [[UIButton alloc] init];
-        HWEmotion *emotion = emotions[i];
-        
-        if (emotion.png) { // 有图片
-            [btn setImage:[UIImage imageNamed:emotion.png] forState:UIControlStateNormal];
-        } else if (emotion.code) { // 是emoji表情
-            // 设置emoji
-            [btn setTitle:emotion.code.emoji forState:UIControlStateNormal];
-            btn.titleLabel.font = [UIFont systemFontOfSize:32];
-        }
-        
+        HWEmotionButton *btn = [[HWEmotionButton alloc] init];
         [self addSubview:btn];
+        
+        // 设置表情数据
+        btn.emotion = emotions[i];
+        
+        // 监听按钮点击
+        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -59,5 +71,25 @@
         btn.x = inset + (i%HWEmotionMaxCols) * btnW;
         btn.y = inset + (i/HWEmotionMaxCols) * btnH;
     }
+}
+
+/**
+ *  监听表情按钮点击
+ *
+ *  @param btn 被点击的表情按钮
+ */
+- (void)btnClick:(HWEmotionButton *)btn
+{
+    // 给popView传递数据
+    self.popView.emotion = btn.emotion;
+    
+    // 取得最上面的window
+    UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
+    [window addSubview:self.popView];
+    
+    // 计算出被点击的按钮在window中的frame
+    CGRect btnFrame = [btn convertRect:btn.bounds toView:nil];
+    self.popView.y = CGRectGetMidY(btnFrame) - self.popView.height; // 100
+    self.popView.centerX = CGRectGetMidX(btnFrame);
 }
 @end

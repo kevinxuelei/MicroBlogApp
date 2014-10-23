@@ -103,6 +103,9 @@
 		189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */; };
 		189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */; };
 		18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */; };
+		18BD6D9C19F8871900C47122 /* HWEmotionPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6D9B19F8871900C47122 /* HWEmotionPopView.m */; };
+		18BD6D9E19F8873000C47122 /* HWEmotionPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */; };
+		18BD6DA119F88D3300C47122 /* HWEmotionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DA019F88D3300C47122 /* HWEmotionButton.m */; };
 		18D9F91619ED167D009ACA4D /* HWStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91519ED167D009ACA4D /* HWStatusCell.m */; };
 		18D9F91919ED19D0009ACA4D /* HWStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F91819ED19D0009ACA4D /* HWStatusFrame.m */; };
 		18ECFACF19E527300009431B /* HWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECFACE19E527300009431B /* HWTabBar.m */; };
@@ -302,6 +305,11 @@
 		189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		18B35D7719E7633300A00499 /* HWNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNewfeatureViewController.h; sourceTree = "<group>"; };
 		18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNewfeatureViewController.m; sourceTree = "<group>"; };
+		18BD6D9A19F8871900C47122 /* HWEmotionPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionPopView.h; sourceTree = "<group>"; };
+		18BD6D9B19F8871900C47122 /* HWEmotionPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionPopView.m; sourceTree = "<group>"; };
+		18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEmotionPopView.xib; sourceTree = "<group>"; };
+		18BD6D9F19F88D3300C47122 /* HWEmotionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionButton.h; sourceTree = "<group>"; };
+		18BD6DA019F88D3300C47122 /* HWEmotionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionButton.m; sourceTree = "<group>"; };
 		18D9F91419ED167D009ACA4D /* HWStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusCell.h; sourceTree = "<group>"; };
 		18D9F91519ED167D009ACA4D /* HWStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatusCell.m; sourceTree = "<group>"; };
 		18D9F91719ED19D0009ACA4D /* HWStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatusFrame.h; sourceTree = "<group>"; };
@@ -478,6 +486,11 @@
 				1865F0D519F736E200EA5A3B /* HWEmotionListView.m */,
 				185B770919F7AA8900738FC7 /* HWEmotionPageView.h */,
 				185B770A19F7AA8900738FC7 /* HWEmotionPageView.m */,
+				18BD6D9A19F8871900C47122 /* HWEmotionPopView.h */,
+				18BD6D9B19F8871900C47122 /* HWEmotionPopView.m */,
+				18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */,
+				18BD6D9F19F88D3300C47122 /* HWEmotionButton.h */,
+				18BD6DA019F88D3300C47122 /* HWEmotionButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -979,6 +992,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18728ECA19E3D91D008F3BFE /* HWTest1ViewController.xib in Resources */,
+				18BD6D9E19F8873000C47122 /* HWEmotionPopView.xib in Resources */,
 				18728E4319E37EB8008F3BFE /* Images.xcassets in Resources */,
 				18728ECC19E3D91D008F3BFE /* HWTest2ViewController.xib in Resources */,
 				187433FB19ECB012009F4EDC /* HWLoadMoreFooter.xib in Resources */,
@@ -1071,6 +1085,7 @@
 				183BD44219E7DF2700C0A26A /* AFHTTPSessionManager.m in Sources */,
 				1839F66E19E4E67900280C20 /* HWTitleMenuViewController.m in Sources */,
 				18728ECD19E3D91D008F3BFE /* HWTest3ViewController.m in Sources */,
+				18BD6DA119F88D3300C47122 /* HWEmotionButton.m in Sources */,
 				185B770819F7895100738FC7 /* HWEmotion.m in Sources */,
 				18728ECB19E3D91D008F3BFE /* HWTest2ViewController.m in Sources */,
 				181BBED319EA6AF00077569F /* UIImageView+WebCache.m in Sources */,
@@ -1078,6 +1093,7 @@
 				181BBED419EA6AF00077569F /* UIView+WebCacheOperation.m in Sources */,
 				1839F66B19E4E09A00280C20 /* HWDropdownMenu.m in Sources */,
 				181BBECD19EA6AF00077569F /* SDWebImagePrefetcher.m in Sources */,
+				18BD6D9C19F8871900C47122 /* HWEmotionPopView.m in Sources */,
 				18ECFACF19E527300009431B /* HWTabBar.m in Sources */,
 				181BBEC619EA6AF00077569F /* NSData+ImageContentType.m in Sources */,
 				18728EC719E3D91D008F3BFE /* HWMessageCenterViewController.m in Sources */,
