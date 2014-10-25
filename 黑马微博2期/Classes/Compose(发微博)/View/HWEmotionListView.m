@@ -51,6 +51,9 @@
 {
     _emotions = emotions;
     
+    // 删除之前的控件
+    [self.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
     NSUInteger count = (emotions.count + HWEmotionPageSize - 1) / HWEmotionPageSize;
     
     // 1.设置页数
@@ -80,6 +83,7 @@
     // 第0页：20个
     // 第1页：20个
     // 第2页：15个
+    [self setNeedsLayout];
 }
 
 - (void)layoutSubviews

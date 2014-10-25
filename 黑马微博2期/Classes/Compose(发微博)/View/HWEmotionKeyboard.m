@@ -78,8 +78,21 @@
         tabBar.delegate = self;
         [self addSubview:tabBar];
         self.tabBar = tabBar;
+        
+        // 表情选中的通知
+        [HWNotificationCenter addObserver:self selector:@selector(emotionDidSelect) name:HWEmotionDidSelectNotification object:nil];
     }
     return self;
+}
+
+- (void)emotionDidSelect
+{
+    self.recentListView.emotions = [HWEmotionTool recentEmotions];
+}
+
+- (void)dealloc
+{
+    [HWNotificationCenter removeObserver:self];
 }
 
 - (void)layoutSubviews
@@ -107,26 +120,24 @@
     // 根据按钮类型，切换键盘上面的listview
     switch (buttonType) {
         case HWEmotionTabBarButtonTypeRecent: { // 最近
+            // 加载沙盒中的数据
+//            self.recentListView.emotions = [HWEmotionTool recentEmotions];
             [self addSubview:self.recentListView];
-//            self.showingListView = self.recentListView;
             break;
         }
             
         case HWEmotionTabBarButtonTypeDefault: { // 默认
             [self addSubview:self.defaultListView];
-//            self.showingListView = self.defaultListView;
             break;
         }
             
         case HWEmotionTabBarButtonTypeEmoji: { // Emoji
             [self addSubview:self.emojiListView];
-//            self.showingListView = self.emojiListView;
             break;
         }
             
         case HWEmotionTabBarButtonTypeLxh: { // Lxh
             [self addSubview:self.lxhListView];
-//            self.showingListView = self.lxhListView;
             break;
         }
     }
