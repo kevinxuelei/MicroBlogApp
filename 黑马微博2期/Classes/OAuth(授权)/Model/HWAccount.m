@@ -7,6 +7,7 @@
 //
 
 #import "HWAccount.h"
+#import "MJExtension.h"
 
 @implementation HWAccount
 + (instancetype)accountWithDict:(NSDictionary *)dict
@@ -20,6 +21,7 @@
     return account;
 }
 
+//MJCodingImplementation
 /**
  *  当一个对象要归档进沙盒中时，就会调用这个方法
  *  目的：在这个方法中说明这个对象的哪些属性要存进沙盒

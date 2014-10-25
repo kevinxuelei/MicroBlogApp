@@ -103,6 +103,7 @@
 		189B5CEA19E3DC5300C3CEB4 /* HWItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CE919E3DC5300C3CEB4 /* HWItemTool.m */; };
 		189B5CED19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */; };
 		189D88D819F8EE64005459E5 /* HWEmotionAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D88D719F8EE64005459E5 /* HWEmotionAttachment.m */; };
+		189D88DC19F90024005459E5 /* HWEmotionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D88DB19F90024005459E5 /* HWEmotionTool.m */; };
 		18B35D7919E7633300A00499 /* HWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */; };
 		18BD6D9C19F8871900C47122 /* HWEmotionPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6D9B19F8871900C47122 /* HWEmotionPopView.m */; };
 		18BD6D9E19F8873000C47122 /* HWEmotionPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6D9D19F8873000C47122 /* HWEmotionPopView.xib */; };
@@ -308,6 +309,8 @@
 		189B5CEC19E3DEE900C3CEB4 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		189D88D619F8EE64005459E5 /* HWEmotionAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionAttachment.h; sourceTree = "<group>"; };
 		189D88D719F8EE64005459E5 /* HWEmotionAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionAttachment.m; sourceTree = "<group>"; };
+		189D88DA19F90024005459E5 /* HWEmotionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionTool.h; sourceTree = "<group>"; };
+		189D88DB19F90024005459E5 /* HWEmotionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionTool.m; sourceTree = "<group>"; };
 		18B35D7719E7633300A00499 /* HWNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNewfeatureViewController.h; sourceTree = "<group>"; };
 		18B35D7819E7633300A00499 /* HWNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNewfeatureViewController.m; sourceTree = "<group>"; };
 		18BD6D9A19F8871900C47122 /* HWEmotionPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionPopView.h; sourceTree = "<group>"; };
@@ -462,6 +465,7 @@
 		1830271319F492D900ED7435 /* Compose(发微博) */ = {
 			isa = PBXGroup;
 			children = (
+				189D88D919F9001A005459E5 /* Tool */,
 				185B770519F7893F00738FC7 /* Model */,
 				1830271B19F4E7F500ED7435 /* View */,
 				1830271419F492D900ED7435 /* Controller */,
@@ -912,6 +916,15 @@
 			path = "Temp(临时)";
 			sourceTree = "<group>";
 		};
+		189D88D919F9001A005459E5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				189D88DA19F90024005459E5 /* HWEmotionTool.h */,
+				189D88DB19F90024005459E5 /* HWEmotionTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		18B35D7519E7630F00A00499 /* Newfeature(新特性) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1072,6 +1085,7 @@
 				18D9F91619ED167D009ACA4D /* HWStatusCell.m in Sources */,
 				187433F919ECAFFF009F4EDC /* HWLoadMoreFooter.m in Sources */,
 				18BD6DA719F8A92F00C47122 /* UITextView+Extension.m in Sources */,
+				189D88DC19F90024005459E5 /* HWEmotionTool.m in Sources */,
 				18D9F91919ED19D0009ACA4D /* HWStatusFrame.m in Sources */,
 				181BBED019EA6AF00077569F /* UIImage+MultiFormat.m in Sources */,
 				181BBED219EA6AF00077569F /* UIImageView+HighlightedWebCache.m in Sources */,

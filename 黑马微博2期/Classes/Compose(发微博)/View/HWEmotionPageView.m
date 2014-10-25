@@ -10,6 +10,7 @@
 #import "HWEmotion.h"
 #import "HWEmotionPopView.h"
 #import "HWEmotionButton.h"
+#import "HWEmotionTool.h"
 
 @interface HWEmotionPageView()
 /** 点击表情后弹出的放大镜 */
@@ -81,9 +82,7 @@
             // 如果手指还在表情按钮上
             if (btn) {
                 // 发出通知
-                NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-                userInfo[HWSelectEmotionKey] = btn.emotion;
-                [HWNotificationCenter postNotificationName:HWEmotionDidSelectNotification object:nil userInfo:userInfo];
+                [self selectEmotion:btn.emotion];
             }
             break;
             
@@ -166,8 +165,22 @@
     });
     
     // 发出通知
+    [self selectEmotion:btn.emotion];
+}
+
+/**
+ *  选中某个表情，发出通知
+ *
+ *  @param emotion 被选中的表情
+ */
+- (void)selectEmotion:(HWEmotion *)emotion
+{
+    // 将这个表情存进沙盒
+    [HWEmotionTool addRecentEmotion:emotion];
+    
+    // 发出通知
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-    userInfo[HWSelectEmotionKey] = btn.emotion;
+    userInfo[HWSelectEmotionKey] = emotion;
     [HWNotificationCenter postNotificationName:HWEmotionDidSelectNotification object:nil userInfo:userInfo];
 }
 @end

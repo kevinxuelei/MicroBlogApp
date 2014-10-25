@@ -11,6 +11,7 @@
 #import "HWEmotionTabBar.h"
 #import "HWEmotion.h"
 #import "MJExtension.h"
+#import "HWEmotionTool.h"
 
 @interface HWEmotionKeyboard() <HWEmotionTabBarDelegate>
 /** 保存正在显示listView */
@@ -31,6 +32,8 @@
 {
     if (!_recentListView) {
         self.recentListView = [[HWEmotionListView alloc] init];
+        // 加载沙盒中的数据
+        self.recentListView.emotions = [HWEmotionTool recentEmotions];
     }
     return _recentListView;
 }

@@ -34,6 +34,8 @@
         
         // 2.pageControl
         UIPageControl *pageControl = [[UIPageControl alloc] init];
+        // 当只有1页时，自动隐藏pageControl
+        pageControl.hidesForSinglePage = YES;
         pageControl.userInteractionEnabled = NO;
         // 设置内部的圆点图片
         [pageControl setValue:[UIImage imageNamed:@"compose_keyboard_dot_normal"] forKeyPath:@"pageImage"];
@@ -53,6 +55,7 @@
     
     // 1.设置页数
     self.pageControl.numberOfPages = count;
+//    self.pageControl.numberOfPages = count > 1? count : 0;
     
     // 2.创建用来显示每一页表情的控件
     for (int i = 0; i<count; i++) {
