@@ -7,9 +7,9 @@
 //
 
 #import "HWOAuthViewController.h"
-#import "AFNetworking.h"
 #import "HWAccountTool.h"
 #import "MBProgressHUD+MJ.h"
+#import "HWHttpTool.h"
 
 @interface HWOAuthViewController () <UIWebViewDelegate>
 
@@ -33,7 +33,8 @@
      client_id	true	string	申请应用时分配的AppKey。
      redirect_uri	true	string	授权回调地址，站外应用需与设置的回调地址一致，站内应用需填写canvas page的地址。
     */
-    NSURL *url = [NSURL URLWithString:@"https://api.weibo.com/oauth2/authorize?client_id=3235932662&redirect_uri=http://www.baidu.com"];
+    NSString *urlStr = [NSString stringWithFormat:@"https://api.weibo.com/oauth2/authorize?client_id=%@&redirect_uri=%@", HWAppKey, HWRedirectURI];
+    NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
 }
@@ -83,45 +84,27 @@
  */
 - (void)accessTokenWithCode:(NSString *)code
 {
-/*
- URL：https://api.weibo.com/oauth2/access_token
- 
- 请求参数：
- client_id：申请应用时分配的AppKey
- client_secret：申请应用时分配的AppSecret
- grant_type：使用authorization_code
- redirect_uri：授权成功后的回调地址
- code：授权成功后返回的code
- */
-    // 1.请求管理者
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-//    mgr.responseSerializer = [AFJSONResponseSerializer serializer];
-    // AFN的AFJSONResponseSerializer默认不接受text/plain这种类型
-    
-    // 2.拼接请求参数
+    // 1.拼接请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"client_id"] = @"3235932662";
-    params[@"client_secret"] = @"227141af66d895d0dd8baca62f73b700";
+    params[@"client_id"] = HWAppKey;
+    params[@"client_secret"] = HWAppSecret;
     params[@"grant_type"] = @"authorization_code";
-    params[@"redirect_uri"] = @"http://www.baidu.com";
+    params[@"redirect_uri"] = HWRedirectURI;
     params[@"code"] = code;
     
-    // 3.发送请求
-    [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+    // 2.发送请求
+    [HWHttpTool post:@"https://api.weibo.com/oauth2/access_token" params:params success:^(id json) {
         [MBProgressHUD hideHUD];
         
         // 将返回的账号字典数据 --> 模型，存进沙盒
-        HWAccount *account = [HWAccount accountWithDict:responseObject];
+        HWAccount *account = [HWAccount accountWithDict:json];
         // 存储账号信息
         [HWAccountTool saveAccount:account];
         
         // 切换窗口的根控制器
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         [window switchRootViewController];
-        
-        // UIWindow的分类、HWWindowTool
-        // UIViewController的分类、HWControllerTool
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSError *error) {
         [MBProgressHUD hideHUD];
         HWLog(@"请求失败-%@", error);
     }];

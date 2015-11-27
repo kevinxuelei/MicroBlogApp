@@ -20,6 +20,9 @@
 #import "NSString+Extension.h"
 #import "NSString+Emoji.h"
 #import "UITextView+Extension.h"
+#import "HWConst.h"
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 
 // 通知中心
 #define HWNotificationCenter [NSNotificationCenter defaultCenter]
@@ -35,11 +38,4 @@
 
 // 随机色
 #define HWRandomColor HWColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
-
-// 通知
-// 表情选中的通知
-#define HWEmotionDidSelectNotification @"HWEmotionDidSelectNotification"
-#define HWSelectEmotionKey @"HWSelectEmotionKey"
-// 删除文字的通知
-#define HWEmotionDidDeleteNotification @"HWEmotionDidDeleteNotification"
 #endif

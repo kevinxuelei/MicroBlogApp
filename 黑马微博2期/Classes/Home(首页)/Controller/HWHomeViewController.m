@@ -9,7 +9,7 @@
 #import "HWHomeViewController.h"
 #import "HWDropdownMenu.h"
 #import "HWTitleMenuViewController.h"
-#import "AFNetworking.h"
+#import "HWHttpTool.h"
 #import "HWAccountTool.h"
 #import "HWTitleButton.h"
 #import "UIImageView+WebCache.h"
@@ -19,6 +19,7 @@
 #import "HWLoadMoreFooter.h"
 #import "HWStatusCell.h"
 #import "HWStatusFrame.h"
+#import "MJRefresh.h"
 
 @interface HWHomeViewController () <HWDropdownMenuDelegate>
 /**
@@ -75,28 +76,16 @@
  */
 - (void)setupUnreadCount
 {
-//    HWLog(@"setupUnreadCount");
-//    return;
-    // 1.请求管理者
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    
-    // 2.拼接请求参数
+    // 1.拼接请求参数
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
     params[@"uid"] = account.uid;
     
-    // 3.发送请求
-    [mgr GET:@"https://rm.api.weibo.com/2/remind/unread_count.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-        // 微博的未读数
-//        int status = [responseObject[@"status"] intValue];
-        // 设置提醒数字
-//        self.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", status];
-        
-        // @20 --> @"20"
-        // NSNumber --> NSString
+    // 2.发送请求
+    [HWHttpTool get:@"https://rm.api.weibo.com/2/remind/unread_count.json" params:params success:^(id json) {
         // 设置提醒数字(微博的未读数)
-        NSString *status = [responseObject[@"status"] description];
+        NSString *status = [json[@"status"] description];
         if ([status isEqualToString:@"0"]) { // 如果是0，得清空数字
             self.tabBarItem.badgeValue = nil;
             [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
@@ -104,7 +93,7 @@
             self.tabBarItem.badgeValue = status;
             [UIApplication sharedApplication].applicationIconBadgeNumber = status.intValue;
         }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSError *error) {
         HWLog(@"请求失败-%@", error);
     }];
 }
@@ -114,9 +103,10 @@
  */
 - (void)setupUpRefresh
 {
-    HWLoadMoreFooter *footer = [HWLoadMoreFooter footer];
-    footer.hidden = YES;
-    self.tableView.tableFooterView = footer;
+//    [self.tableView addFooterWithCallback:^{
+//        HWLog(@"进入上拉刷新状态");
+//    }];
+    [self.tableView addFooterWithTarget:self action:@selector(loadMoreStatus)];
 }
 
 /**
@@ -125,16 +115,10 @@
 - (void)setupDownRefresh
 {
     // 1.添加刷新控件
-    UIRefreshControl *control = [[UIRefreshControl alloc] init];
-    // 只有用户通过手动下拉刷新，才会触发UIControlEventValueChanged事件
-    [control addTarget:self action:@selector(loadNewStatus:) forControlEvents:UIControlEventValueChanged];
-    [self.tableView addSubview:control];
+    [self.tableView addHeaderWithTarget:self action:@selector(loadNewStatus)];
     
-    // 2.马上进入刷新状态(仅仅是显示刷新状态，并不会触发UIControlEventValueChanged事件)
-    [control beginRefreshing];
-    
-    // 3.马上加载数据
-    [self loadNewStatus:control];
+    // 2.进入刷新状态
+    [self.tableView headerBeginRefreshing];
 }
 
 /**
@@ -154,7 +138,7 @@
 /**
  *  UIRefreshControl进入刷新状态：加载最新的数据
  */
-- (void)loadNewStatus:(UIRefreshControl *)control
+- (void)loadNewStatus
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSDictionary *responseObject = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fakeStatus" ofType:@"plist"]];
@@ -173,7 +157,7 @@
         [self.tableView reloadData];
         
         // 结束刷新
-        [control endRefreshing];
+        [self.tableView headerEndRefreshing];
         
         // 显示最新微博的数量
         [self showNewStatusCount:newStatuses.count];
@@ -181,10 +165,7 @@
     
     return;
     
-    // 1.请求管理者
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    
-    // 2.拼接请求参数
+    // 1.拼接请求参数
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
@@ -196,12 +177,10 @@
         params[@"since_id"] = firstStatusF.status.idstr;
     }
     
-    // 3.发送请求
-    [mgr GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-        HWLog(@"%@", responseObject);
-        
+    // 2.发送请求
+    [HWHttpTool get:@"https://api.weibo.com/2/statuses/friends_timeline.json" params:params success:^(id json) {
         // 将 "微博字典"数组 转为 "微博模型"数组
-        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:json[@"statuses"]];
         
         // 将 HWStatus数组 转为 HWStatusFrame数组
         NSArray *newFrames = [self stausFramesWithStatuses:newStatuses];
@@ -215,15 +194,15 @@
         [self.tableView reloadData];
         
         // 结束刷新
-        [control endRefreshing];
+        [self.tableView headerEndRefreshing];
         
         // 显示最新微博的数量
         [self showNewStatusCount:newStatuses.count];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSError *error) {
         HWLog(@"请求失败-%@", error);
         
         // 结束刷新刷新
-        [control endRefreshing];
+        [self.tableView headerEndRefreshing];
     }];
 }
 
@@ -232,10 +211,7 @@
  */
 - (void)loadMoreStatus
 {
-    // 1.请求管理者
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    
-    // 2.拼接请求参数
+    // 1.拼接请求参数
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
@@ -249,10 +225,10 @@
         params[@"max_id"] = @(maxId);
     }
     
-    // 3.发送请求
-    [mgr GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+    // 2.发送请求
+    [HWHttpTool get:@"https://api.weibo.com/2/statuses/friends_timeline.json" params:params success:^(id json) {
         // 将 "微博字典"数组 转为 "微博模型"数组
-        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        NSArray *newStatuses = [HWStatus objectArrayWithKeyValuesArray:json[@"statuses"]];
         
         // 将 HWStatus数组 转为 HWStatusFrame数组
         NSArray *newFrames = [self stausFramesWithStatuses:newStatuses];
@@ -264,12 +240,12 @@
         [self.tableView reloadData];
         
         // 结束刷新(隐藏footer)
-        self.tableView.tableFooterView.hidden = YES;
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self.tableView footerEndRefreshing];
+    } failure:^(NSError *error) {
         HWLog(@"请求失败-%@", error);
         
         // 结束刷新
-        self.tableView.tableFooterView.hidden = YES;
+        [self.tableView footerEndRefreshing];
     }];
 }
 
@@ -329,27 +305,24 @@
  */
 - (void)setupUserInfo
 {
-    // 1.请求管理者
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    
-    // 2.拼接请求参数
+    // 1.拼接请求参数
     HWAccount *account = [HWAccountTool account];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = account.access_token;
     params[@"uid"] = account.uid;
     
-    // 3.发送请求
-    [mgr GET:@"https://api.weibo.com/2/users/show.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+    // 2.发送请求
+    [HWHttpTool get:@"https://api.weibo.com/2/users/show.json" params:params success:^(id json) {
         // 标题按钮
         UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
         // 设置名字
-        HWUser *user = [HWUser objectWithKeyValues:responseObject];
+        HWUser *user = [HWUser objectWithKeyValues:json];
         [titleButton setTitle:user.name forState:UIControlStateNormal];
         
         // 存储昵称到沙盒中
         account.name = user.name;
         [HWAccountTool saveAccount:account];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSError *error) {
         HWLog(@"请求失败-%@", error);
     }];
 }
@@ -438,24 +411,6 @@
     cell.statusFrame = self.statusFrames[indexPath.row];
     
     return cell;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    //    scrollView == self.tableView == self.view
-    // 如果tableView还没有数据，就直接返回
-    if (self.statusFrames.count == 0 || self.tableView.tableFooterView.isHidden == NO) return;
-    
-    CGFloat offsetY = scrollView.contentOffset.y;
-    // 当最后一个cell完全显示在眼前时，contentOffset的y值
-    CGFloat judgeOffsetY = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.height - self.tableView.tableFooterView.height;
-    if (offsetY >= judgeOffsetY) { // 最后一个cell完全进入视野范围内
-        // 显示footer
-        self.tableView.tableFooterView.hidden = NO;
-        
-        // 加载更多的微博数据
-        [self loadMoreStatus];
-    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
